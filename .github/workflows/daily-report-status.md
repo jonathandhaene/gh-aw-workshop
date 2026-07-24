@@ -26,3 +26,6 @@ Highlight the most important activity and add one sentence explaining why it mat
 to the team. Do not include a static repository or workshop-content inventory. If no
 qualifying activity occurred, state that clearly instead of filling the report with
 older or unrelated information.
+
+State only facts supported by GitHub tool results or local Git data. If data is
+unavailable, say so without guessing about repository settings, visibility, or change scope.
