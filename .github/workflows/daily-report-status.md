@@ -12,7 +12,7 @@ steps:
     id: recent
     run: |
       set -euo pipefail
-      COMMIT_LOG=$(git log --oneline --since="24 hours ago" --format="%h %s" | head -10)
+      COMMIT_LOG=$(git log -10 --oneline --since="24 hours ago" --format="%h %s")
       echo "commit_log<<EOF" >> "$GITHUB_OUTPUT"
       echo "$COMMIT_LOG" >> "$GITHUB_OUTPUT"
       echo "EOF" >> "$GITHUB_OUTPUT"
