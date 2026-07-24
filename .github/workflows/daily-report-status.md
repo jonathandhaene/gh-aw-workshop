@@ -7,6 +7,10 @@ permissions:
   issues: read
 checkout:
   fetch-depth: 0
+tools:
+  github:
+    mode: gh-proxy
+    toolsets: [issues, repos]
 steps:
   - name: Fetch recent commits
     id: recent
@@ -34,6 +38,11 @@ data supplied below.
 Read recent commits from `/tmp/gh-aw/data/recent_commits.txt` and open issues
 from `/tmp/gh-aw/data/open_issues.json`. The issue count is the number of objects
 in the JSON array.
+
+You also have read-only GitHub tools via MCP. Use them to fetch the latest five
+commits on the default branch and list open issues labelled `bug`. Include an
+MCP findings section that summarizes those tool results. If a tool returns no
+matching items, state that directly.
 
 Write one short bullet list per topic. If the commit list is empty, state that no
 commits were found in the last 24 hours. If the issue list is empty, state that
