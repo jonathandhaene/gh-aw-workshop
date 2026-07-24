@@ -32,6 +32,9 @@ safe-outputs:
   create-issue:
 ---
 
+<!-- TEMPLATE: Review the trigger, billing method, permissions, and report scope
+     before compiling this workflow in another repository. -->
+
 Create one concise repository activity report in a new issue using only the
 data supplied below.
 
