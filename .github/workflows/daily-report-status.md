@@ -5,6 +5,11 @@ on:
 permissions:
   contents: read
   issues: read
+  pull-requests: read
+tools:
+  github:
+    mode: gh-proxy
+    toolsets: [issues, pull_requests, repos]
 safe-outputs:
   create-issue:
 ---
