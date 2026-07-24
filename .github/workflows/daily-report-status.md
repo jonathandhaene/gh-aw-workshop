@@ -5,10 +5,13 @@ on:
 permissions:
   contents: read
   issues: read
+checkout:
+  fetch-depth: 0
 steps:
   - name: Fetch recent commits
     id: recent
     run: |
+      set -euo pipefail
       COMMIT_LOG=$(git log --oneline --since="24 hours ago" --format="%h %s" | head -10)
       echo "commit_log<<EOF" >> "$GITHUB_OUTPUT"
       echo "$COMMIT_LOG" >> "$GITHUB_OUTPUT"
@@ -16,6 +19,7 @@ steps:
   - name: Fetch open issues
     id: issues
     run: |
+      set -euo pipefail
       ISSUE_LIST=$(gh issue list --state open --limit 10 \
         --json number,title \
         --jq '.[] | "#\(.number) \(.title)"')
@@ -25,7 +29,7 @@ steps:
       echo "EOF" >> "$GITHUB_OUTPUT"
       echo "open_issues_count=$ISSUE_COUNT" >> "$GITHUB_OUTPUT"
     env:
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_TOKEN: ${{ github.token }}
 safe-outputs:
   create-issue:
 ---
