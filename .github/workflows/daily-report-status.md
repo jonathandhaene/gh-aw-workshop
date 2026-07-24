@@ -12,22 +12,16 @@ steps:
     id: recent
     run: |
       set -euo pipefail
-      COMMIT_LOG=$(git log -10 --oneline --since="24 hours ago" --format="%h %s")
-      echo "commit_log<<EOF" >> "$GITHUB_OUTPUT"
-      echo "$COMMIT_LOG" >> "$GITHUB_OUTPUT"
-      echo "EOF" >> "$GITHUB_OUTPUT"
+      mkdir -p /tmp/gh-aw/data
+      git log -10 --oneline --since="24 hours ago" --format="%h %s" \
+        > /tmp/gh-aw/data/recent_commits.txt
   - name: Fetch open issues
     id: issues
     run: |
       set -euo pipefail
-      ISSUE_LIST=$(gh issue list --state open --limit 10 \
-        --json number,title \
-        --jq '.[] | "#\(.number) \(.title)"')
-      ISSUE_COUNT=$(gh issue list --state open --json number --jq 'length')
-      echo "open_issues<<EOF" >> "$GITHUB_OUTPUT"
-      echo "$ISSUE_LIST" >> "$GITHUB_OUTPUT"
-      echo "EOF" >> "$GITHUB_OUTPUT"
-      echo "open_issues_count=$ISSUE_COUNT" >> "$GITHUB_OUTPUT"
+      mkdir -p /tmp/gh-aw/data
+      gh issue list --state open --limit 100 --json number,title \
+        > /tmp/gh-aw/data/open_issues.json
     env:
       GH_TOKEN: ${{ github.token }}
 safe-outputs:
@@ -37,11 +31,9 @@ safe-outputs:
 Create one concise repository activity report in a new issue using only the
 data supplied below.
 
-Recent commits from the previous 24 hours:
-${{ steps.recent.outputs.commit_log }}
-
-Open issues (${{ steps.issues.outputs.open_issues_count }} total):
-${{ steps.issues.outputs.open_issues }}
+Read recent commits from `/tmp/gh-aw/data/recent_commits.txt` and open issues
+from `/tmp/gh-aw/data/open_issues.json`. The issue count is the number of objects
+in the JSON array.
 
 Write one short bullet list per topic. If the commit list is empty, state that no
 commits were found in the last 24 hours. If the issue list is empty, state that
