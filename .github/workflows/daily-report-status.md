@@ -5,7 +5,6 @@ on:
 permissions:
   contents: read
   issues: read
-  copilot-requests: write
 safe-outputs:
   create-issue:
 ---
