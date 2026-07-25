@@ -62,7 +62,7 @@ A **runner** is the machine GitHub provisions for each job — fresh and isolate
 runs-on: ubuntu-latest   # also: windows-latest, macos-latest
 ```
 
-You can also bring a **self-hosted runner** for custom hardware or private networks. Agentic workflows use the same hosted runners.
+You can also bring a **[self-hosted runner](https://github.github.com/gh-aw/reference/self-hosted-runners/)** for custom hardware or private networks. Agentic workflows use the same hosted runners.
 
 </details>
 
