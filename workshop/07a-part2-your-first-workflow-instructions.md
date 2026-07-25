@@ -29,6 +29,7 @@ In `.github/workflows/daily-report-status.md`, update frontmatter so it looks li
 ---
 name: Daily Report Status
 on:
+  schedule: daily
   workflow_dispatch:
 permissions:
   contents: read

@@ -9,12 +9,13 @@ _Writing your first workflow is the moment theory becomes practice — let's mak
 
 ## 🎯 What You'll Do
 
-You'll create the first version of `.github/workflows/daily-report-status.md` with just two [frontmatter](https://github.github.com/gh-aw/reference/frontmatter/) fields:
+You'll create the first version of `.github/workflows/daily-report-status.md` with these [frontmatter](https://github.github.com/gh-aw/reference/frontmatter/) fields:
 
-- `name` (workflow label)
-- `on.schedule` (manual trigger)
+- `name` — the workflow label shown in the Actions UI
+- `on.schedule` — when the workflow runs automatically
+- `on.workflow_dispatch` — lets you trigger a manual run from the Actions tab
 
-Then you'll run your first compile check.
+Then you'll run your first compile check and confirm the generated lock file.
 
 ## 📋 Before You Start
 
@@ -38,7 +39,7 @@ touch .github/workflows/daily-report-status.md
 
 Open `.github/workflows/daily-report-status.md` in your editor.
 
-> [!IMPORTANT]
+> [!NOTE]
 > This `.md` file is **not** the workflow GitHub Actions executes. You write the goal in Markdown; `gh aw compile` generates the `.lock.yml` file that Actions actually runs.
 
 ### Add the starter frontmatter
@@ -50,11 +51,13 @@ Paste this at the top of the file:
 name: Daily Report Status
 on:
   schedule: daily
+  workflow_dispatch:
 ---
 ```
 
 - `name` is what you see in the Actions UI.
-- `schedule: daily` means it triggers once a day. The compiler automatically adds the [`workflow_dispatch`](https://github.github.com/gh-aw/reference/triggers/) event as well.
+- `schedule: daily` triggers the workflow once a day. Use fuzzy expressions like this — `gh aw compile` converts them to cron automatically. Never write raw cron syntax in `.md` files.
+- `workflow_dispatch` lets you trigger a run manually from the Actions tab, which is how you'll test it in [Run Your Workflow](08-run-your-workflow.md).
 
 ![How workflow_dispatch works: author the .md file, compile to a lock.yml, push to GitHub, then click Run workflow in the Actions tab to trigger the agent](images/07a-workflow-dispatch-trigger.svg)
 
@@ -66,15 +69,17 @@ gh aw compile
 
 Expected result:
 
-You see a green success message and a generated `.lock.yml` file next to `daily-report-status.md`.
+You see a green success message and a generated `daily-report-status.lock.yml` file next to `daily-report-status.md`. Open it to see the cron expression that `gh aw compile` created for `schedule: daily`.
 
-If you hit an error, use [Side Quest: Using `gh aw compile` to Catch Errors Early](side-quest-07-01-compile-workflow.md).
-
+> [!TIP]
+> If you hit an error, see [Side Quest: Using `gh aw compile` to Catch Errors Early](side-quest-07-01-compile-workflow.md).
 
 ## ✅ Checkpoint
 
-- [ ] `.github/workflows/daily-report-status.md` exists
-- [ ] You ran `gh aw compile` successfully and it generated `daily-report-status.lock.yml`
+- [ ] `.github/workflows/daily-report-status.md` exists with `name`, `schedule: daily`, and `workflow_dispatch` in frontmatter
+- [ ] You ran `gh aw compile` successfully
+- [ ] `daily-report-status.lock.yml` was generated alongside your `.md` file
+- [ ] The lock file contains a `cron:` expression (check with `cat .github/workflows/daily-report-status.lock.yml`)
 
 <!-- journey: terminal -->
 **Next:** [Part 2: Add instructions, safe outputs, and finish](07a-part2-your-first-workflow-instructions.md)
