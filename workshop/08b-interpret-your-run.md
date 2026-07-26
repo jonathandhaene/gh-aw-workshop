@@ -79,7 +79,7 @@ Put your answers in a scratch file, your editor, or wherever you keep notes. You
 - [ ] I traced the first tool call and noted what the agent was trying to do
 - [ ] I compared the run summary to the actual GitHub change and noted the result
 - [ ] I know the first check to make if a run is missing, confused, or finished without writing anything
-- [ ] I can identify whether a run failed due to a permission error, a vague brief, or a missing output
+- [ ] I can identify whether a run failed due to a [permission](https://github.github.com/gh-aw/reference/permissions/) error, a vague brief, or a missing output
 
 <!-- journey: all -->
 **Next:** [Refine Your Workflow with Agentic Editing](09-agentic-editing.md)

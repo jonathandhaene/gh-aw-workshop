@@ -68,7 +68,7 @@ Now run:
 gh aw doctor
 ```
 
-This verifies your GitHub CLI authentication using the same setup checks `gh-aw` expects before later authoring and compile steps.
+This verifies your GitHub CLI authentication using the same setup checks `gh-aw` expects before later authoring and [compile](https://github.github.com/gh-aw/reference/compilation-process/) steps.
 
 Expected result: a success message confirming GitHub CLI authentication. If it fails, use [Side Quest: Install gh-aw Troubleshooting](side-quest-06-01-install-troubleshooting.md), then rerun `gh aw doctor`.
 

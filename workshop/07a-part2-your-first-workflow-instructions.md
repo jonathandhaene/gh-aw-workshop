@@ -72,7 +72,7 @@ For follow-up edits, prefer asking an agent to update workflows with the `agenti
 - [ ] `.github/workflows/daily-report-status.md` includes `permissions` with `copilot-requests: write`
 - [ ] `gh aw compile` reports valid
 - [ ] The file is committed and pushed to `main`
-- [ ] You are ready to choose the workflow's billing and authentication method
+- [ ] You are ready to choose the workflow's [billing](https://github.github.com/gh-aw/reference/billing/) and authentication method
 
 <!-- journey: terminal -->
 **Next:** [Confirm Model Access](07d-confirm-model-access.md)
