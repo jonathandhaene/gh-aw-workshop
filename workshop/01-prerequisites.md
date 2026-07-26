@@ -29,7 +29,11 @@ If you are using a **desktop or laptop without a terminal** — for example, a s
 > [!IMPORTANT]
 > Phones and tablets are not supported for this workshop. Switch to a desktop or laptop before continuing.
 
-![Setup path decision diagram: choose between Codespace, Local Terminal, and Browser based on your environment](images/01-setup-path-decision.svg)
+<picture>
+   <source media="(prefers-color-scheme: dark)" srcset="images/01-setup-path-decision-dark.svg">
+   <source media="(prefers-color-scheme: light)" srcset="images/01-setup-path-decision-light.svg">
+   <img alt="Setup path decision diagram: choose between Codespace, Local Terminal, and Browser based on your environment" src="images/01-setup-path-decision-light.svg">
+</picture>
 
 ## Verify AI engine access
 
