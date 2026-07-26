@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-label="Actions tab showing where to find Daily Report Status in the workflow list">
+  <!-- Browser chrome -->
+  <rect x="0" y="0" width="1200" height="44" rx="8" ry="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <rect x="0" y="22" width="1200" height="22" fill="#161b22" stroke="none"/>
+  <!-- URL bar -->
+  <rect x="300" y="10" width="600" height="24" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+  <text x="600" y="26" font-family="Arial, sans-serif" font-size="12" fill="#8b949e" text-anchor="middle">github.com/your-org/your-repo/actions</text>
+  <!-- Page background -->
+  <rect x="0" y="44" width="1200" height="516" fill="#0d1117"/>
+  <!-- Repo header bar -->
+  <rect x="0" y="44" width="1200" height="48" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="48" y="74" font-family="Arial, sans-serif" font-size="15" font-weight="600" fill="#f0f6fc">your-org / your-repo</text>
+  <!-- Nav tab bar -->
+  <rect x="0" y="92" width="1200" height="40" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="48" y="117" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">Code</text>
+  <text x="110" y="117" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">Issues</text>
+  <text x="175" y="117" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">Pull requests</text>
+  <text x="280" y="117" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#f0f6fc">Actions</text>
+  <rect x="280" y="129" width="54" height="3" rx="2" fill="#2f81f7"/>
+  <text x="348" y="117" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">Projects</text>
+  <text x="410" y="117" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">Security</text>
+  <text x="475" y="117" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">Settings</text>
+  <!-- Content area -->
+  <rect x="24" y="152" width="240" height="360" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <!-- Sidebar header -->
+  <text x="44" y="178" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#f0f6fc">Workflows</text>
+  <line x1="24" y1="188" x2="264" y2="188" stroke="#30363d" stroke-width="1"/>
+  <!-- Sidebar items -->
+  <rect x="24" y="192" width="240" height="32" fill="#2f81f7" fill-opacity="0.15" rx="4"/>
+  <text x="44" y="212" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#2f81f7">Daily Report Status</text>
+  <text x="44" y="244" font-family="Arial, sans-serif" font-size="13" fill="#8b949e">Other Workflow</text>
+  <!-- Main panel -->
+  <rect x="280" y="152" width="888" height="360" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="308" y="182" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#f0f6fc">Daily Report Status</text>
+  <line x1="280" y1="195" x2="1168" y2="195" stroke="#30363d" stroke-width="1"/>
+  <!-- Workflow run row -->
+  <rect x="296" y="208" width="856" height="52" rx="4" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+  <!-- Green check icon -->
+  <circle cx="328" cy="234" r="12" fill="#238636"/>
+  <text x="328" y="239" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">✓</text>
+  <text x="356" y="230" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#f0f6fc">Daily Report Status</text>
+  <text x="356" y="248" font-family="Arial, sans-serif" font-size="12" fill="#8b949e">main · 2 minutes ago · 1m 23s</text>
+  <!-- Annotation -->
+  <text x="600" y="540" font-family="Arial, sans-serif" font-size="24" fill="#8b949e" text-anchor="middle">Actions tab showing where to find Daily Report Status in the workflow list</text>
+</svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-label="Workflow run summary panel">
+  <!-- Browser chrome -->
+  <rect x="0" y="0" width="1200" height="44" rx="8" ry="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <rect x="0" y="22" width="1200" height="22" fill="#161b22" stroke="none"/>
+  <!-- URL bar -->
+  <rect x="300" y="10" width="600" height="24" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+  <text x="600" y="26" font-family="Arial, sans-serif" font-size="12" fill="#8b949e" text-anchor="middle">github.com/your-org/your-repo/actions/runs/12345678</text>
+  <!-- Page background -->
+  <rect x="0" y="44" width="1200" height="516" fill="#0d1117"/>
+  <!-- Repo header bar -->
+  <rect x="0" y="44" width="1200" height="48" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="48" y="74" font-family="Arial, sans-serif" font-size="15" font-weight="600" fill="#f0f6fc">your-org / your-repo</text>
+  <!-- Nav tab bar -->
+  <rect x="0" y="92" width="1200" height="40" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="48" y="117" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">Code</text>
+  <text x="110" y="117" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">Issues</text>
+  <text x="175" y="117" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">Pull requests</text>
+  <text x="280" y="117" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#f0f6fc">Actions</text>
+  <rect x="280" y="129" width="54" height="3" rx="2" fill="#2f81f7"/>
+  <text x="348" y="117" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">Projects</text>
+  <!-- Run header -->
+  <rect x="24" y="152" width="1152" height="64" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <circle cx="60" cy="184" r="16" fill="#238636"/>
+  <text x="60" y="190" font-family="Arial, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle">✓</text>
+  <text x="90" y="178" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#f0f6fc">Daily Report Status</text>
+  <text x="90" y="198" font-family="Arial, sans-serif" font-size="12" fill="#8b949e">Triggered via workflow_dispatch · main · Today at 09:00 UTC · 1m 23s</text>
+  <!-- Summary panel -->
+  <rect x="24" y="228" width="340" height="264" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="44" y="254" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#f0f6fc">Summary</text>
+  <line x1="24" y1="264" x2="364" y2="264" stroke="#30363d" stroke-width="1"/>
+  <text x="44" y="286" font-family="Arial, sans-serif" font-size="12" fill="#8b949e">Jobs</text>
+  <!-- Job item -->
+  <rect x="32" y="296" width="324" height="36" rx="4" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+  <circle cx="56" cy="314" r="9" fill="#238636"/>
+  <text x="56" y="319" font-family="Arial, sans-serif" font-size="11" fill="#ffffff" text-anchor="middle">✓</text>
+  <text x="74" y="318" font-family="Arial, sans-serif" font-size="13" fill="#f0f6fc">run-daily-report</text>
+  <!-- Log panel -->
+  <rect x="380" y="228" width="796" height="264" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+  <text x="404" y="252" font-family="monospace" font-size="12" fill="#c9d1d9">run-daily-report</text>
+  <text x="404" y="272" font-family="monospace" font-size="12" fill="#c9d1d9">  fetch-repo-data       ✓ 3s</text>
+  <text x="404" y="292" font-family="monospace" font-size="12" fill="#c9d1d9">  generate-report       ✓ 58s</text>
+  <text x="404" y="312" font-family="monospace" font-size="12" fill="#c9d1d9">  post-summary          ✓ 2s</text>
+  <text x="404" y="352" font-family="monospace" font-size="12" fill="#8b949e">## Daily Repository Status</text>
+  <text x="404" y="372" font-family="monospace" font-size="12" fill="#8b949e">Open PRs: 3  ·  Issues: 7  ·  Last commit: 2h ago</text>
+  <text x="404" y="392" font-family="monospace" font-size="12" fill="#8b949e">Status: ✅ All checks passing</text>
+  <!-- Annotation -->
+  <text x="600" y="540" font-family="Arial, sans-serif" font-size="24" fill="#8b949e" text-anchor="middle">Workflow run summary panel</text>
+</svg>
