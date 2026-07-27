@@ -55,7 +55,7 @@ tools:
 ```
 
 > [!NOTE]
-> The `github` tool entry tells gh-aw to start the GitHub MCP server in proxy mode. The agent can then call GitHub tools — listing issues, fetching commits, reading file contents — scoped to the permissions you've declared above.
+> The `github` tool entry tells gh-aw to start the GitHub MCP server in proxy mode. The agent can then call [GitHub tools](https://github.github.com/gh-aw/reference/github-tools/) — listing issues, fetching commits, reading file contents — scoped to the permissions you've declared above.
 
 <!-- -->
 

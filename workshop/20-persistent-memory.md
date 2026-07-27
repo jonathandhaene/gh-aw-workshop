@@ -72,7 +72,7 @@ What each field does:
 | Field | Purpose |
 |-------|---------|
 | `tools:` | Parent key that enables tool integrations for this workflow. Memory primitives are nested under this key. |
-| `cache-memory:` | Tells `gh-aw` to back this memory slot with the GitHub Actions cache. Nested under `tools:`. |
+| `cache-memory:` | Tells `gh-aw` to back this memory slot with the [GitHub Actions](https://github.github.com/gh-aw/guides/github-actions-primer/) cache. Nested under `tools:`. |
 | `key:` | A unique name for this memory slot. Prefix it with your workflow name to avoid collisions if you have multiple workflows in the same repository. |
 | `ttl: 7d` | How long to keep cached data without a refresh. After 7 days of no runs the cache expires and the agent starts fresh. |
 

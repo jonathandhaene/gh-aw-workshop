@@ -76,7 +76,7 @@ Add a short comment at the top of your workflow's Markdown task brief so users k
 
 ```markdown
 <!-- TEMPLATE: Replace "my-repo" with your repository name.
-     Adjust the schedule and permissions to match your needs. -->
+     Adjust the [schedule](https://github.github.com/gh-aw/reference/triggers/#scheduled-triggers-schedule) and [permissions](https://github.github.com/gh-aw/reference/permissions/) to match your needs. -->
 ```
 
 This hint saves teammates guesswork when they first open the file.
