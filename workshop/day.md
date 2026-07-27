@@ -2,6 +2,10 @@
 
 A full-day hands-on experience with GitHub Agentic Workflows — from your first workflow to a live hackathon project.
 
+## 🎯 What You Will Do Today
+
+You will build your first agentic workflow, run it inside GitHub Actions, and iterate on it with real data and AI reasoning. By the end of the day, you will have shipped at least one workflow that solves a real problem in your own repository.
+
 ## Program
 
 | Time | Session |
@@ -28,3 +32,13 @@ Make sure you have completed the [prerequisites](01-prerequisites.md) before the
 **Part 2** is self-directed. Participants choose their own path through [Steps 14+](README.md#curriculum--part-2-go-deeper) based on what interests them most. Facilitators circulate and help unblock.
 
 **Hackathon** has no prescribed outcome — the goal is one working workflow that solves a real problem. Teams of two or three work well.
+
+## ✅ Checkpoint
+
+Before the morning session starts, confirm you are ready:
+
+- [ ] Prerequisites completed (see [01-prerequisites.md](01-prerequisites.md))
+- [ ] Environment set up and `gh aw --version` runs without errors
+- [ ] You know which setup path you are following (Codespace, local, or browser)
+- [ ] You have identified your Part 1 start step in [the curriculum](README.md)
+- [ ] You understand what you will build by end of day
