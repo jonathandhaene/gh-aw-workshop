@@ -56,7 +56,11 @@ If you prefer the terminal, you can use [`gh aw run daily-report-status`](https:
 
 Open your practice repository in GitHub and click **Actions** in the top navigation. In the left sidebar, select **Daily Report Status**.
 
-![Actions tab showing where to find Daily Report Status in the workflow list](images/08-actions-tab.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/08-actions-tab-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="images/08-actions-tab-light.svg">
+  <img alt="Actions tab showing where to find Daily Report Status in the workflow list" src="images/08-actions-tab-light.svg">
+</picture>
 
 Click **Run workflow**, keep the default branch selected, and click the green **Run workflow** button. If **Daily Report Status** is missing, refresh the page and confirm both workflow files are on `main`. If you used the GitHub Copilot path, return to [Step 7c](07c-your-first-workflow-copilot.md) and confirm the workflow pull request was merged. If you used the Terminal path, run `gh aw compile` to check for compile errors.
 
