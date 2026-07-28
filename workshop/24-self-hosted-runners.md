@@ -89,7 +89,7 @@ registration settings (Settings → Actions → Runners).
 
 
 <details>
-<summary>Advanced: ephemeral and isolated runners</summary>
+<summary>Advanced: <a href="https://github.github.com/gh-aw/reference/ephemerals/">ephemeral</a> and isolated runners</summary>
 
 ### Ephemeral and JIT runners
 

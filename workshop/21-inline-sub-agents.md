@@ -20,7 +20,7 @@
 
 ## 🎯 What You'll Do
 
-You'll add a sub-agent to your daily-status workflow so the parent agent can stay focused on planning and final writing while a focused sub-agent handles one repeated task. By the end of this step, your workflow will be easier to scale without turning the whole prompt into one long, repetitive brief.
+You'll add a [sub-agent](https://github.github.com/gh-aw/reference/inline-sub-agents/) to your daily-status workflow so the parent agent can stay focused on planning and final writing while a focused sub-agent handles one repeated task. By the end of this step, your workflow will be easier to scale without turning the whole prompt into one long, repetitive brief.
 
 ## 📋 Before You Start
 
