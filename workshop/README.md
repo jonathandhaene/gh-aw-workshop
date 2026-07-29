@@ -104,6 +104,7 @@ A hands-on workshop that takes you from zero to a fully automated, AI-powered wo
 - [Agent Session Phases Explained](side-quest-11-09-agent-session-phases.md) — full phase reference table, activity feed tips, steering prompts, and advanced agent merge / `--watch` paths; branches from [Step 11d2](12-test-and-iterate.md).
 - [Audit Reference — Artifacts, Firewall Logs, and Report Contents](side-quest-25-01-audit-reference.md) — detailed breakdown of `gh aw audit` report fields, agent artifact files, ⌖ AIC billing, `firewall.md`, and `network.allow`; branches from [Step 25](25-audit-and-observability.md).
 - [Project Future AI Credit Costs with `gh aw forecast`](side-quest-26-01-forecast-costs.md) — full walkthrough of `gh aw forecast`: reading P10/P50/P90 output, using `--period week` and `--days 7`, forecasting all workflows, and deriving a `max-daily-ai-credits` value from the P90 figure; branches from [Step 26](26-manage-costs-and-budgets.md).
+- [Govern Agentic Workflows Across Your Organisation](27-org-governance.md) — apply staged mode (human-in-the-loop approval), protected-files, and concurrency controls to run agentic workflows safely at scale; extends [Step 26](26-manage-costs-and-budgets.md).
 
 ## Getting Started
 
