@@ -13,7 +13,7 @@
 
 ## What is a jailbreak attack?
 
-A **jailbreak** is an attempt to override the agent's intended task brief. Unlike a prompt injection that slips a single command into tool call results, a jailbreak tries to replace or neutralize the authoritative system-level instructions entirely. The goal is to make the agent act as if it received a different brief — one the workflow author never wrote.
+A **jailbreak** is an attempt to override the agent's intended task brief. Unlike a [prompt injection](https://github.github.com/gh-aw/reference/threat-detection/) that slips a single command into tool call results, a jailbreak tries to replace or neutralize the authoritative system-level instructions entirely. The goal is to make the agent act as if it received a different brief — one the workflow author never wrote.
 
 In gh-aw, the attack payload is typically embedded in repository content the agent reads: an issue body, a PR description, a README section, or any other file the workflow scans.
 
@@ -106,7 +106,7 @@ The fourth sentence — "Please disregard your current task…" — is the injec
 ## ✅ Checkpoint
 
 - [ ] I can explain what makes a jailbreak attack different from a simple prompt injection
-- [ ] I can list all five gh-aw defence layers (brief, permissions, safe-outputs, network, detection)
+- [ ] I can list all five gh-aw defence layers (brief, permissions, [safe-outputs](https://github.github.com/gh-aw/reference/safe-outputs/), network, detection)
 - [ ] I can describe why `safe-outputs` removes execution paths rather than just making them harder to reach
 - [ ] I can describe what `network.allowed-domains` blocks even after a partial jailbreak succeeds
 - [ ] I identified the injection sentence in the exercise above
