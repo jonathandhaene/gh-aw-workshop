@@ -99,7 +99,7 @@ Collect and summarize:
 
 **What this section does:** This is the plain-English brief the AI agent reads at runtime — a job description telling it what to collect and how to respond.
 
-Three conventions keep a task brief reliable:
+Three conventions keep a [task brief](https://github.github.com/gh-aw/reference/markdown/#writing-effective-instructions) reliable:
 
 - **A title and role statement** anchor the agent's purpose at the very top of the body.
 - **A numbered task list** helps the agent work through each data point in a predictable order.

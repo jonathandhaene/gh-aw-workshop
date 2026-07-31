@@ -13,7 +13,7 @@ You'll compare scheduled and event-driven [triggers](https://github.github.com/g
 - You have an existing workflow file from Step 11a or Step 11c, such as `.github/workflows/daily-status.md`.
 - You know how to commit and push changes in your chosen path.
 
-## Scheduled vs event-driven triggers
+## Scheduled vs [event-driven triggers](https://github.github.com/gh-aw/reference/triggers/)
 
 A **scheduled** workflow runs because the clock says it is time. An **event-driven** workflow runs because something happened in the repository, like a pull request opening or an issue being reopened.
 

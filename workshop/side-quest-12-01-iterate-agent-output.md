@@ -63,7 +63,7 @@ Run gh aw compile after the edit.
 
 If you are working in a browser-based environment without terminal access, use that agent path instead of the terminal path below.
 
-If you have a terminal open, edit the Markdown body of `.github/workflows/daily-status.md`, then recompile:
+If you have a terminal open, edit the [Markdown body](https://github.github.com/gh-aw/reference/markdown/) of `.github/workflows/daily-status.md`, then recompile:
 
 ```bash
 gh aw compile

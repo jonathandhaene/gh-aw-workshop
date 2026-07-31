@@ -6,7 +6,7 @@
 
 ## 🎯 What You'll Do
 
-Learn five practical techniques for writing AI task briefs that produce clearer, more actionable workflow output. By the end you'll have an improved task brief for your daily status workflow — one that gives the AI better context, tighter constraints, and a predictable output format.
+Learn five practical techniques for writing AI [task briefs](https://github.github.com/gh-aw/reference/markdown/#writing-effective-instructions) that produce clearer, more actionable workflow output. By the end you'll have an improved task brief for your daily status workflow — one that gives the AI better context, tighter constraints, and a predictable output format.
 
 ## 📋 Before You Start
 
