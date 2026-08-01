@@ -114,7 +114,7 @@ The `gh` CLI reads `GH_TOKEN` automatically when it is set as an environment var
 </details>
 
 <details>
-<summary>Learn how permissions frontmatter controls the built-in `GITHUB_TOKEN`</summary>
+<summary>Learn how <a href="https://github.github.com/gh-aw/reference/permissions/">permissions</a> frontmatter controls the built-in `GITHUB_TOKEN`</summary>
 
 gh-aw workflows declare required [permissions](https://github.github.com/gh-aw/reference/permissions/) in frontmatter. Only request what you need:
 
