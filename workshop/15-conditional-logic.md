@@ -24,7 +24,7 @@ The approach breaks into three parts:
 2. Reference that output using the `steps` context expression `${{ steps.recent.outputs.commit_count }}`.
 3. Add a top-level `if:` key in the workflow [frontmatter](https://github.github.com/gh-aw/reference/frontmatter/) that skips the agent job when the count evaluates to zero.
 
-### Add a commit-count step
+### Sub-step A: Add a commit-count step
 
 Open your daily-status workflow file (e.g., `.github/workflows/daily-status.md`) and add the following block inside the YAML frontmatter under `steps:`:
 
@@ -40,22 +40,27 @@ steps:
 This shell command uses `git log` with a `--since` time filter to list only commits from the last 24 hours, pipes the output through `wc -l` to count the lines, strips surrounding whitespace with `tr -d ' '`, and writes the final integer to `$GITHUB_OUTPUT` — a special GitHub Actions file that shares values between steps using `key=value` notation. The `id: recent` field is essential: it creates a named slot in the `steps` context so the value can be referenced as `steps.recent.outputs.commit_count` in later steps or in the top-level `if:` condition.
 
 > [!NOTE]
-> <details>
-> <summary>`$GITHUB_OUTPUT` makes step outputs available to later steps as `steps.<id>.outputs.key`.</summary>
->
-> For a deeper explanation of how the `steps` context works alongside other context objects (`github`, `env`, `runner`), how to use built-in expression functions like `contains()` and `toJSON()`, and how to chain conditions with `&&` and `||`, see [Side Quest: GitHub Actions Expressions and Contexts](side-quest-15-01-expressions-and-contexts.md).
->
-> </details>
+> `$GITHUB_OUTPUT` makes step outputs available to later steps as `steps.<id>.outputs.key`. For a deeper explanation of how the `steps` context works alongside other context objects (`github`, `env`, `runner`), how to use built-in expression functions like `contains()` and `toJSON()`, and how to chain conditions with `&&` and `||`, see [Side Quest: GitHub Actions Expressions and Contexts](side-quest-15-01-expressions-and-contexts.md).
 
-### Add a top-level condition in frontmatter
+**Verify A:** Compile the workflow now to confirm the step is valid before adding the condition:
 
-In the same frontmatter block, add a top-level `if:` key at the same indentation level as `on:` and `steps:`:
+```bash
+gh aw compile
+```
+
+You should see `✅ Compiled successfully`. If you see errors, check that `$GITHUB_OUTPUT` is spelled exactly as shown and that the `id: recent` field is present.
+
+### Sub-step B: Wire the condition into frontmatter
+
+Now add a top-level `if:` key at the same indentation level as `on:` and `steps:` in the frontmatter:
 
 ```yaml
 if: steps.recent.outputs.commit_count != '0'
 ```
 
 This condition is embedded into the generated lock file during [compilation](https://github.github.com/gh-aw/reference/compilation-process/); at runtime, GitHub Actions evaluates it and skips the agent job entirely whenever `commit_count` evaluates to `'0'`. You can also reference the count inside your prompt text to give the model concrete context — for example: `"Summarise the last ${{ steps.recent.outputs.commit_count }} commits"` anchors the analysis to the actual number of changes rather than leaving the model to guess the scope.
+
+**Verify B:** Trigger a manual [`workflow_dispatch`](https://github.github.com/gh-aw/reference/triggers/) run from the Actions tab. On a repo with no recent commits the agent job should appear as **skipped** with a grey icon.
 
 ### Exercise: Add a weekend skip condition
 
@@ -116,9 +121,10 @@ git push
 
 ## ✅ Checkpoint
 
-- [ ] Your workflow has a `count recent commits` step with `id: recent`
-- [ ] Your workflow frontmatter includes `if: steps.recent.outputs.commit_count != '0'`
-- [ ] `gh aw compile` completed without errors and the updated `.lock.yml` is committed and pushed
+- [ ] Your workflow has a `count recent commits` step with `id: recent` (Sub-step A complete)
+- [ ] `gh aw compile` completed without errors after adding the commit-count step
+- [ ] Your workflow frontmatter includes `if: steps.recent.outputs.commit_count != '0'` (Sub-step B complete)
+- [ ] `gh aw compile` completed without errors after adding the `if:` condition and the updated `.lock.yml` is committed and pushed
 - [ ] Both `.github/workflows/daily-status.md` and `.github/workflows/daily-status.lock.yml` are committed and pushed
 - [ ] You triggered the workflow manually and confirmed the conditional behaviour in the run log
 - [ ] The workflow still posts a summary on days with commits
