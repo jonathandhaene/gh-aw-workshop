@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-label="Run workflow confirmation dropdown showing branch selection and final Run workflow button">
+  <rect width="1200" height="560" fill="#0d1117"/>
+  <rect x="60" y="36" width="1080" height="464" rx="8" fill="#161b22" stroke="#30363d" opacity="0.5"/>
+  <path d="M60 44a8 8 0 0 1 8-8h1064a8 8 0 0 1 8 8v36H60z" fill="#161b22" stroke="#30363d" opacity="0.5"/>
+  <circle cx="86" cy="58" r="6" fill="#30363d" opacity="0.85"/>
+  <circle cx="108" cy="58" r="6" fill="#30363d" opacity="0.85"/>
+  <circle cx="130" cy="58" r="6" fill="#30363d" opacity="0.85"/>
+  <rect x="180" y="47" width="610" height="22" rx="11" fill="#0d1117" stroke="#30363d" opacity="0.7"/>
+  <text x="200" y="62" fill="#8b949e" font-family="Arial, sans-serif" font-size="13" opacity="0.8">github.com/your-username/my-practice-repo/actions</text>
+  <line x1="60" y1="80" x2="1140" y2="80" stroke="#30363d" opacity="0.65"/>
+  <text x="100" y="108" fill="#8b949e" font-family="Arial, sans-serif" font-size="17" opacity="0.7">Code</text>
+  <text x="166" y="108" fill="#8b949e" font-family="Arial, sans-serif" font-size="17" opacity="0.7">Issues</text>
+  <text x="234" y="108" fill="#8b949e" font-family="Arial, sans-serif" font-size="17" opacity="0.7">Pull requests</text>
+  <text x="378" y="108" fill="#f0f6fc" font-family="Arial, sans-serif" font-size="17" font-weight="700" opacity="0.78">Actions</text>
+  <text x="461" y="108" fill="#8b949e" font-family="Arial, sans-serif" font-size="17" opacity="0.7">Projects</text>
+  <text x="545" y="108" fill="#8b949e" font-family="Arial, sans-serif" font-size="17" opacity="0.7">Security</text>
+  <text x="634" y="108" fill="#8b949e" font-family="Arial, sans-serif" font-size="17" opacity="0.7">Insights</text>
+  <rect x="374" y="114" width="66" height="4" rx="2" fill="#2f81f7" opacity="0.75"/>
+  <rect x="88" y="136" width="280" height="300" rx="8" fill="#161b22" stroke="#30363d" opacity="0.45"/>
+  <rect x="392" y="136" width="660" height="300" rx="8" fill="#161b22" stroke="#30363d" opacity="0.45"/>
+  <rect x="60" y="36" width="1080" height="464" rx="8" fill="#0d1117" opacity="0.38"/>
+  <rect x="780" y="148" width="266" height="214" rx="12" fill="#161b22" stroke="#30363d"/>
+  <text x="808" y="184" fill="#f0f6fc" font-family="Arial, sans-serif" font-size="24" font-weight="700">Run workflow</text>
+  <text x="808" y="220" fill="#8b949e" font-family="Arial, sans-serif" font-size="15">Use workflow_dispatch to start a run.</text>
+  <text x="808" y="258" fill="#8b949e" font-family="Arial, sans-serif" font-size="14">Branch</text>
+  <rect x="808" y="272" width="210" height="40" rx="8" fill="#161b22" stroke="#30363d"/>
+  <text x="824" y="297" fill="#f0f6fc" font-family="Arial, sans-serif" font-size="16">Branch: main</text>
+  <path d="M992 288l8 8 8-8" fill="none" stroke="#8b949e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="808" y="322" width="132" height="40" rx="8" fill="#238636"/>
+  <text x="874" y="347" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" font-weight="700">Run workflow</text>
+  <text x="600" y="540" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="24">Run workflow confirmation dropdown showing branch selection and final Run workflow button</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-label="Workflow sidebar with the Run workflow button highlighted">
+  <rect width="1200" height="560" fill="#0d1117"/>
+  <rect x="60" y="36" width="1080" height="464" rx="8" fill="#161b22" stroke="#30363d"/>
+  <path d="M60 44a8 8 0 0 1 8-8h1064a8 8 0 0 1 8 8v36H60z" fill="#161b22" stroke="#30363d"/>
+  <circle cx="86" cy="58" r="6" fill="#30363d"/>
+  <circle cx="108" cy="58" r="6" fill="#30363d"/>
+  <circle cx="130" cy="58" r="6" fill="#30363d"/>
+  <rect x="180" y="47" width="610" height="22" rx="11" fill="#0d1117" stroke="#30363d"/>
+  <text x="200" y="62" fill="#8b949e" font-family="Arial, sans-serif" font-size="13">github.com/your-username/my-practice-repo/actions</text>
+  <line x1="60" y1="80" x2="1140" y2="80" stroke="#30363d"/>
+  <text x="100" y="108" fill="#8b949e" font-family="Arial, sans-serif" font-size="17">Code</text>
+  <text x="166" y="108" fill="#8b949e" font-family="Arial, sans-serif" font-size="17">Issues</text>
+  <text x="234" y="108" fill="#8b949e" font-family="Arial, sans-serif" font-size="17">Pull requests</text>
+  <text x="378" y="108" fill="#f0f6fc" font-family="Arial, sans-serif" font-size="17" font-weight="700">Actions</text>
+  <text x="461" y="108" fill="#8b949e" font-family="Arial, sans-serif" font-size="17">Projects</text>
+  <text x="545" y="108" fill="#8b949e" font-family="Arial, sans-serif" font-size="17">Security</text>
+  <text x="634" y="108" fill="#8b949e" font-family="Arial, sans-serif" font-size="17">Insights</text>
+  <rect x="374" y="114" width="66" height="4" rx="2" fill="#2f81f7"/>
+  <rect x="88" y="136" width="280" height="300" rx="8" fill="#161b22" stroke="#30363d"/>
+  <text x="112" y="170" fill="#8b949e" font-family="Arial, sans-serif" font-size="16">Workflows</text>
+  <rect x="106" y="188" width="244" height="48" rx="8" fill="#2f81f7" opacity="0.18"/>
+  <rect x="112" y="198" width="6" height="28" rx="3" fill="#2f81f7"/>
+  <text x="130" y="218" fill="#f0f6fc" font-family="Arial, sans-serif" font-size="17" font-weight="700">Daily Report Status</text>
+  <text x="130" y="236" fill="#8b949e" font-family="Arial, sans-serif" font-size="13">workflow_dispatch</text>
+  <rect x="392" y="136" width="660" height="300" rx="8" fill="#161b22" stroke="#30363d"/>
+  <text x="420" y="174" fill="#f0f6fc" font-family="Arial, sans-serif" font-size="24" font-weight="700">Daily Report Status</text>
+  <text x="420" y="202" fill="#8b949e" font-family="Arial, sans-serif" font-size="15">Run history</text>
+  <rect x="872" y="154" width="148" height="40" rx="8" fill="#2f81f7"/>
+  <text x="946" y="179" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" font-weight="700">Run workflow</text>
+  <rect x="860" y="142" width="172" height="64" rx="12" fill="none" stroke="#2f81f7" stroke-width="3"/>
+  <line x1="420" y1="226" x2="1024" y2="226" stroke="#30363d"/>
+  <text x="420" y="252" fill="#8b949e" font-family="Arial, sans-serif" font-size="13">Recent runs</text>
+  <line x1="420" y1="266" x2="1024" y2="266" stroke="#30363d"/>
+  <circle cx="438" cy="304" r="14" fill="#238636"/>
+  <path d="M432 304l4 4 8-9" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="466" y="309" fill="#f0f6fc" font-family="Arial, sans-serif" font-size="18">Daily Report Status</text>
+  <text x="740" y="309" fill="#8b949e" font-family="Arial, sans-serif" font-size="15">main</text>
+  <text x="814" y="309" fill="#8b949e" font-family="Arial, sans-serif" font-size="15">2 minutes ago</text>
+  <text x="600" y="540" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="24">Workflow sidebar with the Run workflow button highlighted</text>
+</svg>
