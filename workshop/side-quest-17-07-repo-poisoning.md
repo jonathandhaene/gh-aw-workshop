@@ -48,7 +48,7 @@ Write access magnifies every read. If the agent can commit directly, a successfu
 
 gh-aw gives you three layers to prevent repository poisoning.
 
-### Declare read-only permissions
+### Declare read-only [permissions](https://github.github.com/gh-aw/reference/permissions/)
 
 The simplest defence is removing write capability before the agent runs:
 
@@ -68,7 +68,7 @@ tools:
 
 With `contents: read`, the GitHub MCP server cannot call any API that creates or modifies repository content. Even a fully hijacked agent brief cannot commit a file.
 
-### Route writes through a pull request
+### Route writes through a [pull request](https://github.github.com/gh-aw/reference/safe-outputs-pull-requests/)
 
 When the workflow genuinely needs to propose changes, `safe-outputs: create-pull-request` keeps every write behind a human gate:
 
@@ -108,7 +108,7 @@ The agent can propose changes to `docs/` files via a pull request, but it cannot
 
 Even if an injected prompt convinces the agent to propose a change to a workflow file, the `protected-files` policy blocks an automatic merge and surfaces the attempt for human review.
 
-### Limit network destinations
+### Limit [network](https://github.github.com/gh-aw/reference/network/) destinations
 
 Combine file restrictions with `network.allowed-domains` to close the exfiltration channel:
 

@@ -11,7 +11,7 @@
 
 ## The Risk in One Sentence
 
-A supply chain attack through MCP starts when you trust a tool server, package, or image that can change outside your repository, and that server returns data your agent treats as real.
+A [supply chain attack](https://github.github.com/gh-aw/reference/threat-detection/#supply-chain-protection-protected-files) through MCP starts when you trust a tool server, package, or image that can change outside your repository, and that server returns data your agent treats as real.
 
 ## Attack surface at a glance
 
