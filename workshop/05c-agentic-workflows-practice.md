@@ -58,6 +58,14 @@ as an issue with the title "Weekly PR Digest".
 > [!TIP]
 > Struggling to think of a task? Browse the [gh-aw issue-ops pattern](https://github.github.com/gh-aw/patterns/issue-ops/) for inspiration. You will write a real version of your brief in Step 7.
 
+The diagram below shows how these three parts connect in every agentic workflow.
+
+<picture>
+   <source media="(prefers-color-scheme: dark)" srcset="images/05c-anatomy-dark.svg">
+   <source media="(prefers-color-scheme: light)" srcset="images/05c-anatomy-light.svg">
+   <img alt="Three-part anatomy of an agentic workflow: a Trigger fires the workflow, the Agent reads data and applies judgment, and Safe Outputs write results to declared surfaces only." src="images/05c-anatomy-light.svg">
+</picture>
+
 ## ✅ Checkpoint
 
 - [ ] I can decide whether a task calls for an agentic or a standard Actions workflow

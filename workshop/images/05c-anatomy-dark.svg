@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-label="Three-part anatomy of an agentic workflow: a Trigger fires the workflow, the Agent reads data and applies judgment, and Safe Outputs write results to declared surfaces only.">
+  <!-- Background -->
+  <rect width="1200" height="560" fill="#0d1117"/>
+
+  <!-- Title -->
+  <text x="600" y="42" font-family="'Segoe UI',system-ui,sans-serif" font-size="22" font-weight="700" fill="#f0f6fc" text-anchor="middle">Anatomy of an Agentic Workflow</text>
+  <text x="600" y="66" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">Every agentic workflow has exactly three parts: a trigger, an AI agent, and declared safe outputs.</text>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#8b949e"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2f81f7"/>
+    </marker>
+  </defs>
+
+  <!-- ===== PART 1: TRIGGER ===== -->
+  <rect x="60" y="100" width="280" height="360" rx="14" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <!-- Header chip -->
+  <rect x="60" y="100" width="280" height="52" rx="14" fill="#1c2d3e" stroke="#30363d" stroke-width="1.5"/>
+  <rect x="60" y="126" width="280" height="26" fill="#1c2d3e"/>
+  <text x="90" y="133" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" fill="#58a6ff">① TRIGGER</text>
+  <text x="200" y="133" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#79c0ff">fires the workflow</text>
+
+  <!-- Schedule example -->
+  <rect x="90" y="172" width="220" height="58" rx="8" fill="#21262d" stroke="#30363d" stroke-width="1"/>
+  <text x="200" y="194" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="600" fill="#f0f6fc" text-anchor="middle">⏰ Schedule</text>
+  <text x="200" y="212" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">cron: "0 8 * * *"</text>
+  <text x="200" y="225" font-family="'Segoe UI',system-ui,sans-serif" font-size="10" fill="#6e7681" text-anchor="middle">runs every morning at 8 am</text>
+
+  <!-- Push/PR example -->
+  <rect x="90" y="244" width="220" height="58" rx="8" fill="#21262d" stroke="#30363d" stroke-width="1"/>
+  <text x="200" y="266" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="600" fill="#f0f6fc" text-anchor="middle">🔔 Event</text>
+  <text x="200" y="284" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">on: push / pull_request</text>
+  <text x="200" y="297" font-family="'Segoe UI',system-ui,sans-serif" font-size="10" fill="#6e7681" text-anchor="middle">code-change events</text>
+
+  <!-- Manual example -->
+  <rect x="90" y="316" width="220" height="58" rx="8" fill="#21262d" stroke="#30363d" stroke-width="1"/>
+  <text x="200" y="338" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="600" fill="#f0f6fc" text-anchor="middle">🖱️ Manual</text>
+  <text x="200" y="356" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">workflow_dispatch</text>
+  <text x="200" y="369" font-family="'Segoe UI',system-ui,sans-serif" font-size="10" fill="#6e7681" text-anchor="middle">run on demand</text>
+
+  <!-- Same as standard Actions label -->
+  <rect x="90" y="392" width="220" height="28" rx="6" fill="#2e2600" stroke="#9e6a03" stroke-width="1"/>
+  <text x="200" y="411" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#e3b341" text-anchor="middle">Same triggers as standard Actions</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="340" y1="280" x2="420" y2="280" stroke="#8b949e" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="380" y="270" font-family="'Segoe UI',system-ui,sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">fires</text>
+
+  <!-- ===== PART 2: AGENT ===== -->
+  <rect x="420" y="100" width="360" height="360" rx="14" fill="#161b22" stroke="#2f81f7" stroke-width="2"/>
+  <!-- Header chip -->
+  <rect x="420" y="100" width="360" height="52" rx="14" fill="#1158cc" stroke="#2f81f7" stroke-width="1.5"/>
+  <rect x="420" y="126" width="360" height="26" fill="#1158cc"/>
+  <text x="455" y="133" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" fill="#ffffff">② AGENT</text>
+  <text x="550" y="133" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#cae8ff">reads, reasons, and acts</text>
+
+  <!-- Task brief box -->
+  <rect x="450" y="168" width="300" height="60" rx="8" fill="#21262d" stroke="#30363d" stroke-width="1"/>
+  <text x="600" y="188" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="600" fill="#f0f6fc" text-anchor="middle">📝 Task Brief (Markdown)</text>
+  <text x="600" y="206" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">Plain-English instructions for the agent</text>
+  <text x="600" y="220" font-family="'Segoe UI',system-ui,sans-serif" font-size="10" fill="#6e7681" text-anchor="middle">"Read all open issues and post a triage summary"</text>
+
+  <!-- Agent loop -->
+  <rect x="450" y="246" width="300" height="110" rx="8" fill="#27200f" stroke="#9e6a03" stroke-width="1.5"/>
+  <text x="600" y="266" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="600" fill="#e3b341" text-anchor="middle">🤖 AI Model Loop</text>
+  <text x="600" y="284" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#d4a020" text-anchor="middle">Read data → Apply judgment →</text>
+  <text x="600" y="300" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#d4a020" text-anchor="middle">Use permitted tools → Decide action</text>
+  <!-- mini loop arrow -->
+  <path d="M 520 318 Q 540 338 560 318" stroke="#9e6a03" stroke-width="1.5" fill="none" marker-end="url(#arrowBlue)"/>
+  <text x="540" y="345" font-family="'Segoe UI',system-ui,sans-serif" font-size="10" fill="#d4a020">repeats until done</text>
+
+  <!-- Sandbox badge -->
+  <rect x="450" y="374" width="140" height="28" rx="6" fill="#0f2a1f" stroke="#2ea043" stroke-width="1"/>
+  <text x="520" y="393" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#3fb950" text-anchor="middle">🔒 Sandboxed</text>
+
+  <!-- Zero secrets badge -->
+  <rect x="610" y="374" width="140" height="28" rx="6" fill="#2a0f10" stroke="#da3633" stroke-width="1"/>
+  <text x="680" y="393" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#f85149" text-anchor="middle">🚫 Zero Secrets</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="780" y1="280" x2="860" y2="280" stroke="#8b949e" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="820" y="270" font-family="'Segoe UI',system-ui,sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">writes to</text>
+
+  <!-- ===== PART 3: SAFE OUTPUTS ===== -->
+  <rect x="860" y="100" width="280" height="360" rx="14" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <!-- Header chip -->
+  <rect x="860" y="100" width="280" height="52" rx="14" fill="#0f2a1f" stroke="#30363d" stroke-width="1.5"/>
+  <rect x="860" y="126" width="280" height="26" fill="#0f2a1f"/>
+  <text x="890" y="133" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" fill="#3fb950">③ SAFE OUTPUTS</text>
+  <text x="1040" y="133" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#56d364">declared surfaces only</text>
+
+  <!-- Issue comment -->
+  <rect x="890" y="172" width="220" height="50" rx="8" fill="#21262d" stroke="#30363d" stroke-width="1"/>
+  <text x="1000" y="192" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="600" fill="#f0f6fc" text-anchor="middle">💬 Issue / PR Comment</text>
+  <text x="1000" y="209" font-family="'Segoe UI',system-ui,sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">Post a structured summary</text>
+
+  <!-- File commit -->
+  <rect x="890" y="236" width="220" height="50" rx="8" fill="#21262d" stroke="#30363d" stroke-width="1"/>
+  <text x="1000" y="256" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="600" fill="#f0f6fc" text-anchor="middle">📁 File Commit</text>
+  <text x="1000" y="273" font-family="'Segoe UI',system-ui,sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">Write a report to the repo</text>
+
+  <!-- Pull request -->
+  <rect x="890" y="300" width="220" height="50" rx="8" fill="#21262d" stroke="#30363d" stroke-width="1"/>
+  <text x="1000" y="320" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="600" fill="#f0f6fc" text-anchor="middle">🔀 Pull Request</text>
+  <text x="1000" y="337" font-family="'Segoe UI',system-ui,sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">Open a PR with proposed changes</text>
+
+  <!-- Safety note -->
+  <rect x="890" y="366" width="220" height="44" rx="6" fill="#0f2a1f" stroke="#2ea043" stroke-width="1"/>
+  <text x="1000" y="384" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#3fb950" text-anchor="middle">Only declared surfaces</text>
+  <text x="1000" y="400" font-family="'Segoe UI',system-ui,sans-serif" font-size="10" fill="#3fb950" text-anchor="middle">can be written — by design</text>
+
+  <!-- Bottom annotation -->
+  <text x="600" y="500" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">The task brief replaces ~200 lines of YAML. The agent applies judgment; safe outputs enforce what it can write.</text>
+  <text x="600" y="520" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" fill="#6e7681" text-anchor="middle">Trigger ① and Safe Output ③ boundaries are identical to standard GitHub Actions.</text>
+</svg>
