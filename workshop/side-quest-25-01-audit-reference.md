@@ -17,8 +17,8 @@
 - **Agent AIC** — total AI Credits consumed by the agent turn
 - **Threat-detection AIC (⌖ AIC)** — credits consumed by the firewall's threat-detection model, reported separately from agent inference
 - **MCP tool calls** — each tool the agent invoked, with any errors
-- **Threat detection verdict** — whether prompt injection, secret leak, or malicious patch was detected
-- **Safe outputs** — every safe-output declaration the agent emitted
+- **Threat detection verdict** — whether [prompt injection](https://github.github.com/gh-aw/reference/threat-detection/), secret leak, or malicious patch was detected
+- **[Safe outputs](https://github.github.com/gh-aw/reference/safe-outputs/)** — every safe-output declaration the agent emitted
 
 ## Artifact files explained
 
@@ -44,7 +44,7 @@ Use `firewall.md` to quickly identify blocked domains. For raw domain-level reco
 
 ## AIC billing details
 
-AIC (AI Credits) is the billing unit for agentic workflow inference and is derived from token consumption. Exact billing figures appear in your GitHub billing dashboard.
+[AIC](https://github.github.com/gh-aw/reference/cost-management/#ai-credits-aic) (AI Credits) is the billing unit for agentic workflow inference and is derived from token consumption. Exact billing figures appear in your GitHub billing dashboard.
 
 The **⌖ AIC** column in `gh aw logs` output shows credits consumed by the threat-detection model separately from the main agent turn. Both contribute to your organisation's total AIC usage.
 
