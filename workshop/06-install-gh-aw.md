@@ -14,7 +14,11 @@
 
 The diagram below shows how the three paths diverge and then rejoin at Step 7.
 
-![Installation path decision: choose Codespace terminal, local terminal, or GitHub UI, all leading to Step 7](images/06-install-path-decision.svg)
+<picture>
+   <source media="(prefers-color-scheme: dark)" srcset="images/06-install-path-decision-dark.svg">
+   <source media="(prefers-color-scheme: light)" srcset="images/06-install-path-decision-light.svg">
+   <img alt="Installation path decision: choose Codespace terminal, local terminal, or GitHub UI, all leading to Step 7" src="images/06-install-path-decision-light.svg">
+</picture>
 
 <!-- journey: codespace -->
 **Next:** [Install gh-aw — Codespace Terminal](06a-install-terminal.md)
