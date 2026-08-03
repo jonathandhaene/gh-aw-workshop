@@ -122,7 +122,7 @@ Then recompile, push, and update the PR branch to trigger another run.
 - [ ] I can explain why `safe-outputs: create-issue-comment: limit: 1` matters for an event-driven workflow
 
 <!-- journey: all -->
-**Next:** [Make Your Workflow Smarter with Conditional Logic](15-conditional-logic.md)
+**Next:** [Automate Issue Triage with an Agentic Workflow](27-issue-ops-workflow.md)
 <!-- /journey -->
 
 ---

@@ -28,6 +28,7 @@ A hands-on workshop that takes you from zero to a fully automated, AI-powered wo
 | 12 | [Test and Improve Your Workflow](12-test-and-iterate.md) |
 | 14 | [What's Next? Keep Exploring](14-next-steps.md) |
 | 14b | [Build Your First Event-Driven Workflow: PR Auto-Reviewer](14b-pr-reviewer-workflow.md) |
+| 27 | [Automate Issue Triage with an Agentic Workflow](27-issue-ops-workflow.md) |
 
 ## Curriculum — Part 2: Go Deeper
 
