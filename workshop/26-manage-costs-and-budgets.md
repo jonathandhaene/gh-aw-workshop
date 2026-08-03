@@ -111,4 +111,6 @@ gh aw compile
 
 <!-- journey: all -->
 Want to choose another branch from the workshop hub? Return to [What's Next? Keep Exploring](14-next-steps.md).
+
+For enterprise teams ready to deploy workflows at scale: ➡️ [Govern Agentic Workflows Across Your Organisation](27-enterprise-governance.md)
 <!-- /journey -->
