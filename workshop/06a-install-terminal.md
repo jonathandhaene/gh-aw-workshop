@@ -23,6 +23,14 @@ gh auth status
 
 Expected output: `Logged in to github.com as <your-username>`. If you see an error, return to [Verify your Codespace is ready](02a-setup-codespace.md#verify-your-codespace-is-ready).
 
+The four steps below take you from an empty Codespace to a fully initialized authoring environment.
+
+<picture>
+   <source media="(prefers-color-scheme: dark)" srcset="images/06a-setup-pipeline-dark.svg">
+   <source media="(prefers-color-scheme: light)" srcset="images/06a-setup-pipeline-light.svg">
+   <img alt="gh-aw terminal setup pipeline: four steps from auth check through install, doctor, and init to a ready-to-author state" src="images/06a-setup-pipeline-light.svg">
+</picture>
+
 ## Install from terminal
 
 Check whether `gh-aw` is already installed, then install or update accordingly:
