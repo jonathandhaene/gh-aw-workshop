@@ -54,7 +54,7 @@ on:
 ```
 
 - `name` is what you see in the Actions UI.
-- `schedule: daily` means it triggers once a day. The compiler automatically adds the [`workflow_dispatch`](https://github.github.com/gh-aw/reference/triggers/) event as well.
+- `schedule: daily` runs the workflow once a day. The compiler also adds [`workflow_dispatch`](https://github.github.com/gh-aw/reference/triggers/) so you can trigger it manually.
 
 ![How workflow_dispatch works: author the .md file, compile to a lock.yml, push to GitHub, then click Run workflow in the Actions tab to trigger the agent](images/07a-workflow-dispatch-trigger.svg)
 
@@ -73,8 +73,11 @@ If you hit an error, use [Side Quest: Using `gh aw compile` to Catch Errors Earl
 
 ## ✅ Checkpoint
 
-- [ ] `.github/workflows/daily-report-status.md` exists
-- [ ] You ran `gh aw compile` successfully and it generated `daily-report-status.lock.yml`
+- [ ] The `.github/workflows/` directory exists in your repository
+- [ ] `.github/workflows/daily-report-status.md` exists and is open in your editor
+- [ ] The frontmatter block contains a `name:` field and `on.schedule: daily`
+- [ ] `gh aw compile` ran without errors
+- [ ] `daily-report-status.lock.yml` was generated next to `daily-report-status.md`
 
 <!-- journey: terminal -->
 **Next:** [Part 2: Add instructions, safe outputs, and finish](07a-part2-your-first-workflow-instructions.md)
