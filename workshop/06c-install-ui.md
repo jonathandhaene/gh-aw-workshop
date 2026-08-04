@@ -11,7 +11,7 @@ If you decide you want a terminal after all, switch to [Install gh-aw — Codesp
 
 ## How this path works
 
-On the GitHub UI path, you do not install `gh-aw` locally. You stay on github.com, ask GitHub Copilot to initialize the repository for agentic workflows, and let GitHub-hosted automation handle compilation and execution.
+On the GitHub UI path, you do not install `gh-aw` locally. You stay on github.com, ask GitHub Copilot to initialize the repository for agentic workflows, and let GitHub-hosted automation handle [compilation](https://github.github.com/gh-aw/reference/compilation-process/) and execution.
 
 ![GitHub-hosted execution flow for the UI path](images/06c-github-hosted-execution.svg)
 
@@ -19,7 +19,7 @@ In practice, that means:
 
 - You write or review workflow changes in the GitHub web UI.
 - An agent initializes the repository files for you in a pull request.
-- GitHub Actions runs the committed lock file on GitHub's infrastructure.
+- GitHub Actions runs the committed [lock file](https://github.github.com/gh-aw/reference/glossary/#workflow-lock-file-lockyml) on GitHub's infrastructure.
 
 ## Initialize the repository
 

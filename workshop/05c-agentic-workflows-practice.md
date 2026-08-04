@@ -6,7 +6,7 @@
 
 - You've read [What Are Agentic Workflows?](05-agentic-workflows-intro.md)
 
-These exercises help you apply what you just learned — deciding when to use an agentic workflow and drafting your first task brief.
+These exercises help you apply what you just learned — deciding when to use an [agentic workflow](https://github.github.com/gh-aw/introduction/overview/) and drafting your first task brief.
 
 ## Try it: agentic or standard?
 
@@ -62,7 +62,7 @@ as an issue with the title "Weekly PR Digest".
 
 - [ ] I can decide whether a task calls for an agentic or a standard Actions workflow
 - [ ] I have drafted a one-sentence task brief that specifies what data to read and what to post
-- [ ] I can describe the three parts of an agentic workflow: trigger → agent → safe output
+- [ ] I can describe the three parts of an agentic workflow: trigger → agent → [safe output](https://github.github.com/gh-aw/reference/safe-outputs/)
 
 <!-- journey: all -->
 **Next:** [Install the gh-aw CLI Extension](06-install-gh-aw.md)

@@ -72,7 +72,7 @@ git commit -m "Initialize agentic workflow skills"
 git push
 ```
 
-This creates several files needed for agentic workflow authoring:
+This creates several files needed for [agentic workflow](https://github.github.com/gh-aw/introduction/overview/) authoring:
 `.github/skills/agentic-workflows/SKILL.md`,
 `.github/skills/agentic-workflow-designer/SKILL.md`,
 `.github/agents/agentic-workflows.md`, `.github/mcp.json`,
