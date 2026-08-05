@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-label="Local setup flow: four commands to install and initialize gh-aw on a local terminal">
+  <!-- Background -->
+  <rect width="1200" height="560" fill="#0d1117"/>
+
+  <!-- Title -->
+  <text x="600" y="44" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="600" fill="#f0f6fc">Local Setup Flow — gh-aw in 4 Steps</text>
+
+  <!-- Subtitle annotation -->
+  <text x="600" y="530" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#8b949e">Run these commands in order in your local terminal to install and initialize agentic workflow authoring.</text>
+
+  <!-- Step boxes -->
+  <!-- Step 1: gh auth status -->
+  <rect x="60" y="90" width="220" height="340" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <rect x="60" y="90" width="220" height="44" rx="10" fill="#2f81f7"/>
+  <rect x="60" y="120" width="220" height="14" rx="0" fill="#2f81f7"/>
+  <text x="170" y="119" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">① Authenticate</text>
+
+  <text x="170" y="168" text-anchor="middle" font-family="ui-monospace, monospace" font-size="13" fill="#f0f6fc">gh auth status</text>
+  <rect x="80" y="152" width="180" height="28" rx="5" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+
+  <text x="170" y="210" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#8b949e">Confirm your GitHub</text>
+  <text x="170" y="228" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#8b949e">CLI is logged in</text>
+  <text x="170" y="246" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#8b949e">before installing.</text>
+
+  <!-- success chip -->
+  <rect x="110" y="370" width="120" height="26" rx="13" fill="#1a4429" stroke="#2ea043" stroke-width="1"/>
+  <text x="170" y="388" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#3fb950">Logged in ✓</text>
+
+  <!-- Step 2: gh extension install -->
+  <rect x="330" y="90" width="220" height="340" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <rect x="330" y="90" width="220" height="44" rx="10" fill="#2f81f7"/>
+  <rect x="330" y="120" width="220" height="14" rx="0" fill="#2f81f7"/>
+  <text x="440" y="119" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">② Install Extension</text>
+
+  <text x="440" y="168" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11" fill="#f0f6fc">gh extension install</text>
+  <text x="440" y="185" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11" fill="#f0f6fc">github/gh-aw</text>
+  <rect x="350" y="152" width="180" height="42" rx="5" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+
+  <text x="440" y="222" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#8b949e">Install the gh-aw</text>
+  <text x="440" y="240" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#8b949e">extension. Skip this</text>
+  <text x="440" y="258" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#8b949e">if already installed;</text>
+  <text x="440" y="276" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#8b949e">upgrade instead.</text>
+
+  <rect x="380" y="370" width="120" height="26" rx="13" fill="#1a4429" stroke="#2ea043" stroke-width="1"/>
+  <text x="440" y="388" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#3fb950">Installed ✓</text>
+
+  <!-- Step 3: gh aw doctor -->
+  <rect x="600" y="90" width="220" height="340" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <rect x="600" y="90" width="220" height="44" rx="10" fill="#2f81f7"/>
+  <rect x="600" y="120" width="220" height="14" rx="0" fill="#2f81f7"/>
+  <text x="710" y="119" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">③ Diagnose</text>
+
+  <text x="710" y="168" text-anchor="middle" font-family="ui-monospace, monospace" font-size="13" fill="#f0f6fc">gh aw doctor</text>
+  <rect x="620" y="152" width="180" height="28" rx="5" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+
+  <text x="710" y="210" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#8b949e">Verify the extension</text>
+  <text x="710" y="228" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#8b949e">can reach GitHub</text>
+  <text x="710" y="246" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#8b949e">and auth is valid.</text>
+
+  <rect x="650" y="370" width="120" height="26" rx="13" fill="#1a4429" stroke="#2ea043" stroke-width="1"/>
+  <text x="710" y="388" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#3fb950">All checks passed ✓</text>
+
+  <!-- Step 4: gh aw init -->
+  <rect x="870" y="90" width="270" height="340" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <rect x="870" y="90" width="270" height="44" rx="10" fill="#2f81f7"/>
+  <rect x="870" y="120" width="270" height="14" rx="0" fill="#2f81f7"/>
+  <text x="1005" y="119" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">④ Initialize Skills</text>
+
+  <text x="1005" y="162" text-anchor="middle" font-family="ui-monospace, monospace" font-size="12" fill="#f0f6fc">gh aw init</text>
+  <text x="1005" y="178" text-anchor="middle" font-family="ui-monospace, monospace" font-size="12" fill="#f0f6fc">git add . &amp;&amp; git commit</text>
+  <text x="1005" y="194" text-anchor="middle" font-family="ui-monospace, monospace" font-size="12" fill="#f0f6fc">git push</text>
+  <rect x="890" y="148" width="230" height="54" rx="5" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+
+  <text x="1005" y="232" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#8b949e">Scaffold skill files and</text>
+  <text x="1005" y="250" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#8b949e">push to your repo so</text>
+  <text x="1005" y="268" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#8b949e">Actions can use them.</text>
+
+  <!-- generated files chip list -->
+  <text x="1005" y="310" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#8b949e">Creates:</text>
+  <rect x="893" y="318" width="224" height="18" rx="4" fill="#2d2205" stroke="#9e6a03" stroke-width="1"/>
+  <text x="1005" y="331" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" fill="#d29922">.github/skills/  .github/agents/</text>
+
+  <rect x="893" y="340" width="224" height="18" rx="4" fill="#2d2205" stroke="#9e6a03" stroke-width="1"/>
+  <text x="1005" y="353" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" fill="#d29922">.github/mcp.json  .vscode/</text>
+
+  <rect x="915" y="370" width="180" height="26" rx="13" fill="#1a4429" stroke="#2ea043" stroke-width="1"/>
+  <text x="1005" y="388" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#3fb950">Ready to author ✓</text>
+
+  <!-- Arrows between steps -->
+  <line x1="282" y1="260" x2="328" y2="260" stroke="#2f81f7" stroke-width="2" marker-end="url(#arrow-dark)"/>
+  <line x1="552" y1="260" x2="598" y2="260" stroke="#2f81f7" stroke-width="2" marker-end="url(#arrow-dark)"/>
+  <line x1="822" y1="260" x2="868" y2="260" stroke="#2f81f7" stroke-width="2" marker-end="url(#arrow-dark)"/>
+
+  <defs>
+    <marker id="arrow-dark" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2f81f7"/>
+    </marker>
+  </defs>
+</svg>

@@ -10,6 +10,12 @@
 
 You'll verify the `gh` CLI is authenticated, install the `gh-aw` extension, and run one quick diagnostic to confirm your local terminal is ready for [agentic workflow](https://github.github.com/gh-aw/introduction/overview/) setup.
 
+<picture>
+   <source media="(prefers-color-scheme: dark)" srcset="images/06b-local-setup-flow-dark.svg">
+   <source media="(prefers-color-scheme: light)" srcset="images/06b-local-setup-flow-light.svg">
+   <img alt="Local setup flow: four commands to install and initialize gh-aw on a local terminal" src="images/06b-local-setup-flow-light.svg">
+</picture>
+
 ## 📋 Before You Start
 
 - You've completed [What Are Agentic Workflows?](05-agentic-workflows-intro.md)
