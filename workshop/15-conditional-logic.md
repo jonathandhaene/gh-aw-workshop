@@ -26,7 +26,7 @@ The approach breaks into three parts:
 
 ### Add a commit-count step
 
-Open your daily-status workflow file (e.g., `.github/workflows/daily-status.md`) and add the following block inside the YAML frontmatter under `steps:`:
+Open your daily-status workflow file (e.g., `.github/workflows/daily-status.md`) and add the following block inside the YAML [frontmatter](https://github.github.com/gh-aw/reference/frontmatter/) under `steps:`:
 
 ```yaml
 steps:

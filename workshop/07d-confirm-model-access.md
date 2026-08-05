@@ -60,7 +60,7 @@ Use this path when the organization that owns the repository has centralized Cop
 
    This line is already present in the workflow template. Do not remove it.
 3. No repository secret is needed for this path.
-4. Recompile and commit the lock file so it reflects the confirmed configuration:
+4. Recompile and commit the [lock file](https://github.github.com/gh-aw/reference/compilation-process/) so it reflects the confirmed configuration:
 
    **If you are using a terminal:**
 

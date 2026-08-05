@@ -18,7 +18,7 @@ Take stock of everything you've learned, then choose a direction for what to bui
 
 You've gone from zero to a fully automated, AI-powered workflow that:
 
-- Runs on a schedule in GitHub Actions
+- Runs on a [schedule](https://github.github.com/gh-aw/reference/triggers/#scheduled-triggers-schedule) in GitHub Actions
 - Uses gh-aw to call an AI model from a simple YAML file
 - Posts a daily summary without any manual intervention
 
@@ -63,7 +63,7 @@ Here's a quick recap of the concepts you've touched. The diagram below shows how
 - ➡️ [Make Your Workflows Resilient to Failure](22-error-handling-and-resilience.md) — add defensive briefs, timeouts, and fallback outputs so unattended runs stay reliable.
 - ➡️ [Test Your Prompt Ideas with A/B Experiments](23-ab-experiments.md) — compare prompt variants across runs and let data decide which one to keep.
 - ➡️ [Run Your Agentic Workflow on a Self-Hosted Runner](24-self-hosted-runners.md) — target your organisation's runner fleet instead of GitHub-hosted machines (enterprise teams).
-- ➡️ [Audit and Monitor Your Agentic Workflows](25-audit-and-observability.md) — read run artifacts, understand token usage, and build an audit trail for enterprise compliance.
+- ➡️ [Audit and Monitor Your Agentic Workflows](25-audit-and-observability.md) — read run [artifacts](https://github.github.com/gh-aw/reference/artifacts/), understand token usage, and build an [audit](https://github.github.com/gh-aw/reference/audit/) trail for enterprise compliance.
 - ➡️ [Manage Costs and AI Credit Budgets](26-manage-costs-and-budgets.md) — measure AIC consumption, set spending limits, and keep your workflows within budget (enterprise teams).
 
 <!-- journey: all -->

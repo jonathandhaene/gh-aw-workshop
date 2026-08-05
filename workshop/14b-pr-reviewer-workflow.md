@@ -17,7 +17,7 @@ By the end you will have a working PR reviewer workflow and understand how event
 
 ## Why Event-Driven Triggers?
 
-Your daily-status workflow runs on a schedule — it wakes up on its own, checks what happened, and reports. A PR reviewer workflow is different: it runs the moment a developer opens or updates a pull request, with the full PR context handed to it automatically.
+Your daily-status workflow runs on a [schedule](https://github.github.com/gh-aw/reference/triggers/#scheduled-triggers-schedule) — it wakes up on its own, checks what happened, and reports. A PR reviewer workflow is different: it runs the moment a developer opens or updates a pull request, with the full PR context handed to it automatically.
 
 This is the `pull_request` trigger:
 
@@ -59,7 +59,7 @@ You are a helpful PR reviewer. When a pull request is opened or updated:
 Keep the tone constructive and specific. Do not speculate about code you have not seen.
 ```
 
-A few things to notice in this frontmatter:
+A few things to notice in this [frontmatter](https://github.github.com/gh-aw/reference/frontmatter/):
 
 - `permissions: pull-requests: write` lets the agent post a comment on the PR.
 - `safe-outputs: create-issue-comment: limit: 1` caps the workflow at one comment per run, preventing spam if the workflow is triggered repeatedly.

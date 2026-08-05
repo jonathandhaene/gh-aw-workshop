@@ -12,7 +12,7 @@ You'll add an [MCP (Model Context Protocol)](https://github.github.com/gh-aw/gui
 
 - You have installed the `gh-aw` extension in [Install the `gh-aw` CLI Extension](06-install-gh-aw.md).
 - You have a working daily-status workflow from [Build: Daily Repo Status Workflow](07-your-first-workflow.md).
-- You're comfortable editing the YAML frontmatter section at the top of your workflow file.
+- You're comfortable editing the YAML [frontmatter](https://github.github.com/gh-aw/reference/frontmatter/) section at the top of your workflow file.
 
 ## Steps
 
@@ -55,7 +55,7 @@ tools:
 ```
 
 > [!NOTE]
-> The `github` tool entry tells gh-aw to start the GitHub MCP server in proxy mode. The agent can then call GitHub tools — listing issues, fetching commits, reading file contents — scoped to the permissions you've declared above.
+> The `github` tool entry tells gh-aw to start the GitHub MCP server in proxy mode. The agent can then call [GitHub tools](https://github.github.com/gh-aw/reference/github-tools/) — listing issues, fetching commits, reading file contents — scoped to the permissions you've declared above.
 
 <!-- -->
 

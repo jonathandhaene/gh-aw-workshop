@@ -79,7 +79,7 @@ Next, add a step to fetch open issues:
 
 ### Inject data into your AI prompt
 
-The AI prompt lives in the Markdown body after the frontmatter. Update that section so it uses the step outputs:
+The AI prompt lives in the Markdown body after the [frontmatter](https://github.github.com/gh-aw/reference/frontmatter/). Update that section so it uses the step outputs:
 
 ```markdown
 ---

@@ -6,7 +6,7 @@ _The fastest way to improve a workflow is to describe what you want in plain Eng
 
 ## 🎯 What You'll Do
 
-You'll use the `agentic-workflows` Copilot skill — installed in your practice repository during Step 7 — to edit, debug, and optimize `daily-report-status.md` without manually hunting through the frontmatter or Markdown body.
+You'll use the `agentic-workflows` Copilot skill — installed in your practice repository during Step 7 — to edit, debug, and optimize `daily-report-status.md` without manually hunting through the [frontmatter](https://github.github.com/gh-aw/reference/frontmatter/) or Markdown body.
 
 By the end of this step, your workflow will produce more useful output, and you'll know the three prompting patterns that cover most day-to-day workflow maintenance.
 
@@ -104,7 +104,7 @@ Recompile and push the change.
 
 ## Optimize: reduce token usage
 
-Once the workflow produces correct output, you can reduce how much AI Credit it uses per run. This matters especially for workflows that run on a schedule.
+Once the workflow produces correct output, you can reduce how much AI Credit it uses per run. This matters especially for workflows that run on a [schedule](https://github.github.com/gh-aw/reference/triggers/#scheduled-triggers-schedule).
 
 In the GitHub Copilot **Chat** or **Agents** tab, paste:
 
