@@ -17,9 +17,17 @@ A full-day hands-on experience with GitHub Agentic Workflows — from your first
 | 16:15 | **Share and reflect** — each group demos their hackathon project and explains one decision they made |
 | 16:30 | **Social time** |
 
-## Before You Arrive
+## 📋 Before You Start
 
-Make sure you have completed the [prerequisites](01-prerequisites.md) before the day starts. The morning session moves fast, and environment issues will slow you down.
+> [!IMPORTANT]
+> Complete [01-prerequisites.md](01-prerequisites.md) before the day starts — the morning session moves fast and environment issues will slow you down.
+
+## ✅ Before the Day Starts
+
+- [ ] I have completed [01-prerequisites.md](01-prerequisites.md)
+- [ ] My Codespace or local terminal opens and the terminal prompt appears
+- [ ] I can run `gh aw --help` successfully
+- [ ] I know which Part 2 topic I want to explore first
 
 ## Facilitation Notes
 
