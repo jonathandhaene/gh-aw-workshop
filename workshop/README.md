@@ -26,6 +26,7 @@ A hands-on workshop that takes you from zero to a fully automated, AI-powered wo
 | 8b | [Interpret Your First Run](08b-interpret-your-run.md) |
 | 9 | [Refine Your Workflow with Agentic Editing](09-agentic-editing.md) |
 | 12 | [Test and Improve Your Workflow](12-test-and-iterate.md) |
+| 13 | [Put Your Workflow on a Schedule](13-schedule-your-workflow.md) |
 | 14 | [What's Next? Keep Exploring](14-next-steps.md) |
 | 14b | [Build Your First Event-Driven Workflow: PR Auto-Reviewer](14b-pr-reviewer-workflow.md) |
 
