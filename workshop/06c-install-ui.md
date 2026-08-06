@@ -13,7 +13,11 @@ If you decide you want a terminal after all, switch to [Install gh-aw — Codesp
 
 On the GitHub UI path, you do not install `gh-aw` locally. You stay on github.com, ask GitHub Copilot to initialize the repository for agentic workflows, and let GitHub-hosted automation handle compilation and execution.
 
-![GitHub-hosted execution flow for the UI path](images/06c-github-hosted-execution.svg)
+<picture>
+   <source media="(prefers-color-scheme: dark)" srcset="images/06c-github-hosted-execution-dark.svg">
+   <source media="(prefers-color-scheme: light)" srcset="images/06c-github-hosted-execution-light.svg">
+   <img alt="GitHub-hosted execution flow for the UI path" src="images/06c-github-hosted-execution-light.svg">
+</picture>
 
 In practice, that means:
 
