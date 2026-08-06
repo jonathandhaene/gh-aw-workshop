@@ -54,6 +54,7 @@ Here's a quick recap of the concepts you've touched. The diagram below shows how
 
 ### Go deeper
 
+- ➡️ [Read Data from Other Repositories](27-cross-repository-workflows.md) — extend a workflow to pull context from multiple repos in your organisation (ideal for enterprise fleet-wide reports).
 - ➡️ [Make Your Workflow Smarter with Conditional Logic](15-conditional-logic.md) — add conditions so your workflow only runs when there is meaningful activity to report.
 - ➡️ [Connect a Live Data Source to Your Workflow](16-connect-data-source.md) — fetch live repository data and pass it into your AI prompt as workflow context.
 - ➡️ [Give Your Agent More Tools with MCP](17-add-mcp-tools.md) — connect the GitHub MCP server so your agent can read live repository data as it runs.
