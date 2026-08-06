@@ -2,7 +2,7 @@
 <!-- page-adventure: advanced -->
 <!--
 <research-metadata>
-  <focus>Persistent memory in agentic workflows — cache-memory and repo-memory frontmatter tools</focus>
+  <focus>Persistent memory in agentic workflows — [cache-memory](https://github.github.com/gh-aw/reference/cache-memory/) and [repo-memory](https://github.github.com/gh-aw/reference/repo-memory/) [frontmatter](https://github.github.com/gh-aw/reference/frontmatter/) tools</focus>
   <sources>
     <source>https://github.github.com/gh-aw/llms.txt</source>
     <source>https://raw.githubusercontent.com/github/gh-aw/main/.github/aw/memory.md</source>
@@ -39,7 +39,7 @@ Every workflow run you have built so far starts with a blank slate. That is fine
 - **Compare against a baseline** — "did the number of failing tests increase since yesterday?"
 - **Scan incrementally** — skip pull requests you have already reviewed.
 
-You will use `cache-memory` in this step; see [Side Quest: Choosing Between Cache Memory and Repo Memory](side-quest-20-01-memory-patterns.md) for a full comparison.
+You will use `cache-memory` in this step; see [Side Quest: Choosing Between [Cache Memory](https://github.github.com/gh-aw/reference/cache-memory/) and Repo Memory](side-quest-20-01-memory-patterns.md) for a full comparison.
 
 ## Steps
 
@@ -123,7 +123,7 @@ git push
 1. Trigger a manual run in **Actions → Daily Status Report → Run workflow**.
 2. Open the run log and confirm it contains `cache-memory: loaded 0 items`. This confirms the cache starts empty and initializes correctly.
 
-### Trigger a second run and confirm memory reuse
+### Trigger a second run and confirm memory [reuse](https://github.github.com/gh-aw/guides/reusing-workflows/)
 
 1. Trigger the workflow a second time with no new issues.
 2. Open the second run log and find `cache-memory: loaded N items`.

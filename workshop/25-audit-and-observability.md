@@ -1,12 +1,12 @@
 <!-- page-journey: all -->
 <!-- page-adventure: advanced -->
-# Audit and Monitor Your Agentic Workflows
+# [Audit](https://github.github.com/gh-aw/reference/audit/) and Monitor Your Agentic Workflows
 
 > _Knowing what your agent did — and proving it — is what turns a useful automation into a trustworthy one._
 
 ## 🎯 What You'll Do
 
-You will use `gh aw logs` and `gh aw audit` to review the built-in artifacts that every agentic workflow run produces, understand token usage, and debug unexpected behavior. By the end you will know where to look when a run behaves unexpectedly or when a compliance review asks what the agent did.
+You will use `gh aw logs` and `gh aw audit` to review the built-in [artifacts](https://github.github.com/gh-aw/reference/artifacts/) that every agentic workflow run produces, understand token usage, and debug unexpected behavior. By the end you will know where to look when a run behaves unexpectedly or when a compliance review asks what the agent did.
 
 ## 📋 Before You Start
 

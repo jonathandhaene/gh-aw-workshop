@@ -9,7 +9,7 @@
     <source>https://raw.githubusercontent.com/github/gh-aw/main/.github/aw/token-optimization.md</source>
   </sources>
   <rationale>
-    The existing curriculum covers MCP tools, shared workflow reuse, persistent memory, and conditional logic — but nothing on how to decompose a workflow into multiple agents within a single file. Learners who follow the full path end up with one monolithic prompt running on an expensive frontier model even for trivial per-item tasks. This step closes that gap by introducing the planner-worker pattern.
+    The existing curriculum covers MCP tools, shared workflow [reuse](https://github.github.com/gh-aw/guides/reusing-workflows/), persistent memory, and conditional logic — but nothing on how to decompose a workflow into multiple agents within a single file. Learners who follow the full path end up with one monolithic prompt running on an expensive frontier model even for trivial per-item tasks. This step closes that gap by introducing the planner-worker pattern.
   </rationale>
 </research-metadata>
 -->
@@ -25,7 +25,7 @@ You'll add a sub-agent to your daily-status workflow so the parent agent can sta
 ## 📋 Before You Start
 
 - You have a working agentic workflow from the build steps ([Step 11a](07-your-first-workflow.md) or equivalent).
-- You understand YAML frontmatter from [Write Your First Agentic Workflow](07-your-first-workflow.md).
+- You understand YAML [frontmatter](https://github.github.com/gh-aw/reference/frontmatter/) from [Write Your First Agentic Workflow](07-your-first-workflow.md).
 - You know how to compile a workflow from [Side Quest: Using `gh aw compile` to Catch Errors Early](side-quest-07-01-compile-workflow.md).
 
 ## Understand the parent agent and sub-agent split

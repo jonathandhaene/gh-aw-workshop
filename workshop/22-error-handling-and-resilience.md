@@ -6,7 +6,7 @@
 
 ## 🎯 What You'll Do
 
-Learn the most common ways agentic workflows fail in production and apply three practical techniques — defensive task briefs, timeout settings, and [safe-output](https://github.github.com/gh-aw/reference/safe-outputs/) fallbacks — to keep your workflow useful even when things go wrong.
+Learn the most common ways agentic workflows fail in production and apply three practical techniques — defensive task briefs, timeout settings, and [safe-output](https://github.github.com/gh-aw/reference/[safe-outputs](https://github.github.com/gh-aw/reference/safe-outputs/)/) fallbacks — to keep your workflow useful even when things go wrong.
 
 ## 📋 Before You Start
 
@@ -65,7 +65,7 @@ timeout-minutes: 10
 >
 > </details>
 
-### Add a fallback message to safe outputs
+### Add a fallback message to [safe outputs](https://github.github.com/gh-aw/reference/safe-outputs/)
 
 When your workflow uses a `noop` or comment safe output, always include a meaningful fallback body. If the agent reaches the output step but has nothing to report, this ensures the run still records a visible result:
 

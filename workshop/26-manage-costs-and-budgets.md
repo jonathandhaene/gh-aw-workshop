@@ -6,11 +6,11 @@
 
 ## 🎯 What You'll Do
 
-You'll review your workflow's AI Credit consumption in the GitHub billing dashboard, estimate monthly costs for a scheduled workflow, and apply at least one technique to keep spending within budget.
+You'll review your workflow's AI Credit consumption in the GitHub [billing](https://github.github.com/gh-aw/reference/billing/) dashboard, estimate monthly costs for a scheduled workflow, and apply at least one technique to keep spending within budget.
 
 ## 📋 Before You Start
 
-- You have completed [Audit and Monitor Your Agentic Workflows](25-audit-and-observability.md).
+- You have completed [Audit and Monitor Your Agentic Workflows](25-[audit](https://github.github.com/gh-aw/reference/audit/)-and-observability.md).
 - You have run your workflow at least once and seen token usage data in `gh aw logs` output.
 - _(Enterprise users)_ Your GitHub administrator has confirmed that Copilot Enterprise billing is enabled for your organisation.
 

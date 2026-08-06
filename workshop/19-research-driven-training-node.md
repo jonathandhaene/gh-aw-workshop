@@ -10,7 +10,7 @@ In this step, you will turn `github/gh-aw` research into a concrete training pla
 
 ## 📋 Before You Start
 
-- You completed [Share and Reuse Your Agentic Workflows](18-share-and-reuse.md).
+- You completed [Share and [Reuse](https://github.github.com/gh-aw/guides/reusing-workflows/) Your Agentic Workflows](18-share-and-reuse.md).
 - You can open `workshop/README.md` and identify where new nodes belong in the curriculum table.
 - You can run `gh aw compile` for workflow validation from earlier steps.
 
@@ -35,7 +35,7 @@ This gives you a compact index of what the gh-aw project currently emphasizes fo
 
 ### Pick one high-value learner gap
 
-Read your existing workshop path and ask one practical question: _what can a learner do now that they could not do before this new node exists?_ Keep your answer narrow. Good gaps are concrete, such as "how to validate workflow constraints before opening a PR" or "how to select [safe outputs](https://github.github.com/gh-aw/reference/safe-outputs/) for automation."
+Read your existing workshop path and ask one practical question: _what can a learner do now that they could not do before this new node exists?_ Keep your answer narrow. Good gaps are concrete, such as "how to validate workflow constraints before opening a PR" or "how to select [safe outputs](https://github.github.com/gh-aw/reference/[safe-outputs](https://github.github.com/gh-aw/reference/safe-outputs/)/) for automation."
 
 ### Draft a node proposal with clear scope
 

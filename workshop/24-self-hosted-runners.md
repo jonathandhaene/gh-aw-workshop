@@ -18,7 +18,7 @@ rather than a GitHub-hosted machine.
 - You know the label assigned to your runner (for example, `self-hosted`, `ubuntu-self-hosted`, or a custom label your admin configured).
 
 > [!NOTE]
-> Not on an enterprise plan? GitHub-hosted runners work for the main workshop path. Come back to this step if you later move to a GHES or GHEC environment with self-hosted runners.
+> Not on an enterprise plan? GitHub-hosted runners work for the main workshop path. Come back to this step if you later move to a GHES or GHEC environment with [self-hosted runners](https://github.github.com/gh-aw/reference/self-hosted-runners/).
 
 ## Understand runner targeting in frontmatter
 
@@ -101,12 +101,12 @@ Just-in-time (JIT) runners are provisioned on demand and deregistered immediatel
 They require a registration token scoped to your organisation or repository and are typically
 managed by a runner controller such as actions-runner-controller.
 
-### Proxy and network requirements
+### Proxy and [network](https://github.github.com/gh-aw/reference/network/) requirements
 
 Self-hosted runners in enterprise environments often sit behind an outbound proxy.
 The agentic engine needs to reach model endpoints and GitHub APIs.
 
-If your runner uses a proxy, set these environment variables in the runner's system
+If your runner uses a proxy, set these [environment variables](https://github.github.com/gh-aw/reference/environment-variables/) in the runner's system
 configuration **before** registering it, or ask your admin to confirm they are already set:
 
 ```bash
@@ -174,7 +174,7 @@ Commit the updated lock file before triggering your next workflow run.
 - [ ] No workflow steps failed due to runner availability or label mismatch
 
 <!-- journey: all -->
-**Next:** [Audit and Monitor Your Agentic Workflows](25-audit-and-observability.md)
+**Next:** [Audit and Monitor Your Agentic Workflows](25-[audit](https://github.github.com/gh-aw/reference/audit/)-and-observability.md)
 <!-- /journey -->
 
 
