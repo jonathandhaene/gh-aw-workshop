@@ -21,6 +21,13 @@ A full-day hands-on experience with GitHub Agentic Workflows — from your first
 
 Make sure you have completed the [prerequisites](01-prerequisites.md) before the day starts. The morning session moves fast, and environment issues will slow you down.
 
+Specifically, you should arrive with:
+
+- A GitHub account with access to GitHub Copilot
+- Your development environment set up and tested (Codespace, local terminal, or browser path)
+- The `gh` CLI authenticated (`gh auth status` returns no errors)
+- The `gh-aw` extension installed (`gh extension list` shows `gh-aw`)
+
 ## Facilitation Notes
 
 **Part 1** covers [Steps 0–12](README.md#curriculum--part-1-build-your-first-workflow): welcome, prerequisites, environment setup, Actions intro, the agentic workflow model, installing `gh-aw`, writing your first workflow, running it, and iterating.
@@ -28,3 +35,13 @@ Make sure you have completed the [prerequisites](01-prerequisites.md) before the
 **Part 2** is self-directed. Participants choose their own path through [Steps 14+](README.md#curriculum--part-2-go-deeper) based on what interests them most. Facilitators circulate and help unblock.
 
 **Hackathon** has no prescribed outcome — the goal is one working workflow that solves a real problem. Teams of two or three work well.
+
+## ✅ Checkpoint
+
+Before the day begins, confirm you're ready:
+
+- [ ] You have completed the [prerequisites](01-prerequisites.md) and your environment is set up
+- [ ] You know where Part 1 starts — the welcome step is at [Step 0](00-welcome.md)
+- [ ] You have GitHub Copilot access (check at github.com/settings/copilot)
+- [ ] You have read the facilitation notes above so you know how the day flows
+- [ ] (Facilitators) You have shared the program schedule and start link with participants ahead of time
