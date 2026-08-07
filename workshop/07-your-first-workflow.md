@@ -11,7 +11,11 @@ You'll create `.github/workflows/daily-report-status.md`, a small workflow that 
 
 In either path, you'll start with `daily-report-status.md` and end with `daily-report-status.lock.yml`, the compiled workflow that GitHub Actions runs.
 
-![Diagram showing how daily-report-status.md is compiled by gh aw compile into daily-report-status.lock.yml which GitHub Actions then executes](images/07-compile-flow.svg)
+<picture>
+   <source media="(prefers-color-scheme: dark)" srcset="images/07-compile-flow-dark.svg">
+   <source media="(prefers-color-scheme: light)" srcset="images/07-compile-flow-light.svg">
+   <img alt="Diagram showing how daily-report-status.md is compiled by gh aw compile into daily-report-status.lock.yml which GitHub Actions then executes" src="images/07-compile-flow-light.svg">
+</picture>
 
 ## 📋 Before You Start
 
