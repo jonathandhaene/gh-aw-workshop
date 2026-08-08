@@ -10,7 +10,7 @@ You'll use `gh aw compile` as a fast feedback loop while you edit workflow files
 
 ## What `gh aw compile` does
 
-`gh aw compile` checks your workflow source file, validates the [frontmatter](https://github.github.com/gh-aw/reference/frontmatter/) and Markdown body structure, and generates the compiled lock file GitHub Actions runs. It catches formatting and schema mistakes before you commit or trigger a workflow.
+`gh aw compile` checks your workflow source file, validates the [frontmatter](https://github.github.com/gh-aw/reference/frontmatter/) and Markdown body structure, and generates the compiled [lock file](https://github.github.com/gh-aw/reference/glossary/#workflow-lock-file-lockyml) GitHub Actions runs. It catches formatting and schema mistakes before you commit or trigger a workflow.
 
 Run it any time you edit a workflow file:
 
@@ -35,7 +35,7 @@ This is useful after each small edit because it confirms the file structure with
 
 ## Use `--validate` for deeper validation
 
-When you want stricter checks on top of normal compilation, add `--validate`:
+When you want stricter checks on top of normal [compilation](https://github.github.com/gh-aw/reference/compilation-process/), add `--validate`:
 
 ```bash
 gh aw compile --validate

@@ -41,7 +41,7 @@ Some versions of `gh aw` also show a follow-up message explaining that the defau
 
 ## Cause
 
-The default token inside a Codespace usually has enough access to work with your repository. However, it may not have the permissions that `gh aw run` needs. In practice, the missing permissions are usually `actions:write` and `workflows:write`.
+The default token inside a Codespace usually has enough access to work with your repository. However, it may not have the [permissions](https://github.github.com/gh-aw/reference/permissions/) that `gh aw run` needs. In practice, the missing permissions are usually `actions:write` and `workflows:write`.
 
 ---
 
