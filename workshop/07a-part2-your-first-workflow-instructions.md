@@ -21,6 +21,12 @@ You'll finish `.github/workflows/daily-report-status.md` by adding:
 
 Each section of your workflow file serves a distinct purpose at runtime — the diagram below shows what each part controls.
 
+<picture>
+   <source media="(prefers-color-scheme: dark)" srcset="images/07a-workflow-file-anatomy-dark.svg">
+   <source media="(prefers-color-scheme: light)" srcset="images/07a-workflow-file-anatomy-light.svg">
+   <img alt="Agentic workflow file anatomy: frontmatter sections (name, on, permissions, safe-outputs) and the Task body, each mapped to its runtime purpose" src="images/07a-workflow-file-anatomy-light.svg">
+</picture>
+
 ### Add `permissions` and `safe-outputs`
 
 In `.github/workflows/daily-report-status.md`, update frontmatter so it looks like this:
