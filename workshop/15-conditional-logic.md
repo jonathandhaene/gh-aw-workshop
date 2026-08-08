@@ -17,14 +17,14 @@ Add a conditional check to your daily-status workflow so it only posts a summary
 
 ### Understand the problem
 
-Your daily-status workflow currently runs every weekday regardless of repository activity, which means it can produce empty or near-empty summaries like "No activity to report" on quiet days. Over time these hollow reports erode confidence in the tool because readers learn to ignore them. Conditional logic solves this by inspecting repository state in a deterministic shell step before any AI processing begins, then skipping the agent job entirely when the precondition is not met.
+Your daily-status workflow currently runs every weekday regardless of repository activity, which means it can produce empty or near-empty summaries like "No activity to report" on quiet days. Over time these hollow reports erode confidence in the tool because readers learn to ignore them.
 
-The approach breaks into three parts:
-1. Run a shell command to count commits from the last 24 hours and write the result to `$GITHUB_OUTPUT`.
-2. Reference that output using the `steps` context expression `${{ steps.recent.outputs.commit_count }}`.
-3. Add a top-level `if:` key in the workflow [frontmatter](https://github.github.com/gh-aw/reference/frontmatter/) that skips the agent job when the count evaluates to zero.
+Conditional logic solves this by inspecting repository state in a **deterministic shell step** before any AI processing begins, then skipping the agent job entirely when the precondition is not met. You'll do this in two focused milestones:
 
-### Add a commit-count step
+1. **Capture** a commit count and write it to a step output.
+2. **Gate** the agent job with an `if:` condition that reads that output.
+
+### Milestone 1 — Capture commit count as a step output
 
 Open your daily-status workflow file (e.g., `.github/workflows/daily-status.md`) and add the following block inside the YAML frontmatter under `steps:`:
 
@@ -37,17 +37,17 @@ steps:
       echo "commit_count=$COUNT" >> $GITHUB_OUTPUT
 ```
 
-This shell command uses `git log` with a `--since` time filter to list only commits from the last 24 hours, pipes the output through `wc -l` to count the lines, strips surrounding whitespace with `tr -d ' '`, and writes the final integer to `$GITHUB_OUTPUT` — a special GitHub Actions file that shares values between steps using `key=value` notation. The `id: recent` field is essential: it creates a named slot in the `steps` context so the value can be referenced as `steps.recent.outputs.commit_count` in later steps or in the top-level `if:` condition.
+The two key mechanics here are:
 
-> [!NOTE]
-> <details>
-> <summary>`$GITHUB_OUTPUT` makes step outputs available to later steps as `steps.<id>.outputs.key`.</summary>
->
-> For a deeper explanation of how the `steps` context works alongside other context objects (`github`, `env`, `runner`), how to use built-in expression functions like `contains()` and `toJSON()`, and how to chain conditions with `&&` and `||`, see [Side Quest: GitHub Actions Expressions and Contexts](side-quest-15-01-expressions-and-contexts.md).
->
-> </details>
+- **`$GITHUB_OUTPUT`**: a special file that GitHub Actions reads after a step finishes. Any `key=value` line you write to it becomes available as a step output.
+- **`id: recent`**: gives this step a name so later steps (and `if:` conditions) can reference its outputs via `steps.recent.outputs.commit_count`.
 
-### Add a top-level condition in frontmatter
+> [!TIP]
+> The `wc -l` and `tr -d` shell commands are standard Unix utilities — if you're new to them, see [Side Quest: Shell Output Basics](side-quest-15-02-shell-output-basics.md) for a plain-language walkthrough.
+
+**Try it:** after adding the step, compile and trigger a manual run. Open the run log and expand the **Count recent commits** step — you should see the `commit_count` value echoed in the output.
+
+### Milestone 2 — Add an if: condition that reads the output
 
 In the same frontmatter block, add a top-level `if:` key at the same indentation level as `on:` and `steps:`:
 
@@ -55,7 +55,19 @@ In the same frontmatter block, add a top-level `if:` key at the same indentation
 if: steps.recent.outputs.commit_count != '0'
 ```
 
-This condition is embedded into the generated lock file during [compilation](https://github.github.com/gh-aw/reference/compilation-process/); at runtime, GitHub Actions evaluates it and skips the agent job entirely whenever `commit_count` evaluates to `'0'`. You can also reference the count inside your prompt text to give the model concrete context — for example: `"Summarise the last ${{ steps.recent.outputs.commit_count }} commits"` anchors the analysis to the actual number of changes rather than leaving the model to guess the scope.
+> [!NOTE]
+> `if:` is a top-level [frontmatter](https://github.github.com/gh-aw/reference/frontmatter/) key, not a step-level key. It controls whether the entire agent job runs.
+
+At runtime, GitHub Actions evaluates this expression and **skips the agent job entirely** when `commit_count` is `'0'`. You can also pass the count into your prompt to give the model concrete context:
+
+```yaml
+prompt: "Summarise the last ${{ steps.recent.outputs.commit_count }} commits."
+```
+
+> [!TIP]
+> For a deeper explanation of the `steps` context, expression functions like `contains()`, and how to chain conditions, see [Side Quest: GitHub Actions Expressions and Contexts](side-quest-15-01-expressions-and-contexts.md).
+
+**Try it:** compile and trigger a run. On a day with no commits the agent job should appear as **skipped** (grey icon) in the Actions log.
 
 ### Exercise: Add a weekend skip condition
 
