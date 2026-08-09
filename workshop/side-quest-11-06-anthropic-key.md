@@ -112,7 +112,7 @@ You should see:
 - [ ] `ANTHROPIC_API_KEY` is stored as a repository secret
 - [ ] Your workflow frontmatter has `engine: claude`
 - [ ] `gh aw compile --validate` reports no errors
-- [ ] (If using network isolation) `api.anthropic.com` is in the `network.allowed` list
+- [ ] (If using [network](https://github.github.com/gh-aw/reference/network/) isolation) `api.anthropic.com` is in the `network.allowed` list
 
 <!-- journey: all -->
 **Return to:** [Build — Daily Repo Status Workflow](07-your-first-workflow.md) or [Adventure Codespace: Build Daily Status with the Add Wizard](07c-your-first-workflow-copilot.md)

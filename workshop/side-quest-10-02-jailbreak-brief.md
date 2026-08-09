@@ -106,7 +106,7 @@ The fourth sentence — "Please disregard your current task…" — is the injec
 ## ✅ Checkpoint
 
 - [ ] I can explain what makes a jailbreak attack different from a simple prompt injection
-- [ ] I can list all five gh-aw defence layers (brief, permissions, safe-outputs, network, detection)
+- [ ] I can list all five gh-aw defence layers (brief, permissions, [safe-outputs](https://github.github.com/gh-aw/reference/safe-outputs/), network, detection)
 - [ ] I can describe why `safe-outputs` removes execution paths rather than just making them harder to reach
 - [ ] I can describe what `network.allowed-domains` blocks even after a partial jailbreak succeeds
 - [ ] I identified the injection sentence in the exercise above
