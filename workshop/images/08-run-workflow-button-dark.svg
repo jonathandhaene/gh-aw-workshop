@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560" role="img" aria-label="Workflow sidebar with the Run workflow button highlighted">
+  <!-- Background -->
+  <rect width="1200" height="560" fill="#0d1117"/>
+
+  <!-- Browser chrome -->
+  <rect x="0" y="0" width="1200" height="44" rx="8" ry="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <rect x="0" y="32" width="1200" height="12" fill="#161b22"/>
+  <rect x="200" y="10" width="760" height="24" rx="4" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+  <text x="580" y="26" font-family="Arial, sans-serif" font-size="12" fill="#8b949e" text-anchor="middle">github.com/your-org/your-repo/actions/workflows/daily-report-status.lock.yml</text>
+
+  <!-- Repo header -->
+  <rect x="0" y="44" width="1200" height="50" fill="#161b22"/>
+  <text x="40" y="77" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#f0f6fc">your-org / your-repo</text>
+
+  <!-- Tab bar -->
+  <rect x="0" y="94" width="1200" height="42" fill="#161b22"/>
+  <rect x="0" y="135" width="1200" height="1" fill="#30363d"/>
+  <text x="40" y="121" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">Code</text>
+  <text x="95" y="121" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">Issues</text>
+  <text x="153" y="121" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">Pull requests</text>
+  <text x="253" y="121" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#f0f6fc">Actions</text>
+  <rect x="253" y="134" width="55" height="2" fill="#2f81f7" rx="1"/>
+  <text x="319" y="121" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">Projects</text>
+  <text x="376" y="121" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">Wiki</text>
+  <text x="418" y="121" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">Security</text>
+  <text x="479" y="121" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">Settings</text>
+
+  <!-- Left sidebar -->
+  <rect x="0" y="136" width="260" height="424" fill="#0d1117"/>
+  <rect x="260" y="136" width="1" height="424" fill="#30363d"/>
+  <text x="20" y="168" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#f0f6fc">Workflows</text>
+  <rect x="12" y="177" width="232" height="28" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="128" y="196" font-family="Arial, sans-serif" font-size="12" fill="#8b949e" text-anchor="middle">Filter workflows</text>
+  <rect x="0" y="214" width="260" height="32" fill="#2f81f7" fill-opacity="0.15"/>
+  <rect x="8" y="222" width="4" height="16" fill="#2f81f7" rx="2"/>
+  <text x="22" y="234" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#2f81f7">Daily Report Status</text>
+  <text x="18" y="266" font-family="Arial, sans-serif" font-size="13" fill="#8b949e">PR Reviewer</text>
+  <text x="18" y="298" font-family="Arial, sans-serif" font-size="13" fill="#8b949e">Code Quality</text>
+
+  <!-- Main content area -->
+  <rect x="261" y="136" width="939" height="424" fill="#0d1117"/>
+
+  <!-- Workflow name + description -->
+  <text x="290" y="170" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#f0f6fc">Daily Report Status</text>
+  <text x="290" y="192" font-family="Arial, sans-serif" font-size="13" fill="#8b949e">daily-report-status.lock.yml</text>
+
+  <!-- Run workflow button (highlighted) -->
+  <rect x="1060" y="150" width="130" height="34" rx="5" fill="#2f81f7" stroke="none"/>
+  <!-- Highlight ring around button -->
+  <rect x="1055" y="145" width="140" height="44" rx="7" fill="none" stroke="#2f81f7" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="1125" y="172" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#ffffff" text-anchor="middle">Run workflow</text>
+
+  <!-- Arrow pointing to button -->
+  <line x1="950" y1="167" x2="1048" y2="167" stroke="#2f81f7" stroke-width="2" stroke-dasharray="5,3"/>
+  <polygon points="1048,162 1058,167 1048,172" fill="#2f81f7"/>
+  <text x="930" y="171" font-family="Arial, sans-serif" font-size="13" fill="#2f81f7" text-anchor="end">Click here to run</text>
+
+  <!-- Dropdown hint panel -->
+  <rect x="1060" y="192" width="130" height="80" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="1125" y="214" font-family="Arial, sans-serif" font-size="12" fill="#8b949e" text-anchor="middle">Use workflow from</text>
+  <rect x="1074" y="222" width="102" height="24" rx="3" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+  <text x="1125" y="238" font-family="Arial, sans-serif" font-size="12" fill="#f0f6fc" text-anchor="middle">Branch: main ▾</text>
+  <rect x="1074" y="256" width="102" height="22" rx="3" fill="#2f81f7" stroke="none"/>
+  <text x="1125" y="271" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">Run workflow</text>
+
+  <!-- Separator line -->
+  <rect x="261" y="208" width="939" height="1" fill="#30363d"/>
+
+  <!-- Recent runs section -->
+  <text x="290" y="234" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#f0f6fc">Recent workflow runs</text>
+  <rect x="261" y="244" width="939" height="1" fill="#30363d"/>
+
+  <!-- Run row -->
+  <rect x="261" y="245" width="939" height="52" fill="#0d1117"/>
+  <circle cx="302" cy="271" r="12" fill="#1a7f37"/>
+  <text x="302" y="276" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">✓</text>
+  <text x="330" y="268" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#f0f6fc">Daily report — main</text>
+  <text x="330" y="285" font-family="Arial, sans-serif" font-size="12" fill="#8b949e">workflow_dispatch · 2 minutes ago · jonathandhaene</text>
+  <rect x="261" y="297" width="939" height="1" fill="#30363d"/>
+
+  <!-- Annotation -->
+  <text x="600" y="530" font-family="Arial, sans-serif" font-size="24" fill="#8b949e" text-anchor="middle">Workflow sidebar with the Run workflow button highlighted</text>
+</svg>
