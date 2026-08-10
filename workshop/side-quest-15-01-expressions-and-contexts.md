@@ -6,7 +6,7 @@
 
 ## 🎯 What You'll Do
 
-Explore the expression and context system that powers GitHub Actions conditions, output references, and dynamic values. By the end, the `${{ steps.recent.outputs.commit_count }}` style syntax in your conditional workflow will feel natural.
+Explore the expression and context system that powers [GitHub Actions](https://github.github.com/gh-aw/guides/github-actions-primer/) conditions, output references, and dynamic values. By the end, the `${{ steps.recent.outputs.commit_count }}` style syntax in your conditional workflow will feel natural.
 
 ## 📋 Before You Start
 

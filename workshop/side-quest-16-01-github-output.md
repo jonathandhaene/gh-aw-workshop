@@ -66,7 +66,7 @@ echo "$COMMIT_LOG" >> $GITHUB_OUTPUT
 echo "EOF" >> $GITHUB_OUTPUT
 ```
 
-The three lines together tell GitHub Actions:
+The three lines together tell [GitHub Actions](https://github.github.com/gh-aw/guides/github-actions-primer/):
 1. `commit_log<<EOF` — start a multi-line value named `commit_log`, using `EOF` as the end marker.
 2. `$COMMIT_LOG` — the actual content (can span many lines).
 3. `EOF` — close the block.

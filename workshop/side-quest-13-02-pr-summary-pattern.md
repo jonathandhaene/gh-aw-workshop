@@ -14,7 +14,7 @@ Build a PR summary workflow that posts a structured, human-readable summary comm
 
 A free-form review comment is useful, but a structured summary is re-usable. When every PR gets a summary in the same format, teams can scrape those comments to generate changelogs automatically, hand them to release managers as draft notes, or include them in sprint retrospectives.
 
-The key design choice here is the output template: you define the structure in the workflow brief, and the agent fills in the blanks.
+The key design choice here is the output template: you define the structure in the workflow brief, and the agent fills in the blanks. Declare what the agent may write using [`safe-outputs`](https://github.github.com/gh-aw/reference/safe-outputs/) in the frontmatter.
 
 ## The Summary Workflow
 
