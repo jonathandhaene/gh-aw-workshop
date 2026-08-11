@@ -139,7 +139,7 @@ Because MCP tool servers receive and return data at runtime, a few security conc
 
 **Poisoned payload** — the manipulated data a compromised tool server returns. It may be fabricated data (such as fake issue lists) or embedded instructions that redirect the agent to take unintended actions.
 
-**Blast radius** — the scope of damage a successful attack can cause. For MCP-based agents, the blast radius is larger than a traditional dependency vulnerability because the payload is interpreted by an AI model that may act on embedded instructions.
+[**Blast radius**](https://github.github.com/gh-aw/introduction/architecture/#threat-model) — the scope of damage a successful attack can cause. For MCP-based agents, the blast radius is larger than a traditional dependency vulnerability because the payload is interpreted by an AI model that may act on embedded instructions.
 
 ---
 

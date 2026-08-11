@@ -65,7 +65,7 @@ An injection asking the agent to open an issue or post a comment will fail becau
 
 ### `network.allowed` blocks outbound exfiltration
 
-gh-aw lets you declare a [firewall](https://github.github.com/gh-aw/reference/network/) allowlist of domains the workflow runner may contact. Any outbound connection to a domain not in the list is rejected.
+gh-aw lets you declare a [firewall](https://github.github.com/gh-aw/reference/network/#blocking-domains) allowlist of domains the workflow runner may contact. Any outbound connection to a domain not in the list is rejected.
 
 ```yaml
 ---

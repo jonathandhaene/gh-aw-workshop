@@ -14,7 +14,7 @@
 
 ## The core risk: credentials that never expire
 
-A **personal access token (PAT)** is a credential you generate manually and store in a secret. It:
+A [**personal access token (PAT)**](https://github.github.com/gh-aw/reference/auth/#which-secret-do-i-need) is a credential you generate manually and store in a secret. It:
 
 - Is valid for days, months, or indefinitely — depending on how it was configured.
 - Carries whatever scopes you granted when you created it, across every repository those scopes touch.
@@ -42,7 +42,7 @@ Unattended workflows run without a human watching every log. The window between 
 
 ---
 
-## How gh-aw limits the blast radius
+## How gh-aw limits the [blast radius](https://github.github.com/gh-aw/introduction/architecture/#threat-model)
 
 gh-aw gives you three design features that reduce long-lived credential risk:
 
