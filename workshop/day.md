@@ -1,3 +1,4 @@
+<!-- page-type: schedule -->
 # One-Day Workshop Program
 
 A full-day hands-on experience with GitHub Agentic Workflows — from your first workflow to a live hackathon project.
@@ -28,3 +29,12 @@ Make sure you have completed the [prerequisites](01-prerequisites.md) before the
 **Part 2** is self-directed. Participants choose their own path through [Steps 14+](README.md#curriculum--part-2-go-deeper) based on what interests them most. Facilitators circulate and help unblock.
 
 **Hackathon** has no prescribed outcome — the goal is one working workflow that solves a real problem. Teams of two or three work well.
+
+## ✅ Pre-workshop checklist
+
+Use this checklist before participants arrive to confirm everything is ready:
+
+- [ ] All participants have completed the [prerequisites](01-prerequisites.md) (GitHub account, Copilot access, `gh` CLI installed)
+- [ ] Codespaces quota confirmed — verify that the org or personal account has sufficient Codespaces hours for all participants
+- [ ] Actions tab enabled in the practice repository and at least one test workflow has run successfully
+- [ ] Side-quest links tested and accessible: [terminal basics](side-quest-01-01-terminal-basics.md), [AW deep dive](side-quest-05-02-aw-deep-dive.md), [install troubleshooting](side-quest-06-01-install-troubleshooting.md)
