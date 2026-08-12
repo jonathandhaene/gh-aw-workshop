@@ -44,13 +44,13 @@ Use `firewall.md` to quickly identify blocked domains. For raw domain-level reco
 
 ## AIC billing details
 
-AIC (AI Credits) is the billing unit for agentic workflow inference and is derived from token consumption. Exact billing figures appear in your GitHub billing dashboard.
+AIC (AI Credits) is the billing unit for [agentic workflow](https://github.github.com/gh-aw/introduction/overview/) inference and is derived from token consumption. Exact billing figures appear in your GitHub billing dashboard.
 
 The **⌖ AIC** column in `gh aw logs` output shows credits consumed by the threat-detection model separately from the main agent turn. Both contribute to your organisation's total AIC usage.
 
 ## Adding a blocked domain to [network.allow](https://github.github.com/gh-aw/reference/network/#configuration)
 
-If the firewall blocked a domain your workflow needs, add it to `network.allow` in your workflow frontmatter and recompile:
+If the firewall blocked a domain your workflow needs, add it to `network.allow` in your workflow [frontmatter](https://github.github.com/gh-aw/reference/frontmatter/) and recompile:
 
 ```yaml
 network:
