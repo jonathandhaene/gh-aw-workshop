@@ -70,7 +70,11 @@ If the run fails immediately with a model-access or authentication error, return
 
 The diagram below shows the full lifecycle of a workflow run, from the moment you click **Run workflow** through to the agent updating your repository.
 
-![Workflow run lifecycle: from manual dispatch through queued, running, and finished states, ending with the agent updating a repository issue](images/08-run-lifecycle.svg)
+<picture>
+   <source media="(prefers-color-scheme: dark)" srcset="images/08-run-lifecycle-dark.svg">
+   <source media="(prefers-color-scheme: light)" srcset="images/08-run-lifecycle-light.svg">
+   <img alt="Workflow run lifecycle: from manual dispatch through queued, running, and finished states, ending with the agent updating a repository issue" src="images/08-run-lifecycle-light.svg">
+</picture>
 
 After a few seconds, a new run appears with a yellow spinning icon. Click the run, then click the job name to open the live log.
 
