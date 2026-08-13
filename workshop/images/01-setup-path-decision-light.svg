@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560"
+     role="img" aria-label="Setup path decision diagram: choose between Codespace, Local Terminal, and Browser based on your environment">
+  <rect width="1200" height="560" fill="#f6f8fa"/>
+  <!-- Browser chrome -->
+  <rect x="0" y="0" width="1200" height="44" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+  <rect x="0" y="36" width="1200" height="8" fill="#ffffff"/>
+  <rect x="350" y="10" width="500" height="24" rx="4" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+  <text x="600" y="26" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#57606a">github.com/octocat/daily-report</text>
+  <!-- Nav tabs -->
+  <rect x="0" y="44" width="1200" height="40" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+  <text x="60" y="69" font-family="Arial, sans-serif" font-size="14" fill="#57606a">Code</text>
+  <text x="120" y="69" font-family="Arial, sans-serif" font-size="14" fill="#57606a">Issues</text>
+  <text x="190" y="69" font-family="Arial, sans-serif" font-size="14" fill="#57606a">Pull requests</text>
+  <text x="300" y="69" font-family="Arial, sans-serif" font-size="14" fill="#57606a">Actions</text>
+  <!-- Content area -->
+  <rect x="40" y="96" width="1120" height="420" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+  <!-- Title -->
+  <text x="600" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#24292f">Choose Your Setup Path</text>
+  <text x="600" y="152" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#57606a">Pick the environment where you'll run workshop commands — you only need one</text>
+  <!-- START node -->
+  <rect x="490" y="165" width="220" height="44" rx="22" fill="#0969da"/>
+  <text x="600" y="192" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#ffffff">Start Here</text>
+  <!-- Arrow down -->
+  <line x1="600" y1="209" x2="600" y2="228" stroke="#57606a" stroke-width="2" marker-end="url(#arr)"/>
+  <defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#57606a"/></marker></defs>
+  <!-- Decision diamond -->
+  <polygon points="600,230 740,280 600,330 460,280" fill="#fff8c5" stroke="#bf8700" stroke-width="1.5"/>
+  <text x="600" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#24292f">Where will you</text>
+  <text x="600" y="292" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#24292f">run commands?</text>
+  <!-- Left arrow: Codespace -->
+  <line x1="460" y1="280" x2="310" y2="280" stroke="#57606a" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="385" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#57606a">Codespace</text>
+  <!-- Right arrow: Local -->
+  <line x1="740" y1="280" x2="890" y2="280" stroke="#57606a" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="815" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#57606a">local terminal</text>
+  <!-- Codespace card -->
+  <rect x="130" y="238" width="180" height="96" rx="8" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="220" y="263" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#1a7f37">GitHub Codespace</text>
+  <text x="220" y="281" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#1a7f37">Runs in your browser</text>
+  <text x="220" y="297" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#57606a">gh + git + gh-aw pre-installed</text>
+  <text x="220" y="322" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#1a7f37">★ Recommended</text>
+  <!-- Local card -->
+  <rect x="890" y="238" width="200" height="96" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="990" y="263" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#24292f">Local Terminal</text>
+  <text x="990" y="281" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#57606a">macOS / Linux / Windows</text>
+  <text x="990" y="297" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#57606a">Install git, gh, gh-aw</text>
+  <text x="990" y="313" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#57606a">manually</text>
+  <!-- Arrows to Step 2 -->
+  <line x1="220" y1="334" x2="220" y2="358" stroke="#57606a" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="990" y1="334" x2="990" y2="358" stroke="#57606a" stroke-width="2" marker-end="url(#arr)"/>
+  <!-- Step 2 boxes -->
+  <rect x="130" y="358" width="180" height="52" rx="6" fill="#0969da" opacity="0.12" stroke="#0969da" stroke-width="1"/>
+  <text x="220" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#0969da">→ Setup Codespace</text>
+  <text x="220" y="398" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#57606a">(Step 02a)</text>
+  <rect x="890" y="358" width="200" height="52" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+  <text x="990" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#24292f">→ Local Setup</text>
+  <text x="990" y="398" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#57606a">(Step 02b)</text>
+  <!-- Annotation -->
+  <text x="600" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#57606a">Setup path decision diagram</text>
+</svg>

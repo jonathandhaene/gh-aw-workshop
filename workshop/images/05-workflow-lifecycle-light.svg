@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560"
+     role="img" aria-label="Agentic workflow lifecycle: a Markdown file with YAML frontmatter and a task brief is compiled by gh aw compile into a lock.yml file, which GitHub Actions triggers, runs the AI agent that reads repository data and calls tools, and produces a structured output posted back to GitHub">
+  <rect width="1200" height="560" fill="#f6f8fa"/>
+  <!-- Browser chrome -->
+  <rect x="0" y="0" width="1200" height="44" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+  <rect x="0" y="36" width="1200" height="8" fill="#ffffff"/>
+  <rect x="350" y="10" width="500" height="24" rx="4" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+  <text x="600" y="26" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#57606a">github.com/octocat/daily-report</text>
+  <!-- Nav tabs -->
+  <rect x="0" y="44" width="1200" height="40" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+  <text x="60" y="69" font-family="Arial, sans-serif" font-size="14" fill="#57606a">Code</text>
+  <text x="300" y="69" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#0969da">Actions</text>
+  <rect x="298" y="82" width="60" height="2" fill="#0969da"/>
+  <!-- Title -->
+  <text x="600" y="112" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#24292f">Agentic Workflow Lifecycle</text>
+  <text x="600" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#57606a">How a Markdown brief becomes a live, AI-powered GitHub Actions workflow</text>
+  <!-- Main card -->
+  <rect x="40" y="142" width="1120" height="360" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+  <!-- Stage 1: .md file -->
+  <rect x="62" y="162" width="190" height="300" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+  <circle cx="157" cy="162" r="12" fill="#0969da"/>
+  <text x="157" y="167" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#ffffff">1</text>
+  <text x="157" y="193" text-anchor="middle" font-family="monospace" font-size="13" font-weight="600" fill="#0969da">workflow.md</text>
+  <rect x="74" y="205" width="166" height="95" rx="4" fill="#ddf4ff" stroke="#0969da" stroke-width="1" stroke-dasharray="4 2"/>
+  <text x="157" y="222" text-anchor="middle" font-family="monospace" font-size="11" fill="#0969da" font-weight="600">YAML Frontmatter</text>
+  <text x="86" y="238" font-family="monospace" font-size="10" fill="#24292f">on: schedule</text>
+  <text x="86" y="252" font-family="monospace" font-size="10" fill="#24292f">  cron: '0 8 * * *'</text>
+  <text x="86" y="266" font-family="monospace" font-size="10" fill="#24292f">permissions:</text>
+  <text x="86" y="280" font-family="monospace" font-size="10" fill="#24292f">  issues: write</text>
+  <rect x="74" y="308" width="166" height="110" rx="4" fill="#fff8c5" stroke="#bf8700" stroke-width="1" stroke-dasharray="4 2"/>
+  <text x="157" y="325" text-anchor="middle" font-family="monospace" font-size="11" fill="#bf8700" font-weight="600">Task Brief</text>
+  <text x="86" y="343" font-family="Arial, sans-serif" font-size="10" fill="#24292f">Summarize open issues</text>
+  <text x="86" y="357" font-family="Arial, sans-serif" font-size="10" fill="#24292f">by theme, flag urgent</text>
+  <text x="86" y="371" font-family="Arial, sans-serif" font-size="10" fill="#24292f">ones, post a digest.</text>
+  <text x="86" y="393" font-family="Arial, sans-serif" font-size="10" fill="#57606a" font-style="italic">(plain English goal)</text>
+  <text x="157" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#57606a">You write this</text>
+
+  <!-- Arrow 1→2 with compile label -->
+  <rect x="262" y="268" width="96" height="22" rx="4" fill="#8250df" fill-opacity="0.15"/>
+  <text x="310" y="283" text-anchor="middle" font-family="monospace" font-size="11" fill="#8250df" font-weight="600">gh aw compile</text>
+  <line x1="254" y1="300" x2="336" y2="300" stroke="#8250df" stroke-width="2"/>
+  <polygon points="336,300 328,295 328,305" fill="#8250df"/>
+
+  <!-- Stage 2: lock.yml -->
+  <rect x="342" y="162" width="180" height="300" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+  <circle cx="432" cy="162" r="12" fill="#0969da"/>
+  <text x="432" y="167" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#ffffff">2</text>
+  <text x="432" y="193" text-anchor="middle" font-family="monospace" font-size="13" font-weight="600" fill="#0969da">lock.yml</text>
+  <rect x="354" y="205" width="156" height="220" rx="4" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+  <text x="366" y="225" font-family="monospace" font-size="10" fill="#57606a">on:</text>
+  <text x="366" y="241" font-family="monospace" font-size="10" fill="#57606a">  schedule:</text>
+  <text x="366" y="257" font-family="monospace" font-size="10" fill="#24292f">    - cron: 0 8 * * *</text>
+  <text x="366" y="275" font-family="monospace" font-size="10" fill="#57606a">jobs:</text>
+  <text x="366" y="291" font-family="monospace" font-size="10" fill="#57606a">  agent:</text>
+  <text x="366" y="307" font-family="monospace" font-size="10" fill="#24292f">    runs-on: ubuntu</text>
+  <text x="366" y="323" font-family="monospace" font-size="10" fill="#57606a">    steps:</text>
+  <text x="366" y="339" font-family="monospace" font-size="10" fill="#24292f">    - uses: gh-aw@v1</text>
+  <text x="432" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#57606a">Compiled Actions YAML</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="524" y1="300" x2="598" y2="300" stroke="#57606a" stroke-width="2"/>
+  <polygon points="598,300 590,295 590,305" fill="#57606a"/>
+  <text x="561" y="292" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#57606a">triggers</text>
+
+  <!-- Stage 3: AI Agent -->
+  <rect x="604" y="162" width="200" height="300" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+  <circle cx="704" cy="162" r="12" fill="#0969da"/>
+  <text x="704" y="167" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#ffffff">3</text>
+  <text x="704" y="193" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#0969da">AI Agent</text>
+  <rect x="616" y="205" width="176" height="80" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+  <text x="704" y="226" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#24292f">Reads task brief</text>
+  <text x="704" y="244" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#57606a">Calls GitHub tools</text>
+  <text x="704" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#57606a">Analyzes data</text>
+  <text x="704" y="276" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#57606a">Reasons over results</text>
+  <rect x="616" y="295" width="176" height="60" rx="6" fill="#fff8c5" stroke="#bf8700" stroke-width="1"/>
+  <text x="704" y="316" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#bf8700">Tool Loop</text>
+  <text x="704" y="334" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#57606a">list-issues → analyze</text>
+  <text x="704" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#57606a">→ compose output</text>
+  <text x="704" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#57606a">Runs in Actions runner</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="806" y1="300" x2="876" y2="300" stroke="#1a7f37" stroke-width="2"/>
+  <polygon points="876,300 868,295 868,305" fill="#1a7f37"/>
+  <text x="841" y="292" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1a7f37">outputs</text>
+
+  <!-- Stage 4: Output -->
+  <rect x="882" y="162" width="256" height="300" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+  <circle cx="1010" cy="162" r="12" fill="#1a7f37"/>
+  <text x="1010" y="167" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#ffffff">4</text>
+  <text x="1010" y="193" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#1a7f37">Safe Output</text>
+  <rect x="894" y="205" width="232" height="210" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+  <text x="906" y="224" font-family="monospace" font-size="10" fill="#57606a">## Daily Status</text>
+  <text x="906" y="240" font-family="monospace" font-size="10" fill="#24292f">**Open issues: 12**</text>
+  <text x="906" y="256" font-family="monospace" font-size="10" fill="#24292f">**Urgent: 2**</text>
+  <text x="906" y="274" font-family="monospace" font-size="10" fill="#57606a">Themes:</text>
+  <text x="906" y="290" font-family="monospace" font-size="10" fill="#57606a">- Auth (4)</text>
+  <text x="906" y="306" font-family="monospace" font-size="10" fill="#57606a">- Perf (3)</text>
+  <text x="906" y="322" font-family="monospace" font-size="10" fill="#57606a">- Docs (2)</text>
+  <text x="906" y="340" font-family="monospace" font-size="10" fill="#57606a">...</text>
+  <text x="1010" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#57606a">Posted to GitHub issue</text>
+  <!-- Annotation -->
+  <text x="600" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#57606a">Agentic workflow lifecycle</text>
+</svg>
