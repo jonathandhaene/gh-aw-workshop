@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-label="Agentic workflow loop: a schedule trigger fires every day, the AI agent reads your repository activity, decides what matters, then publishes a daily status report as a GitHub Issue.">
+  <!-- Background -->
+  <rect width="1200" height="560" fill="#f6f8fa"/>
+
+  <!-- Title -->
+  <text x="600" y="42" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#24292f" text-anchor="middle">Agentic Workflow Loop</text>
+  <text x="600" y="66" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#57606a" text-anchor="middle">How your workflow runs every day without manual effort</text>
+
+  <!-- Step 1: Schedule Trigger -->
+  <!-- Box -->
+  <rect x="50" y="170" width="200" height="100" rx="10" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <!-- Badge -->
+  <circle cx="88" cy="170" r="14" fill="#0969da"/>
+  <text x="88" y="175" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+  <!-- Icon area -->
+  <text x="150" y="215" font-family="system-ui, -apple-system, sans-serif" font-size="28" text-anchor="middle">⏰</text>
+  <text x="150" y="244" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#24292f" text-anchor="middle">Schedule Trigger</text>
+  <text x="150" y="261" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#57606a" text-anchor="middle">Runs every day</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="252" y1="220" x2="318" y2="220" stroke="#d0d7de" stroke-width="2"/>
+  <polygon points="318,214 330,220 318,226" fill="#d0d7de"/>
+  <!-- Label -->
+  <text x="291" y="212" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#57606a" text-anchor="middle">triggers</text>
+
+  <!-- Step 2: Agent Reads Repo -->
+  <rect x="330" y="170" width="200" height="100" rx="10" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <circle cx="368" cy="170" r="14" fill="#0969da"/>
+  <text x="368" y="175" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+  <text x="430" y="215" font-family="system-ui, -apple-system, sans-serif" font-size="28" text-anchor="middle">🔍</text>
+  <text x="430" y="244" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#24292f" text-anchor="middle">Read Repository</text>
+  <text x="430" y="261" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#57606a" text-anchor="middle">Agent reads recent activity</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="532" y1="220" x2="598" y2="220" stroke="#d0d7de" stroke-width="2"/>
+  <polygon points="598,214 610,220 598,226" fill="#d0d7de"/>
+  <text x="571" y="212" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#57606a" text-anchor="middle">analyses</text>
+
+  <!-- Step 3: AI Decides -->
+  <rect x="610" y="170" width="200" height="100" rx="10" fill="#ffffff" stroke="#0969da" stroke-width="2"/>
+  <circle cx="648" cy="170" r="14" fill="#0969da"/>
+  <text x="648" y="175" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+  <!-- AI highlight chip -->
+  <rect x="648" y="178" width="82" height="18" rx="9" fill="#ddf4ff"/>
+  <text x="689" y="191" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#0969da" text-anchor="middle">AI Reasoning</text>
+  <text x="710" y="225" font-family="system-ui, -apple-system, sans-serif" font-size="28" text-anchor="middle">🧠</text>
+  <text x="710" y="249" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#24292f" text-anchor="middle">Decide What Matters</text>
+  <text x="710" y="266" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#57606a" text-anchor="middle">Filters noise, surfaces insights</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="812" y1="220" x2="878" y2="220" stroke="#d0d7de" stroke-width="2"/>
+  <polygon points="878,214 890,220 878,226" fill="#d0d7de"/>
+  <text x="851" y="212" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#57606a" text-anchor="middle">publishes</text>
+
+  <!-- Step 4: Publish Report -->
+  <rect x="890" y="170" width="200" height="100" rx="10" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <circle cx="928" cy="170" r="14" fill="#0969da"/>
+  <text x="928" y="175" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+  <text x="990" y="215" font-family="system-ui, -apple-system, sans-serif" font-size="28" text-anchor="middle">📋</text>
+  <text x="990" y="244" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#24292f" text-anchor="middle">Publish Report</text>
+  <text x="990" y="261" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#57606a" text-anchor="middle">Creates a GitHub Issue</text>
+
+  <!-- Loop arrow from step 4 back to step 1 -->
+  <!-- Arc below the boxes -->
+  <path d="M990,272 Q990,380 600,390 Q210,380 150,272" fill="none" stroke="#d0d7de" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <polygon points="144,267 150,280 156,267" fill="#d0d7de"/>
+  <text x="600" y="408" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#57606a" text-anchor="middle">Repeats daily — no manual effort needed</text>
+
+  <!-- Bottom annotation -->
+  <text x="600" y="480" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#57606a" text-anchor="middle">The AI agent follows a plain-English task brief you write — no shell scripts required.</text>
+  <text x="600" y="500" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#57606a" text-anchor="middle">You stay in control through permissions and safe-output declarations.</text>
+
+  <!-- Dashed grouping around AI step label -->
+  <rect x="604" y="162" width="212" height="116" rx="12" fill="none" stroke="#0969da" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.5"/>
+</svg>
