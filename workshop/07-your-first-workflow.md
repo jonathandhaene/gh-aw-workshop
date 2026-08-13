@@ -22,7 +22,7 @@ In either path, you'll start with `daily-report-status.md` and end with `daily-r
 
 | Path | What you'll do | Continue |
 |---|---|---|
-| **Terminal path** | Build the workflow incrementally in two short parts, compile after each meaningful change, then commit and push | [Write the workflow with the Terminal path](07a-your-first-workflow-terminal.md) |
+| **Terminal path** | Build the workflow incrementally in two short parts, [compile](https://github.github.com/gh-aw/reference/compilation-process/) after each meaningful change, then commit and push | [Write the workflow with the Terminal path](07a-your-first-workflow-terminal.md) |
 | **GitHub Copilot path** | Ask an agent in GitHub Copilot or the repository's **Agents** tab to create and validate the workflow, then review and merge its pull request | [Write the workflow with GitHub Copilot](07c-your-first-workflow-copilot.md) |
 
 The Terminal path gives you early compiler feedback. The GitHub Copilot path delegates `gh aw compile` to the agent's session workspace, so browser-first learners can still complete this step without a local terminal.
