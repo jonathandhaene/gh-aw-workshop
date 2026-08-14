@@ -8,7 +8,7 @@ _You've built a scheduled workflow. Now build one that fires when something happ
 
 Create a new agentic workflow triggered by the `pull_request` event. When a contributor opens or updates a PR, your workflow will read the changed files and the PR description, then post an automated review comment summarising what changed and flagging anything worth a second look.
 
-By the end you will have a working PR reviewer workflow and understand how event-driven triggers differ from scheduled ones.
+By the end you will have a working PR reviewer workflow and understand how event-driven [triggers](https://github.github.com/gh-aw/reference/triggers/) differ from scheduled ones.
 
 ## 📋 Before You Start
 
@@ -59,7 +59,7 @@ You are a helpful PR reviewer. When a pull request is opened or updated:
 Keep the tone constructive and specific. Do not speculate about code you have not seen.
 ```
 
-A few things to notice in this frontmatter:
+A few things to notice in this [frontmatter](https://github.github.com/gh-aw/reference/frontmatter/):
 
 - `permissions: pull-requests: write` lets the agent post a comment on the PR.
 - `safe-outputs: create-issue-comment: limit: 1` caps the workflow at one comment per run, preventing spam if the workflow is triggered repeatedly.

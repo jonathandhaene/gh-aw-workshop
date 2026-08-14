@@ -38,7 +38,7 @@ Examples of focused changes:
 - ask for a shorter or more structured output format
 - name one missing field the agent should include
 - add a fallback instruction for empty results
-- tighten one permission or safe-output rule
+- tighten one permission or [safe-output](https://github.github.com/gh-aw/reference/safe-outputs/) rule
 
 If you are using a Copilot agent to edit the file, tell it to make the change, review the diff, and then run `gh aw compile` before testing.
 
