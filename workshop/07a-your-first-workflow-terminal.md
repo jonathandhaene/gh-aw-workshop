@@ -73,8 +73,11 @@ If you hit an error, use [Side Quest: Using `gh aw compile` to Catch Errors Earl
 
 ## ✅ Checkpoint
 
-- [ ] `.github/workflows/daily-report-status.md` exists
-- [ ] You ran `gh aw compile` successfully and it generated `daily-report-status.lock.yml`
+- [ ] `.github/workflows/daily-report-status.md` exists at the correct path
+- [ ] The frontmatter in `daily-report-status.md` contains both a `name:` field and an `on: schedule: daily` block
+- [ ] `gh aw compile` ran without errors and generated `daily-report-status.lock.yml` next to the `.md` file
+- [ ] You understand that `daily-report-status.lock.yml` (not the `.md`) is the file GitHub Actions executes
+- [ ] You can explain what `schedule: daily` does and why `workflow_dispatch` is automatically added by the compiler
 
 <!-- journey: terminal -->
 **Next:** [Part 2: Add instructions, safe outputs, and finish](07a-part2-your-first-workflow-instructions.md)
