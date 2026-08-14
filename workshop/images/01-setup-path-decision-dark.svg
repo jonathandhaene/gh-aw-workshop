@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560"
+     role="img" aria-label="Setup path decision diagram: choose between Codespace, Local Terminal, and Browser based on your environment">
+  <rect width="1200" height="560" fill="#0d1117"/>
+
+  <!-- Main card -->
+  <rect x="40" y="30" width="1120" height="490" rx="12" ry="12"
+        fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="600" y="68" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif"
+        font-size="20" font-weight="700" fill="#f0f6fc">Choose Your Setup Path</text>
+  <text x="600" y="90" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif"
+        font-size="13" fill="#8b949e">Pick the environment where you'll run workshop commands — you only need one</text>
+
+  <!-- START node -->
+  <rect x="490" y="110" width="220" height="50" rx="25" ry="25"
+        fill="#2f81f7" stroke="none"/>
+  <text x="600" y="141" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif"
+        font-size="14" font-weight="600" fill="#f0f6fc">Start Here</text>
+
+  <!-- Arrow down from start -->
+  <line x1="600" y1="160" x2="600" y2="188" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow-dark)"/>
+
+  <!-- Decision diamond -->
+  <polygon points="600,190 760,250 600,310 440,250"
+           fill="#272115" stroke="#9e6a03" stroke-width="1.5"/>
+  <text x="600" y="245" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif"
+        font-size="13" font-weight="600" fill="#f0f6fc">Where will you</text>
+  <text x="600" y="263" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif"
+        font-size="13" font-weight="600" fill="#f0f6fc">run commands?</text>
+
+  <!-- Left arrow from diamond -->
+  <line x1="440" y1="250" x2="290" y2="250" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow-dark)"/>
+  <text x="365" y="240" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif"
+        font-size="11" fill="#8b949e">browser /</text>
+  <text x="365" y="254" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif"
+        font-size="11" fill="#8b949e">Codespace</text>
+
+  <!-- Right arrow from diamond -->
+  <line x1="760" y1="250" x2="910" y2="250" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow-dark)"/>
+  <text x="835" y="240" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif"
+        font-size="11" fill="#8b949e">local</text>
+  <text x="835" y="254" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif"
+        font-size="11" fill="#8b949e">terminal</text>
+
+  <!-- Codespace card -->
+  <rect x="110" y="195" width="180" height="110" rx="8" ry="8"
+        fill="#0f2b1b" stroke="#3fb950" stroke-width="1.5"/>
+  <text x="200" y="222" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif"
+        font-size="13" font-weight="700" fill="#3fb950">GitHub Codespace</text>
+  <text x="200" y="242" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif"
+        font-size="11" fill="#3fb950">Runs in your browser</text>
+  <text x="200" y="259" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif"
+        font-size="11" fill="#8b949e">gh + git + gh-aw</text>
+  <text x="200" y="274" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif"
+        font-size="11" fill="#8b949e">pre-installed</text>
+  <text x="200" y="293" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif"
+        font-size="11" fill="#3fb950">★ Recommended for beginners</text>
+
+  <!-- Local card -->
+  <rect x="910" y="195" width="180" height="110" rx="8" ry="8"
+        fill="#0d1f3a" stroke="#2f81f7" stroke-width="1.5"/>
+  <text x="1000" y="222" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif"
+        font-size="13" font-weight="700" fill="#2f81f7">Local Terminal</text>
+  <text x="1000" y="242" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif"
+        font-size="11" fill="#2f81f7">Runs on your machine</text>
+  <text x="1000" y="259" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif"
+        font-size="11" fill="#8b949e">Install: gh CLI ≥ 2.40</text>
+  <text x="1000" y="274" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif"
+        font-size="11" fill="#8b949e">and Git</text>
+  <text x="1000" y="293" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif"
+        font-size="11" fill="#2f81f7">For experienced devs</text>
+
+  <!-- Arrows down from cards -->
+  <line x1="200" y1="305" x2="200" y2="368" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow-dark)"/>
+  <line x1="1000" y1="305" x2="1000" y2="368" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow-dark)"/>
+
+  <!-- Adventure Codespace box -->
+  <rect x="110" y="370" width="180" height="54" rx="8" ry="8"
+        fill="#0d1117" stroke="#3fb950" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="200" y="396" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif"
+        font-size="13" font-weight="600" fill="#3fb950">Adventure Codespace →</text>
+  <text x="200" y="413" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif"
+        font-size="11" fill="#8b949e">02a-setup-codespace.md</text>
+
+  <!-- Adventure Local box -->
+  <rect x="910" y="370" width="180" height="54" rx="8" ry="8"
+        fill="#0d1117" stroke="#2f81f7" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="1000" y="396" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif"
+        font-size="13" font-weight="600" fill="#2f81f7">Adventure Local →</text>
+  <text x="1000" y="413" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif"
+        font-size="11" fill="#8b949e">02b-setup-local.md</text>
+
+  <!-- Convergence arrows -->
+  <line x1="200" y1="424" x2="200" y2="460" stroke="#8b949e" stroke-width="2"/>
+  <line x1="200" y1="460" x2="530" y2="460" stroke="#8b949e" stroke-width="2"/>
+  <line x1="1000" y1="424" x2="1000" y2="460" stroke="#8b949e" stroke-width="2"/>
+  <line x1="1000" y1="460" x2="670" y2="460" stroke="#8b949e" stroke-width="2"/>
+  <line x1="530" y1="460" x2="670" y2="460" stroke="#8b949e" stroke-width="2"/>
+  <line x1="600" y1="460" x2="600" y2="490" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow-dark)"/>
+
+  <!-- Final box -->
+  <rect x="460" y="492" width="280" height="20" rx="4" ry="4" fill="none"/>
+  <text x="600" y="507" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif"
+        font-size="13" fill="#8b949e">Both paths lead to Step 3: Create Your Repository →</text>
+
+  <!-- Defs -->
+  <defs>
+    <marker id="arrow-dark" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#8b949e"/>
+    </marker>
+  </defs>
+</svg>
