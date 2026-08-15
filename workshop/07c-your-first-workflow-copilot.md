@@ -55,7 +55,7 @@ Before you approve the merge, the agent presents the file changes in its session
 
 ## Review and merge
 
-1. Confirm `.github/workflows/daily-report-status.md` contains the requested trigger, [permissions](https://github.github.com/gh-aw/reference/permissions/), safe outputs, and task.
+1. Confirm `.github/workflows/daily-report-status.md` contains the requested trigger, [permissions](https://github.github.com/gh-aw/reference/permissions/), [safe outputs](https://github.github.com/gh-aw/reference/safe-outputs/), and task.
 2. Confirm `.github/workflows/daily-report-status.lock.yml` exists.
 3. Ask the agent to correct anything that does not match the prompt.
 4. Merge the pull request into `main`.
