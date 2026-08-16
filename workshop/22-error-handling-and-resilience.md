@@ -22,7 +22,7 @@ Agentic workflows can fail for several reasons:
 | Failure type | Example | Effect |
 |---|---|---|
 | **Empty data** | No open issues to summarise | Agent produces a vague or empty report |
-| **Tool error** | GitHub API rate-limit hit mid-run | Agent stops mid-task without writing output |
+| **Tool error** | GitHub API [rate-limit](https://github.github.com/gh-aw/reference/rate-limiting-controls/) hit mid-run | Agent stops mid-task without writing output |
 | **Timeout** | Complex reasoning takes too long | Workflow job is cancelled by Actions |
 | **Prompt drift** | Instructions are ambiguous | Agent takes an unexpected code path |
 

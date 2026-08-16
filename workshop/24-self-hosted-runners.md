@@ -93,7 +93,7 @@ registration settings (Settings → Actions → Runners).
 
 ### Ephemeral and JIT runners
 
-Ephemeral runners are destroyed after a single job — each run starts on a fresh machine,
+[Ephemeral runners](https://github.github.com/gh-aw/reference/ephemerals/) are destroyed after a single job — each run starts on a fresh machine,
 preventing state from leaking between executions. Register one using the ephemeral flag
 and target it with the same label strategy described above.
 
