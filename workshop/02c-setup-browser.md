@@ -6,6 +6,14 @@
 
 You'll create your practice repository on github.com. No terminal, no local installs, and no Codespace required — everything in this workshop runs in your browser.
 
+The diagram below shows the seven steps of your path, with the CLI install stage automatically skipped:
+
+<picture>
+   <source media="(prefers-color-scheme: dark)" srcset="images/02c-browser-setup-flow-dark.svg">
+   <source media="(prefers-color-scheme: light)" srcset="images/02c-browser-setup-flow-light.svg">
+   <img alt="Browser setup path: create repository, skip CLI install, use GitHub UI to install and run agentic workflows" src="images/02c-browser-setup-flow-light.svg">
+</picture>
+
 ## Steps
 
 **Verify you are on the right path before continuing:**
