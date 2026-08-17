@@ -6,7 +6,7 @@
 
 ## 🎯 What You'll Do
 
-You'll review your workflow's AI Credit consumption in the GitHub billing dashboard, estimate monthly costs for a scheduled workflow, and apply at least one technique to keep spending within budget.
+You'll review your workflow's AI Credit consumption in the [GitHub billing](https://github.github.com/gh-aw/reference/billing/) dashboard, estimate monthly costs for a scheduled workflow, and apply at least one technique to keep spending within budget.
 
 ## 📋 Before You Start
 
@@ -71,7 +71,7 @@ A few techniques keep spend in check:
 
 - **Shorten the task brief** — fewer input tokens per run.
 - **Filter data before passing it to the agent** — smaller context lowers cost.
-- **Cache results with persistent memory** — skip re-processing unchanged data. See [Make Your Workflow Remember Across Runs](20-persistent-memory.md).
+- **Cache results with [persistent memory](https://github.github.com/gh-aw/reference/cache-memory/)** — skip re-processing unchanged data. See [Make Your Workflow Remember Across Runs](20-persistent-memory.md).
 - **Reduce run frequency** — fewer runs means fewer AIC.
 
 > [!TIP]

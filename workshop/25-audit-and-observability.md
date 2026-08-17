@@ -6,7 +6,7 @@
 
 ## 🎯 What You'll Do
 
-You will use `gh aw logs` and `gh aw audit` to review the built-in artifacts that every agentic workflow run produces, understand token usage, and debug unexpected behavior. By the end you will know where to look when a run behaves unexpectedly or when a compliance review asks what the agent did.
+You will use `gh aw logs` and `gh aw audit` to review the built-in [artifacts](https://github.github.com/gh-aw/reference/artifacts/) that every agentic workflow run produces, understand [token usage](https://github.github.com/gh-aw/reference/artifacts/#accessing-token-usage-data), and debug unexpected behavior. By the end you will know where to look when a run behaves unexpectedly or when a compliance review asks what the agent did.
 
 ## 📋 Before You Start
 
@@ -73,7 +73,7 @@ suggest how to reduce it.
 <paste report here>
 ```
 
-The skill understands agentic workflow [frontmatter](https://github.github.com/gh-aw/reference/frontmatter/) and safe-output rules. It can suggest a more efficient prompt, validate your changes, or walk you through a fix — all without leaving the chat. Ask the agent to make edits directly so it can run `gh aw compile` to validate before committing.
+The skill understands agentic workflow [frontmatter](https://github.github.com/gh-aw/reference/frontmatter/) and [safe-output](https://github.github.com/gh-aw/reference/safe-outputs/) rules. It can suggest a more efficient prompt, validate your changes, or walk you through a fix — all without leaving the chat. Ask the agent to make edits directly so it can run `gh aw compile` to validate before committing.
 
 ### Browse artifacts in the GitHub UI
 
