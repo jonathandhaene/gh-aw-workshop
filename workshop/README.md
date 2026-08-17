@@ -26,6 +26,7 @@ A hands-on workshop that takes you from zero to a fully automated, AI-powered wo
 | 8b | [Interpret Your First Run](08b-interpret-your-run.md) |
 | 9 | [Refine Your Workflow with Agentic Editing](09-agentic-editing.md) |
 | 12 | [Test and Improve Your Workflow](12-test-and-iterate.md) |
+| 13 | [Schedule Your Workflow to Run Automatically](13-schedule-your-workflow.md) |
 | 14 | [What's Next? Keep Exploring](14-next-steps.md) |
 | 14b | [Build Your First Event-Driven Workflow: PR Auto-Reviewer](14b-pr-reviewer-workflow.md) |
 
@@ -74,7 +75,7 @@ A hands-on workshop that takes you from zero to a fully automated, AI-powered wo
 - [Pattern: Generate a PR Summary Comment](side-quest-13-02-pr-summary-pattern.md) — post a structured, changelog-ready summary comment when a pull request opens; branches from [Step 14b](14b-pr-reviewer-workflow.md).
 - [Pattern: PR Review Checklist](side-quest-13-03-pr-checklist-pattern.md) — evaluate pull requests against a quality checklist and post a pass/fail table; branches from [Step 14b](14b-pr-reviewer-workflow.md).
 - [Observe and Reduce Token Costs](side-quest-13-04-token-optimization.md) — hands-on optimization activity for building an AIC baseline, auditing expensive runs, identifying cost drivers, and testing one token-reduction change at a time; branches from [Step 14b](14b-pr-reviewer-workflow.md).
-- [Fuzzy Schedule Expressions](side-quest-13-01-schedule-expressions.md) — quick reference for choosing between `daily`, `hourly`, `weekly`, and other fuzzy schedule expressions; branches from [Step 12](12-test-and-iterate.md).
+- [Fuzzy Schedule Expressions](side-quest-13-01-schedule-expressions.md) — quick reference for choosing between `daily`, `hourly`, `weekly`, and other fuzzy schedule expressions; branches from [Step 13](13-schedule-your-workflow.md).
 - [Evaluating and Iterating on Agent Output](side-quest-12-01-iterate-agent-output.md) — structured rubric for judging output quality, a five-row problem-to-fix reference table, and a one-change-at-a-time iteration loop; branches from [Step 12](12-test-and-iterate.md).
 - [GitHub Actions Expressions and Contexts](side-quest-15-01-expressions-and-contexts.md) — deep dive into `${{ }}` syntax, available context objects, output references, and `if:` conditions; branches from [Step 15](15-conditional-logic.md).
 - [YAML Frontmatter Pitfalls](side-quest-11-02-yaml-frontmatter.md) — reference guide for the five most common YAML mistakes; branches from [Step 11a](07-your-first-workflow.md).
