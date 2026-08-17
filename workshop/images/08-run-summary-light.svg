@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560" role="img" aria-label="Workflow run summary panel">
+  <!-- Page background -->
+  <rect width="1200" height="560" fill="#f6f8fa"/>
+  <!-- Browser chrome -->
+  <rect x="0" y="0" width="1200" height="44" rx="8" ry="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+  <rect x="0" y="36" width="1200" height="8" fill="#ffffff"/>
+  <rect x="200" y="10" width="800" height="24" rx="12" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+  <text x="600" y="26" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#57606a">github.com/your-org/your-repo/actions/runs/1234567890</text>
+  <!-- Nav tabs -->
+  <rect x="0" y="44" width="1200" height="40" fill="#ffffff"/>
+  <line x1="0" y1="83" x2="1200" y2="83" stroke="#d0d7de" stroke-width="1"/>
+  <text x="60" y="69" font-family="Arial, sans-serif" font-size="13" fill="#57606a">Code</text>
+  <text x="110" y="69" font-family="Arial, sans-serif" font-size="13" fill="#57606a">Issues</text>
+  <text x="175" y="69" font-family="Arial, sans-serif" font-size="13" fill="#57606a">Pull requests</text>
+  <text x="270" y="69" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#24292f">Actions</text>
+  <line x1="268" y1="83" x2="303" y2="83" stroke="#0969da" stroke-width="2"/>
+
+  <!-- Run header -->
+  <rect x="30" y="100" width="1140" height="64" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+  <circle cx="60" cy="132" r="14" fill="#1a7f37"/>
+  <text x="54" y="137" font-family="Arial, sans-serif" font-size="14" fill="#ffffff">✓</text>
+  <text x="85" y="126" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#24292f">Daily Report Status</text>
+  <text x="85" y="148" font-family="Arial, sans-serif" font-size="12" fill="#57606a">Run #42 · Triggered via schedule · main · 2 minutes ago · Duration: 1m 23s</text>
+  <!-- Re-run button -->
+  <rect x="1050" y="116" width="108" height="28" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+  <text x="1104" y="134" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#24292f">Re-run all jobs</text>
+
+  <!-- Summary panel -->
+  <rect x="30" y="178" width="340" height="350" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+  <text x="50" y="206" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#24292f">Jobs</text>
+  <!-- Job row -->
+  <rect x="40" y="214" width="320" height="44" rx="4" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+  <circle cx="62" cy="236" r="9" fill="#1a7f37"/>
+  <text x="57" y="240" font-family="Arial, sans-serif" font-size="10" fill="#ffffff">✓</text>
+  <text x="80" y="240" font-family="Arial, sans-serif" font-size="13" fill="#0969da">run-report</text>
+  <text x="80" y="252" font-family="Arial, sans-serif" font-size="11" fill="#57606a">1m 23s</text>
+
+  <!-- Steps in right panel -->
+  <rect x="390" y="178" width="780" height="350" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+  <text x="410" y="206" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#24292f">run-report</text>
+  <!-- Step 1 -->
+  <rect x="400" y="216" width="760" height="36" rx="4" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+  <circle cx="420" cy="234" r="8" fill="#1a7f37"/>
+  <text x="415" y="238" font-family="Arial, sans-serif" font-size="10" fill="#ffffff">✓</text>
+  <text x="436" y="238" font-family="Arial, sans-serif" font-size="13" fill="#24292f">Set up job</text>
+  <text x="1090" y="238" text-anchor="end" font-family="Arial, sans-serif" font-size="11" fill="#57606a">0s</text>
+  <!-- Step 2 -->
+  <rect x="400" y="258" width="760" height="36" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+  <circle cx="420" cy="276" r="8" fill="#1a7f37"/>
+  <text x="415" y="280" font-family="Arial, sans-serif" font-size="10" fill="#ffffff">✓</text>
+  <text x="436" y="280" font-family="Arial, sans-serif" font-size="13" fill="#24292f">Checkout repository</text>
+  <text x="1090" y="280" text-anchor="end" font-family="Arial, sans-serif" font-size="11" fill="#57606a">3s</text>
+  <!-- Step 3 -->
+  <rect x="400" y="300" width="760" height="36" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+  <circle cx="420" cy="318" r="8" fill="#1a7f37"/>
+  <text x="415" y="322" font-family="Arial, sans-serif" font-size="10" fill="#ffffff">✓</text>
+  <text x="436" y="318" font-family="Arial, sans-serif" font-size="13" fill="#24292f">Run agentic workflow</text>
+  <text x="1090" y="318" text-anchor="end" font-family="Arial, sans-serif" font-size="11" fill="#57606a">1m 18s</text>
+  <!-- Step 4 -->
+  <rect x="400" y="342" width="760" height="36" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+  <circle cx="420" cy="360" r="8" fill="#1a7f37"/>
+  <text x="415" y="364" font-family="Arial, sans-serif" font-size="10" fill="#ffffff">✓</text>
+  <text x="436" y="360" font-family="Arial, sans-serif" font-size="13" fill="#24292f">Post run cleanup</text>
+  <text x="1090" y="360" text-anchor="end" font-family="Arial, sans-serif" font-size="11" fill="#57606a">2s</text>
+
+  <!-- Annotation -->
+  <text x="600" y="548" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#57606a">Workflow run summary panel</text>
+</svg>
