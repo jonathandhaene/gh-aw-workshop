@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Run workflow button in the Actions sidebar" viewBox="0 0 1200 560" width="1200" height="560">
+  <defs>
+    <clipPath id="clip-workflow-name-a"><rect x="94" y="139" width="182" height="18" rx="2"/></clipPath>
+    <clipPath id="clip-workflow-name-b"><rect x="94" y="187" width="182" height="18" rx="2"/></clipPath>
+    <clipPath id="clip-workflow-name-c"><rect x="94" y="235" width="182" height="18" rx="2"/></clipPath>
+    <clipPath id="clip-header-title"><rect x="374" y="131" width="360" height="24" rx="2"/></clipPath>
+    <clipPath id="clip-run-1"><rect x="438" y="203" width="250" height="18" rx="2"/></clipPath>
+    <clipPath id="clip-run-2"><rect x="438" y="265" width="220" height="18" rx="2"/></clipPath>
+    <clipPath id="clip-run-3"><rect x="438" y="327" width="250" height="18" rx="2"/></clipPath>
+  </defs>
+  <rect width="1200" height="560" fill="#0d1117"/>
+  <rect x="26" y="18" width="1148" height="44" rx="12" ry="12" fill="#161b22" stroke="#30363d"/>
+  <rect x="26" y="40" width="1148" height="22" fill="#161b22"/>
+  <circle cx="52" cy="40" r="5" fill="#30363d"/>
+  <circle cx="70" cy="40" r="5" fill="#30363d"/>
+  <circle cx="88" cy="40" r="5" fill="#30363d"/>
+  <rect x="238" y="28" width="632" height="24" rx="12" fill="#0d1117" stroke="#30363d"/>
+  <text x="554" y="44" font-family="Arial, sans-serif" font-size="12" fill="#8b949e" text-anchor="middle">github.com/your-org/your-repo/actions</text>
+
+  <rect x="26" y="62" width="1148" height="46" fill="#161b22" stroke="#30363d"/>
+  <g font-family="Arial, sans-serif" font-size="14" fill="#8b949e">
+    <text x="56" y="90">Code</text>
+    <text x="116" y="90">Issues</text>
+    <text x="182" y="90">Pull requests</text>
+    <text x="304" y="90" fill="#2f81f7" font-weight="700">Actions</text>
+    <text x="388" y="90">Projects</text>
+    <text x="468" y="90">Wiki</text>
+    <text x="520" y="90">Security</text>
+    <text x="604" y="90">Insights</text>
+  </g>
+  <rect x="302" y="97" width="58" height="3" rx="2" fill="#2f81f7"/>
+
+  <rect x="44" y="124" width="278" height="344" rx="10" fill="#161b22" stroke="#30363d"/>
+  <text x="68" y="152" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#f0f6fc">Workflows</text>
+
+  <rect x="58" y="164" width="250" height="52" rx="8" fill="#0f253f" stroke="#2f81f7"/>
+  <circle cx="80" cy="190" r="6" fill="#2f81f7"/>
+  <text x="94" y="194" clip-path="url(#clip-workflow-name-a)" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#f0f6fc">Daily Repository Status Report</text>
+  <text x="94" y="210" font-family="Arial, sans-serif" font-size="11" fill="#8b949e">workflow_dispatch</text>
+
+  <rect x="58" y="224" width="250" height="40" rx="8" fill="#161b22"/>
+  <circle cx="80" cy="244" r="5" fill="#30363d"/>
+  <text x="94" y="248" clip-path="url(#clip-workflow-name-b)" font-family="Arial, sans-serif" font-size="13" fill="#f0f6fc">PR Reviewer</text>
+
+  <rect x="58" y="272" width="250" height="40" rx="8" fill="#161b22"/>
+  <circle cx="80" cy="292" r="5" fill="#30363d"/>
+  <text x="94" y="296" clip-path="url(#clip-workflow-name-c)" font-family="Arial, sans-serif" font-size="13" fill="#f0f6fc">Nightly Docs Check</text>
+
+  <rect x="68" y="334" width="146" height="34" rx="6" fill="#2f81f7"/>
+  <text x="141" y="356" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">Run workflow</text>
+
+  <rect x="346" y="124" width="810" height="344" rx="10" fill="#161b22" stroke="#30363d"/>
+  <text x="374" y="148" clip-path="url(#clip-header-title)" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#f0f6fc">Daily Repository Status Report</text>
+  <text x="374" y="172" font-family="Arial, sans-serif" font-size="13" fill="#8b949e">Recent runs</text>
+
+  <rect x="374" y="190" width="754" height="50" rx="8" fill="#161b22" stroke="#30363d"/>
+  <circle cx="400" cy="215" r="10" fill="#1f883d"/>
+  <path d="M395 215l4 4 7-8" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="438" y="212" clip-path="url(#clip-run-1)" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#f0f6fc">Completed 2 hours ago</text>
+  <text x="438" y="229" font-family="Arial, sans-serif" font-size="12" fill="#8b949e">main · workflow_dispatch</text>
+  <text x="1070" y="220" font-family="Arial, sans-serif" font-size="12" fill="#8b949e" text-anchor="end">38s</text>
+
+  <rect x="374" y="252" width="754" height="50" rx="8" fill="#161b22" stroke="#30363d"/>
+  <circle cx="400" cy="277" r="10" fill="#30363d"/>
+  <path d="M395 277h10" stroke="#8b949e" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="438" y="274" clip-path="url(#clip-run-2)" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#f0f6fc">No runs yet</text>
+  <text x="438" y="291" font-family="Arial, sans-serif" font-size="12" fill="#8b949e">schedule pending</text>
+  <text x="1070" y="282" font-family="Arial, sans-serif" font-size="12" fill="#8b949e" text-anchor="end">—</text>
+
+  <rect x="374" y="314" width="754" height="50" rx="8" fill="#161b22" stroke="#30363d"/>
+  <circle cx="400" cy="339" r="10" fill="#1f883d"/>
+  <path d="M395 339l4 4 7-8" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="438" y="336" clip-path="url(#clip-run-3)" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#f0f6fc">Completed yesterday</text>
+  <text x="438" y="353" font-family="Arial, sans-serif" font-size="12" fill="#8b949e">main · scheduled run</text>
+  <text x="1070" y="344" font-family="Arial, sans-serif" font-size="12" fill="#8b949e" text-anchor="end">41s</text>
+
+  <text x="600" y="528" font-family="Arial, sans-serif" font-size="24" fill="#8b949e" text-anchor="middle">Run workflow button in the Actions sidebar</text>
+</svg>

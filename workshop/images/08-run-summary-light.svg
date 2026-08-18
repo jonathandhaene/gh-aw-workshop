@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Workflow run summary panel" viewBox="0 0 1200 560" width="1200" height="560">
+  <defs>
+    <clipPath id="clip-summary-title"><rect x="156" y="134" width="420" height="26" rx="2"/></clipPath>
+    <clipPath id="clip-job-name"><rect x="112" y="236" width="190" height="18" rx="2"/></clipPath>
+  </defs>
+  <rect width="1200" height="560" fill="#f6f8fa"/>
+  <rect x="26" y="18" width="1148" height="44" rx="12" ry="12" fill="#ffffff" stroke="#d0d7de"/>
+  <rect x="26" y="40" width="1148" height="22" fill="#ffffff"/>
+  <circle cx="52" cy="40" r="5" fill="#d0d7de"/>
+  <circle cx="70" cy="40" r="5" fill="#d0d7de"/>
+  <circle cx="88" cy="40" r="5" fill="#d0d7de"/>
+  <rect x="238" y="28" width="632" height="24" rx="12" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="554" y="44" font-family="Arial, sans-serif" font-size="12" fill="#57606a" text-anchor="middle">github.com/your-org/your-repo/actions</text>
+
+  <rect x="26" y="62" width="1148" height="46" fill="#ffffff" stroke="#d0d7de"/>
+  <g font-family="Arial, sans-serif" font-size="14" fill="#57606a">
+    <text x="56" y="90">Code</text>
+    <text x="116" y="90">Issues</text>
+    <text x="182" y="90">Pull requests</text>
+    <text x="304" y="90" fill="#0969da" font-weight="700">Actions</text>
+    <text x="388" y="90">Projects</text>
+    <text x="468" y="90">Wiki</text>
+    <text x="520" y="90">Security</text>
+    <text x="604" y="90">Insights</text>
+  </g>
+  <rect x="302" y="97" width="58" height="3" rx="2" fill="#0969da"/>
+
+  <rect x="44" y="122" width="1112" height="352" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+  <circle cx="92" cy="149" r="18" fill="#1a7f37"/>
+  <path d="M84 149l6 6 11-13" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="156" y="152" clip-path="url(#clip-summary-title)" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#24292f">Daily Repository Status Report #1</text>
+  <rect x="584" y="133" width="82" height="28" rx="14" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="625" y="151" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#24292f" text-anchor="middle">Success</text>
+  <text x="156" y="176" font-family="Arial, sans-serif" font-size="13" fill="#57606a">Completed a few seconds ago</text>
+
+  <rect x="76" y="208" width="304" height="224" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="100" y="236" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#24292f">Jobs</text>
+  <rect x="92" y="250" width="272" height="62" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <circle cx="114" cy="281" r="10" fill="#1a7f37"/>
+  <path d="M109 281l4 4 7-8" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="132" y="278" clip-path="url(#clip-job-name)" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#24292f">run-report</text>
+  <text x="132" y="295" font-family="Arial, sans-serif" font-size="12" fill="#57606a">1 step group completed</text>
+
+  <rect x="404" y="208" width="716" height="224" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="428" y="236" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#24292f">Summary</text>
+  <rect x="428" y="250" width="668" height="158" rx="8" fill="#0d1117"/>
+  <g font-family="monospace" font-size="20" fill="#c9d1d9">
+    <text x="454" y="289">## Daily Repository Status</text>
+    <text x="454" y="325">- Open issues: 3</text>
+    <text x="454" y="361">- Open PRs: 1</text>
+    <text x="454" y="397">- Last commit: 2 hours ago</text>
+  </g>
+
+  <text x="600" y="528" font-family="Arial, sans-serif" font-size="24" fill="#57606a" text-anchor="middle">Workflow run summary panel showing AI-generated report</text>
+</svg>
