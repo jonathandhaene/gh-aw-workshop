@@ -111,4 +111,6 @@ gh aw compile
 
 <!-- journey: all -->
 Want to choose another branch from the workshop hub? Return to [What's Next? Keep Exploring](14-next-steps.md).
+
+**Next:** [Governance and Policy Workflows](27-governance-and-policy.md) _(enterprise teams — automate compliance checks across your agentic workflows)_
 <!-- /journey -->
