@@ -10,6 +10,14 @@ Letting an AI agent act on your repository on a schedule only works if it can't 
 
 ![Animated GitHub Actions run showing four security jobs: activation validates the agent is authorized to run, agent runs with sandbox, firewall, and integrity filter enabled, detection scans for malicious code, and safe-outputs applies changes within guardrails](images/05-agent-run-log.svg)
 
+The diagram below shows how these two layers work together to keep your repository safe.
+
+<picture>
+   <source media="(prefers-color-scheme: dark)" srcset="images/05b-two-layer-security-dark.svg">
+   <source media="(prefers-color-scheme: light)" srcset="images/05b-two-layer-security-light.svg">
+   <img alt="Two-layer security model: the sandbox isolates the agent from external threats, while the safe-output system controls all writes back to GitHub" src="images/05b-two-layer-security-light.svg">
+</picture>
+
 ## Safe by design: sandbox + guardrailed outputs
 
 - **A [sandbox](https://github.github.com/gh-aw/reference/sandbox/) around the agent.** The agent runs isolated inside the [Agent Workflow Firewall](https://github.github.com/gh-aw/reference/sandbox/), with **read-only** access to your repo and network egress limited to the domains you allow. Even if a prompt injection or a compromised tool tries to reach out or exfiltrate data, the firewall blocks anything outside the allowlist.

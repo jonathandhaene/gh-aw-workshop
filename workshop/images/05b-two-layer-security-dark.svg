@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560" role="img" aria-label="Two-layer security model: the sandbox isolates the agent from external threats, while the safe-output system controls all writes back to GitHub">
+  <!-- Background -->
+  <rect width="1200" height="560" fill="#0d1117"/>
+
+  <!-- Title -->
+  <text x="600" y="38" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#f0f6fc" text-anchor="middle">Two-Layer Security Model</text>
+  <text x="600" y="60" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">How agentic workflows stay safe in production</text>
+
+  <!-- ═══ OUTER: GitHub Actions runner boundary ═══ -->
+  <rect x="40" y="80" width="1120" height="400" rx="12" fill="none" stroke="#30363d" stroke-width="2" stroke-dasharray="8 4"/>
+  <text x="60" y="102" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#8b949e" font-weight="600">GitHub Actions Runner</text>
+
+  <!-- ═══ LAYER 1: Sandbox / Firewall box ═══ -->
+  <rect x="70" y="112" width="580" height="340" rx="10" fill="#1c2a3a" stroke="#2f81f7" stroke-width="1.5"/>
+  <text x="360" y="136" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#79c0ff" text-anchor="middle">Layer 1 — Sandbox + Firewall</text>
+
+  <!-- Threats coming in from left -->
+  <rect x="82" y="160" width="140" height="42" rx="6" fill="#2d2208" stroke="#d29922" stroke-width="1.5"/>
+  <text x="152" y="177" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#e3b341" text-anchor="middle" font-weight="600">Prompt Injection</text>
+  <text x="152" y="193" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#e3b341" text-anchor="middle">(from issue / PR text)</text>
+
+  <rect x="82" y="218" width="140" height="42" rx="6" fill="#2d2208" stroke="#d29922" stroke-width="1.5"/>
+  <text x="152" y="235" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#e3b341" text-anchor="middle" font-weight="600">Data Exfiltration</text>
+  <text x="152" y="251" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#e3b341" text-anchor="middle">(outbound network call)</text>
+
+  <rect x="82" y="276" width="140" height="42" rx="6" fill="#2d2208" stroke="#d29922" stroke-width="1.5"/>
+  <text x="152" y="293" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#e3b341" text-anchor="middle" font-weight="600">Malicious Tool</text>
+  <text x="152" y="309" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#e3b341" text-anchor="middle">(compromised MCP)</text>
+
+  <!-- Arrows from threats toward Firewall -->
+  <line x1="222" y1="181" x2="258" y2="181" stroke="#d29922" stroke-width="1.5" marker-end="url(#arrowWarnD)"/>
+  <line x1="222" y1="239" x2="258" y2="239" stroke="#d29922" stroke-width="1.5" marker-end="url(#arrowWarnD)"/>
+  <line x1="222" y1="297" x2="258" y2="297" stroke="#d29922" stroke-width="1.5" marker-end="url(#arrowWarnD)"/>
+
+  <!-- Firewall chip -->
+  <rect x="258" y="155" width="110" height="190" rx="8" fill="#1c2a3a" stroke="#2f81f7" stroke-width="1.5"/>
+  <text x="313" y="228" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#79c0ff" text-anchor="middle">Agent</text>
+  <text x="313" y="245" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#79c0ff" text-anchor="middle">Workflow</text>
+  <text x="313" y="262" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#79c0ff" text-anchor="middle">Firewall</text>
+  <text x="313" y="285" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">domain allowlist</text>
+  <text x="313" y="300" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">read-only repo</text>
+  <text x="313" y="315" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">no write tokens</text>
+
+  <!-- Blocked arrows (red X) -->
+  <text x="236" y="178" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#ff7b72" font-weight="700">✗</text>
+  <text x="236" y="236" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#ff7b72" font-weight="700">✗</text>
+  <text x="236" y="294" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#ff7b72" font-weight="700">✗</text>
+
+  <!-- Agent box inside sandbox -->
+  <rect x="400" y="160" width="220" height="220" rx="8" fill="#161b22" stroke="#2f81f7" stroke-width="1.5"/>
+  <text x="510" y="186" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#f0f6fc" text-anchor="middle">AI Agent</text>
+  <text x="510" y="205" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">(reads repo, fetches data,</text>
+  <text x="510" y="219" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">reasons about task)</text>
+
+  <!-- Read-only data sources -->
+  <rect x="415" y="232" width="90" height="32" rx="5" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+  <text x="460" y="252" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#f0f6fc" text-anchor="middle">Repo (read-only)</text>
+
+  <rect x="515" y="232" width="90" height="32" rx="5" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+  <text x="560" y="252" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#f0f6fc" text-anchor="middle">Allowed APIs</text>
+
+  <!-- Output from agent: structured request -->
+  <rect x="420" y="290" width="180" height="40" rx="5" fill="#12261e" stroke="#3fb950" stroke-width="1"/>
+  <text x="510" y="307" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#3fb950" text-anchor="middle">Structured Write</text>
+  <text x="510" y="321" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#3fb950" text-anchor="middle">Request (no write token)</text>
+
+  <!-- Firewall → Agent arrow -->
+  <line x1="368" y1="250" x2="400" y2="250" stroke="#2f81f7" stroke-width="1.5" marker-end="url(#arrowBlueD)"/>
+
+  <!-- ═══ LAYER 2: Safe-Output box ═══ -->
+  <rect x="680" y="112" width="440" height="340" rx="10" fill="#12261e" stroke="#3fb950" stroke-width="1.5"/>
+  <text x="900" y="136" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#3fb950" text-anchor="middle">Layer 2 — Safe-Output System</text>
+
+  <!-- Arrow from agent output to validator -->
+  <line x1="600" y1="310" x2="695" y2="220" stroke="#3fb950" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrowGreenD)"/>
+
+  <!-- Arrow label -->
+  <line x1="650" y1="310" x2="680" y2="310" stroke="#3fb950" stroke-width="2" marker-end="url(#arrowGreenD)"/>
+  <text x="665" y="305" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">request</text>
+
+  <!-- Validator box -->
+  <rect x="695" y="155" width="180" height="130" rx="8" fill="#161b22" stroke="#3fb950" stroke-width="1.5"/>
+  <text x="785" y="178" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#f0f6fc" text-anchor="middle">Validator</text>
+  <text x="785" y="198" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">per-op limits</text>
+  <text x="785" y="213" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">label constraints</text>
+  <text x="785" y="228" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">allowed repos</text>
+  <text x="785" y="243" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">title rules</text>
+  <text x="785" y="263" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">audit trail</text>
+
+  <!-- Validator → GitHub writes -->
+  <line x1="875" y1="220" x2="905" y2="220" stroke="#3fb950" stroke-width="1.5" marker-end="url(#arrowGreenD)"/>
+
+  <!-- GitHub writes box -->
+  <rect x="905" y="155" width="195" height="200" rx="8" fill="#161b22" stroke="#3fb950" stroke-width="1.5"/>
+  <text x="1002" y="178" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#f0f6fc" text-anchor="middle">GitHub Writes</text>
+
+  <!-- Write chips -->
+  <rect x="920" y="188" width="160" height="26" rx="5" fill="#12261e" stroke="#3fb950" stroke-width="1"/>
+  <text x="1000" y="205" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#3fb950" text-anchor="middle">✓ Create issue</text>
+
+  <rect x="920" y="222" width="160" height="26" rx="5" fill="#12261e" stroke="#3fb950" stroke-width="1"/>
+  <text x="1000" y="239" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#3fb950" text-anchor="middle">✓ Post comment</text>
+
+  <rect x="920" y="256" width="160" height="26" rx="5" fill="#12261e" stroke="#3fb950" stroke-width="1"/>
+  <text x="1000" y="273" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#3fb950" text-anchor="middle">✓ Open PR</text>
+
+  <rect x="920" y="290" width="160" height="26" rx="5" fill="#2d1417" stroke="#f85149" stroke-width="1"/>
+  <text x="1000" y="307" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#ff7b72" text-anchor="middle">✗ Push to protected</text>
+
+  <rect x="920" y="324" width="160" height="26" rx="5" fill="#2d1417" stroke="#f85149" stroke-width="1"/>
+  <text x="1000" y="341" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#ff7b72" text-anchor="middle">✗ Unlimited PRs</text>
+
+  <!-- Bottom annotation -->
+  <text x="600" y="510" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#8b949e" text-anchor="middle">The agent never holds write tokens. All changes go through the validator with per-operation limits and a full audit trail.</text>
+
+  <!-- Defs for arrow markers -->
+  <defs>
+    <marker id="arrowBlueD" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#2f81f7"/>
+    </marker>
+    <marker id="arrowGreenD" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#3fb950"/>
+    </marker>
+    <marker id="arrowWarnD" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#d29922"/>
+    </marker>
+  </defs>
+</svg>
