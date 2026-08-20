@@ -1,18 +1,18 @@
 <!-- page-journey: all -->
 <!-- page-adventure: side-quest -->
-# Side Quest: Fuzzy Schedule Expressions
+# Side Quest: Fuzzy [Schedule](https://github.github.com/gh-aw/reference/triggers/#scheduled-triggers-schedule) Expressions
 
 > _Optional: use this quick reference if you want help choosing a schedule expression for [Schedule It to Run Every Day](12-test-and-iterate.md), then return to the main adventure._
 
 ## 📋 Before You Start
 
 - You have completed [Schedule It to Run Every Day](12-test-and-iterate.md) or are working through it now.
-- You understand that [GitHub Actions](https://github.github.com/gh-aw/reference/triggers/) schedules use **cron expressions** (e.g., `0 9 * * 1` runs at 09:00 UTC every Monday).
+- You understand that [GitHub Actions](https://github.github.com/gh-aw/reference/triggers/) schedules use **[cron](https://github.github.com/gh-aw/reference/schedule-syntax/) expressions** (e.g., `0 9 * * 1` runs at 09:00 UTC every Monday).
 - You know how to run `gh aw compile` to regenerate a workflow's lock file.
 
 ## 🎯 What You'll Do
 
-You'll learn how `gh-aw`'s plain-English schedule syntax maps to GitHub Actions cron schedules. By the end, you'll know which fuzzy expression fits your workflow, how to verify the compiled cron value, and how agentic workflows differ from classic Actions YAML when it comes to scheduling.
+You'll learn how `gh-aw`'s plain-English [schedule syntax](https://github.github.com/gh-aw/reference/schedule-syntax/) maps to GitHub Actions cron schedules. By the end, you'll know which fuzzy expression fits your workflow, how to verify the compiled cron value, and how agentic workflows differ from classic Actions YAML when it comes to scheduling.
 
 ## Cron in one minute
 
@@ -28,7 +28,7 @@ You do **not** need to write cron by hand for common cases. In `gh-aw`, you can 
 | `schedule: every 6 hours` | `14 */6 * * *` | You want several updates per day without generating hourly noise. |
 | `schedule: daily` | `49 23 * * *` | You need a standard once-a-day summary. |
 | `schedule: daily on weekdays` | `50 11 * * 1-5` | The workflow matters during the work week but can stay quiet on weekends. |
-| `schedule: weekly` | `20 4 * * 5` | You want a low-noise roundup or audit-style report. |
+| `schedule: weekly` | `20 4 * * 5` | You want a low-noise roundup or [audit](https://github.github.com/gh-aw/reference/audit/)-style report. |
 
 > [!TIP]
 > `gh-aw` **scatters** schedules across different minutes or hours so not every workflow runs at the same time. Your compiled cron value may differ from the examples above — treat your own lock file as the source of truth.
@@ -72,7 +72,7 @@ If none of the fuzzy options match your exact timing need, choose the closest fu
 > ```yaml
 > on:
 >   schedule: daily on weekdays
->   workflow_dispatch: {}
+>   [workflow_dispatch](https://github.github.com/gh-aw/reference/triggers/#dispatch-triggers-workflowdispatch): {}
 > ```
 
 <!-- journey: all -->
