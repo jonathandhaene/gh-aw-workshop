@@ -60,6 +60,14 @@ as an issue with the title "Weekly PR Digest".
 
 ## ✅ Checkpoint
 
+The three parts work together like this: a trigger fires the workflow, the agent reads context and applies judgment, and safe outputs write the result back to GitHub.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/05c-trigger-agent-output-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="images/05c-trigger-agent-output-light.svg">
+  <img alt="The three parts of an agentic workflow: a trigger fires an event, the AI agent reasons and acts, and safe outputs write the result back to GitHub" src="images/05c-trigger-agent-output-light.svg">
+</picture>
+
 - [ ] I can decide whether a task calls for an agentic or a standard Actions workflow
 - [ ] I have drafted a one-sentence task brief that specifies what data to read and what to post
 - [ ] I can describe the three parts of an agentic workflow: trigger → agent → safe output
