@@ -110,5 +110,5 @@ gh aw compile
 - [ ] You identified at least one technique to reduce token consumption
 
 <!-- journey: all -->
-Want to choose another branch from the workshop hub? Return to [What's Next? Keep Exploring](14-next-steps.md).
+**Next:** [Enforce Organisation-Wide Governance for Agentic Workflows](27-enterprise-governance.md)
 <!-- /journey -->
