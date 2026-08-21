@@ -2,14 +2,14 @@
 <!-- page-adventure: side-quest -->
 # Side Quest: How MCP Tool Servers Work
 
-> _Optional: work through this primer after [Step 17](17-add-mcp-tools.md) if you want to understand how MCP changed your workflow's agentic loop, then continue to the next step._
+> _Optional: work through this primer after [Step 17](17-add-mcp-tools.md) if you want to understand how MCP changed your workflow's [agentic loop](https://github.github.com/gh-aw/introduction/how-they-work/), then continue to the next step._
 
 ## 📋 Before You Start
 
 - You have completed [Give Your Agent More Tools with MCP](17-add-mcp-tools.md).
 - You have a workflow YAML file open in your editor.
 
-By default, a gh-aw agent reads your task brief and produces text. **MCP (Model Context Protocol)** breaks that boundary — it lets the agent call structured tools at runtime and incorporate real data into its output.
+By default, a gh-aw agent reads your [task brief](https://github.github.com/gh-aw/reference/markdown/) and produces text. **MCP (Model Context Protocol)** breaks that boundary — it lets the agent call structured tools at runtime and incorporate real data into its output.
 
 ---
 

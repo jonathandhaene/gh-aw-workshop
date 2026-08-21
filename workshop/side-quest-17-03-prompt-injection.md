@@ -12,7 +12,7 @@
 
 Your agent reads live repository data. That includes issue titles, PR bodies, commit messages, and file contents — all written by other people. Some of that text might try to act like an instruction.
 
-That is **prompt injection**: hiding a directive inside data so that the AI treats it as a command.
+That is **[prompt injection](https://github.github.com/gh-aw/reference/threat-detection/)**: hiding a directive inside data so that the AI treats it as a command.
 
 ---
 
@@ -34,7 +34,7 @@ gh-aw has three layers that limit the impact of a prompt injection attempt.
 
 ### The task brief is the primary instruction source
 
-In gh-aw, the workflow's Markdown task brief is compiled into the agent's instruction context before any repository data is fetched. Repository data (issue bodies, commit messages, file contents) arrives as **tool call results** — structured context, not system-level instructions.
+In gh-aw, the workflow's Markdown [task brief](https://github.github.com/gh-aw/reference/markdown/) is compiled into the agent's instruction context before any repository data is fetched. Repository data (issue bodies, commit messages, file contents) arrives as **tool call results** — structured context, not system-level instructions.
 
 The agent's core goal comes from your task brief. Injected text in data surfaces competes with that goal rather than replacing it.
 

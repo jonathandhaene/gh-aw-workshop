@@ -2,7 +2,7 @@
 <!-- page-adventure: side-quest -->
 # Side Quest: Agentic Workflow Security Architecture (Explain Like You're 5)
 
-> _Optional: work through this visual primer if you want an intuitive mental model for why gh-aw uses a sandbox, where the agent runs, and what outputs are considered safe._
+> _Optional: work through this visual primer if you want an intuitive mental model for why gh-aw uses a [sandbox](https://github.github.com/gh-aw/reference/sandbox/), where the agent runs, and what outputs are considered safe._
 
 ## 📋 Before You Start
 
@@ -98,7 +98,7 @@ network:
 - [ ] You can explain why sandbox boundaries reduce risk in agentic workflows
 - [ ] You can describe where the agent runs during a workshop workflow execution
 - [ ] You can list what makes an output safe vs. unsafe
-- [ ] You can explain how permissions, tools, and task brief work together as a security architecture
+- [ ] You can explain how permissions, tools, and [task brief](https://github.github.com/gh-aw/reference/markdown/) work together as a security architecture
 
 ---
 

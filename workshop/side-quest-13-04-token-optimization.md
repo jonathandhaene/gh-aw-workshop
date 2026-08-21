@@ -8,7 +8,7 @@
 
 - You completed [Build Your First Event-Driven Workflow: PR Auto-Reviewer](14b-pr-reviewer-workflow.md).
 - You have a working PR reviewer workflow or another workflow with at least 5 completed runs so you can compare before-and-after usage.
-- If you want extra background on AIC, audit artifacts, or budget guardrails, continue later to [Audit and Monitor Your Agentic Workflows](25-audit-and-observability.md) and [Manage Costs and AI Credit Budgets](26-manage-costs-and-budgets.md).
+- If you want extra background on [AIC](https://github.github.com/gh-aw/reference/cost-management/#ai-credits-aic), audit artifacts, or budget guardrails, continue later to [Audit and Monitor Your Agentic Workflows](25-audit-and-observability.md) and [Manage Costs and AI Credit Budgets](26-manage-costs-and-budgets.md).
 
 ## Build a cost baseline
 
