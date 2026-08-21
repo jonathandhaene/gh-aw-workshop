@@ -17,9 +17,27 @@ A full-day hands-on experience with GitHub Agentic Workflows — from your first
 | 16:15 | **Share and reflect** — each group demos their hackathon project and explains one decision they made |
 | 16:30 | **Social time** |
 
-## Before You Arrive
+## 📋 Before You Arrive
 
 Make sure you have completed the [prerequisites](01-prerequisites.md) before the day starts. The morning session moves fast, and environment issues will slow you down.
+
+Run this quick check in your Codespace or terminal to confirm your environment is ready:
+
+```bash
+gh --version && gh aw --version
+```
+
+Both commands should print a version number. If either fails, work through [Step 6 — Install gh-aw](06-install-gh-aw.md) before arriving.
+
+## ✅ Checkpoint
+
+Use this checklist at key points during the day to confirm you're on track:
+
+- [ ] Environment check passed: `gh --version` and `gh aw --version` both return a version number
+- [ ] Part 1 complete: your first agentic workflow compiles and runs successfully in GitHub Actions
+- [ ] Part 2 started: you have extended your workflow with at least one new capability (conditional logic, live data, MCP tool, or memory)
+- [ ] Hackathon: you have identified a real workflow idea from your own team or repo
+- [ ] Hackathon: your team's workflow runs end-to-end at least once before the demo
 
 ## Facilitation Notes
 
