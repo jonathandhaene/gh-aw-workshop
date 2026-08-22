@@ -73,8 +73,10 @@ If you hit an error, use [Side Quest: Using `gh aw compile` to Catch Errors Earl
 
 ## ✅ Checkpoint
 
-- [ ] `.github/workflows/daily-report-status.md` exists
-- [ ] You ran `gh aw compile` successfully and it generated `daily-report-status.lock.yml`
+- [ ] `.github/workflows/daily-report-status.md` exists in the `.github/workflows/` directory
+- [ ] The file contains a `name:` field and an `on.schedule:` field in the frontmatter
+- [ ] `gh aw compile` ran without errors and generated `daily-report-status.lock.yml`
+- [ ] Both `daily-report-status.md` and `daily-report-status.lock.yml` are in `.github/workflows/`
 
 <!-- journey: terminal -->
 **Next:** [Part 2: Add instructions, safe outputs, and finish](07a-part2-your-first-workflow-instructions.md)
