@@ -6,9 +6,9 @@
 
 ## 📋 Before You Start
 
-- You have a working agentic workflow from the build steps ([Step 11a](07-your-first-workflow.md) or equivalent).
+- You have a working [agentic workflow](https://github.github.com/gh-aw/introduction/overview/) from the build steps ([Step 11a](07-your-first-workflow.md) or equivalent).
 - You have completed or are about to start [Make Your Workflow Remember Across Runs](20-persistent-memory.md).
-- You understand YAML frontmatter from [Write Your First Agentic Workflow](07-your-first-workflow.md).
+- You understand YAML [frontmatter](https://github.github.com/gh-aw/reference/frontmatter/) from [Write Your First Agentic Workflow](07-your-first-workflow.md).
 
 `gh-aw` gives you two primitives for persisting state between workflow runs. They behave differently, store data in different places, and suit different use cases. This side quest walks through both in detail so you can pick the right one for your workflow — and know how to switch if your needs change.
 
@@ -42,7 +42,7 @@ Ask yourself: _what happens if the memory is lost?_
 | A few duplicate alerts on cache expiry is tolerable | `cache-memory` |
 | Losing state would flood your team with false positives | `repo-memory` |
 | You need a baseline that survives a repository clone or transfer | `repo-memory` |
-| You want the simplest setup with no extra permissions | `cache-memory` |
+| You want the simplest setup with no extra [permissions](https://github.github.com/gh-aw/reference/permissions/) | `cache-memory` |
 | You need to inspect or edit the stored state manually | `repo-memory` |
 | You expect the workflow to run infrequently (less than once a week) | `repo-memory` |
 

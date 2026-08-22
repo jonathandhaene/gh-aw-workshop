@@ -36,7 +36,7 @@ If the workflow has `contents: write` and no file restrictions, the agent may fa
 
 ---
 
-## Why This Matters for Agentic Workflows
+## Why This Matters for [Agentic Workflows](https://github.github.com/gh-aw/introduction/overview/)
 
 Classic CI/CD runs deterministic scripts. An agentic workflow reads freeform repository content — issue bodies, PR descriptions, file text — and decides at runtime what to do. That reasoning loop makes it vulnerable to **content-driven manipulation**: the attack payload lives in repository data, not in workflow code.
 
@@ -48,7 +48,7 @@ Write access magnifies every read. If the agent can commit directly, a successfu
 
 gh-aw gives you three layers to prevent repository poisoning.
 
-### Declare read-only permissions
+### Declare read-only [permissions](https://github.github.com/gh-aw/reference/permissions/)
 
 The simplest defence is removing write capability before the agent runs:
 
@@ -66,7 +66,7 @@ tools:
 ---
 ```
 
-With `contents: read`, the GitHub MCP server cannot call any API that creates or modifies repository content. Even a fully hijacked agent brief cannot commit a file.
+With `contents: read`, the GitHub [MCP server](https://github.github.com/gh-aw/guides/mcps/) cannot call any API that creates or modifies repository content. Even a fully hijacked agent brief cannot commit a file.
 
 ### Route writes through a pull request
 
@@ -108,7 +108,7 @@ The agent can propose changes to `docs/` files via a pull request, but it cannot
 
 Even if an injected prompt convinces the agent to propose a change to a workflow file, the `protected-files` policy blocks an automatic merge and surfaces the attempt for human review.
 
-### Limit network destinations
+### Limit [network](https://github.github.com/gh-aw/reference/network/) destinations
 
 Combine file restrictions with `network.allowed-domains` to close the exfiltration channel:
 
@@ -124,7 +124,7 @@ Even if an attacker crafts a payload that reaches a file write, their exfiltrati
 
 ---
 
-## ✏️ Exercise: Spot the Dangerous Frontmatter
+## ✏️ Exercise: Spot the Dangerous [Frontmatter](https://github.github.com/gh-aw/reference/frontmatter/)
 
 Read this workflow frontmatter and identify every configuration that makes repository poisoning possible:
 

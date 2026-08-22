@@ -1,13 +1,13 @@
 <!-- page-journey: all -->
 <!-- page-adventure: side-quest -->
-# Side Quest: Output Injection via Safe Outputs
+# Side Quest: Output Injection via [Safe Outputs](https://github.github.com/gh-aw/reference/safe-outputs/)
 
 > _Output injection is a technique where crafted repository content tries to embed markdown, HTML, or instructions into an agent's output to mislead the people who read it — and gh-aw's `safe-outputs` block keeps agent output constrained to approved surfaces and shapes._
 
 ## 📋 Before You Start
 
 - You have completed [Side Quest: Supply Chain Attacks via MCP Tool Servers](side-quest-17-05-supply-chain-mcp.md) or you are already familiar with `safe-outputs` guardrails.
-- You have a practice repository with at least one agentic workflow so you can inspect its `safe-outputs:` and `permissions:` blocks.
+- You have a practice repository with at least one [agentic workflow](https://github.github.com/gh-aw/introduction/overview/) so you can inspect its `safe-outputs:` and `permissions:` blocks.
 
 ## The Attack
 

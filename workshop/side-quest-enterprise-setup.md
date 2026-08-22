@@ -12,7 +12,7 @@
 
 Use this side quest if your environment differs from standard `github.com` defaults.
 
-## Confirm GHES version and agentic workflow support
+## Confirm GHES version and [agentic workflow](https://github.github.com/gh-aw/introduction/overview/) support
 
 Agentic workflows require **GHES 3.12 or later**. On earlier versions, the Copilot cloud agent feature is unavailable regardless of licensing or policy settings.
 
@@ -20,7 +20,7 @@ Agentic workflows require **GHES 3.12 or later**. On earlier versions, the Copil
 |---|---|
 | **github.com** | ✅ Fully supported |
 | **GitHub Enterprise Cloud (GHEC)** | ✅ Fully supported |
-| **GitHub Enterprise Server (GHES) 3.12+** | ✅ Supported when Copilot Enterprise and network access are configured by admin |
+| **GitHub Enterprise Server (GHES) 3.12+** | ✅ Supported when Copilot Enterprise and [network](https://github.github.com/gh-aw/reference/network/) access are configured by admin |
 | **GitHub Enterprise Server (GHES) < 3.12** | ❌ Not supported — upgrade required |
 
 Before continuing:
@@ -52,7 +52,7 @@ Before continuing:
 > gh auth status
 > ```
 
-## Self-hosted runner prerequisites
+## [Self-hosted runner](https://github.github.com/gh-aw/reference/self-hosted-runners/) prerequisites
 
 If your enterprise requires [self-hosted runners](https://github.github.com/gh-aw/reference/self-hosted-runners/) for GitHub Actions, confirm these before you continue:
 
@@ -60,7 +60,7 @@ If your enterprise requires [self-hosted runners](https://github.github.com/gh-a
 - The runner allows workflow jobs from your repository.
 - If your network uses an outbound proxy, proxy settings are configured for runner jobs.
 - Network egress allows access to required endpoints such as `github.com`, `api.github.com`, `raw.githubusercontent.com`, and any model or MCP endpoints your workflow uses.
-- Required secrets and permissions are configured for runner-based execution.
+- Required secrets and [permissions](https://github.github.com/gh-aw/reference/permissions/) are configured for runner-based execution.
 
 If you do not have this access yet, ask your admin to provide a ready-to-use runner target before you build and run workflows.
 

@@ -14,11 +14,11 @@
 `gh aw audit` generates a Markdown report that covers:
 
 - **Run metadata** — workflow name, trigger, engine, and model
-- **Agent AIC** — total AI Credits consumed by the agent turn
+- **Agent [AIC](https://github.github.com/gh-aw/reference/cost-management/#ai-credits-aic)** — total [AI Credits](https://github.github.com/gh-aw/reference/cost-management/#ai-credits-aic) consumed by the agent turn
 - **Threat-detection AIC (⌖ AIC)** — credits consumed by the firewall's threat-detection model, reported separately from agent inference
 - **MCP tool calls** — each tool the agent invoked, with any errors
 - **Threat detection verdict** — whether prompt injection, secret leak, or malicious patch was detected
-- **Safe outputs** — every safe-output declaration the agent emitted
+- **[Safe outputs](https://github.github.com/gh-aw/reference/safe-outputs/)** — every safe-output declaration the agent emitted
 
 ## Artifact files explained
 
@@ -29,8 +29,8 @@ The `agent` artifact — downloaded by both `gh aw logs --artifacts all` and `gh
 | File | What it tells you |
 |---|---|
 | `safeoutputs.jsonl` | Every safe-output declaration the agent emitted |
-| `mcp-logs/` | One log file per MCP server, listing every tool call and result |
-| `sandbox/firewall/audit/` | Domain-level network access log (raw data) |
+| `mcp-logs/` | One log file per [MCP server](https://github.github.com/gh-aw/guides/mcps/), listing every tool call and result |
+| `sandbox/firewall/audit/` | Domain-level [network](https://github.github.com/gh-aw/reference/network/) access log (raw data) |
 | `agent_usage.json` | Token usage for the agent turn |
 
 ### Readable log files
@@ -42,15 +42,15 @@ The audit report is accompanied by readable files written alongside the raw arti
 
 Use `firewall.md` to quickly identify blocked domains. For raw domain-level records, look inside `sandbox/firewall/audit/` in the agent artifact.
 
-## AIC billing details
+## AIC [billing](https://github.github.com/gh-aw/reference/billing/) details
 
-AIC (AI Credits) is the billing unit for agentic workflow inference and is derived from token consumption. Exact billing figures appear in your GitHub billing dashboard.
+AIC (AI Credits) is the billing unit for [agentic workflow](https://github.github.com/gh-aw/introduction/overview/) inference and is derived from token consumption. Exact billing figures appear in your GitHub billing dashboard.
 
 The **⌖ AIC** column in `gh aw logs` output shows credits consumed by the threat-detection model separately from the main agent turn. Both contribute to your organisation's total AIC usage.
 
 ## Adding a blocked domain to [network.allow](https://github.github.com/gh-aw/reference/network/#configuration)
 
-If the firewall blocked a domain your workflow needs, add it to `network.allow` in your workflow frontmatter and recompile:
+If the firewall blocked a domain your workflow needs, add it to `network.allow` in your workflow [frontmatter](https://github.github.com/gh-aw/reference/frontmatter/) and recompile:
 
 ```yaml
 network:

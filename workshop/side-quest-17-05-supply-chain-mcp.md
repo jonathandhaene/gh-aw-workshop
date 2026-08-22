@@ -15,7 +15,7 @@ A supply chain attack through MCP starts when you trust a tool server, package, 
 
 ## Attack surface at a glance
 
-Use this table as a quick threat model when you add or review an MCP server.
+Use this table as a quick threat model when you add or review an [MCP server](https://github.github.com/gh-aw/guides/mcps/).
 
 | Attack type | How it works | Detection signal |
 | --- | --- | --- |
@@ -62,10 +62,10 @@ Before you trust a server like this, verify who publishes it, confirm the expect
 Adopt these habits when you work with MCP servers:
 
 1. **Pin the server you run.** Prefer a specific version or image digest over a mutable default like `latest`.
-2. **Restrict permissions and outputs.** Keep `permissions:` minimal and declare only the write surfaces you actually need in `safe-outputs`.
+2. **Restrict [permissions](https://github.github.com/gh-aw/reference/permissions/) and outputs.** Keep `permissions:` minimal and declare only the write surfaces you actually need in `safe-outputs`.
 3. **Audit tool names before you add them.** Confirm the publisher, verify the expected server name, and keep the tool list narrow.
 
-gh-aw helps by making you declare `tools:` explicitly, limit network destinations with `network.allowed`, and narrow what the workflow can write with `permissions:` and `safe-outputs`.
+gh-aw helps by making you declare `tools:` explicitly, limit [network](https://github.github.com/gh-aw/reference/network/) destinations with `network.allowed`, and narrow what the workflow can write with `permissions:` and `safe-outputs`.
 
 Further reading:
 

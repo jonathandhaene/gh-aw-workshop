@@ -1,6 +1,6 @@
 <!-- page-journey: all -->
 <!-- page-adventure: side-quest -->
-# Side Quest: Sub-Agent Syntax Reference
+# Side Quest: [Sub-Agent](https://github.github.com/gh-aw/reference/inline-sub-agents/) Syntax Reference
 
 > _Optional: use this short repair exercise if you want one clean sub-agent pattern before you return to [Step 21](21-inline-sub-agents.md)._
 
@@ -74,7 +74,7 @@ Quick check:
 
 ## Keep only the sub-agent fields
 
-Inside a sub-agent block, keep the frontmatter small:
+Inside a sub-agent block, keep the [frontmatter](https://github.github.com/gh-aw/reference/frontmatter/) small:
 
 - `description` explains the sub-agent's job
 - `model` is optional if you want to override the parent model
