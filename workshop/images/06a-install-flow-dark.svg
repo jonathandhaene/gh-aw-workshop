@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560" role="img" aria-label="Four-step Codespace terminal setup: verify auth, install gh-aw, run doctor, initialize skills">
+  <!-- Background -->
+  <rect width="1200" height="560" fill="#0d1117"/>
+
+  <!-- Title -->
+  <text x="600" y="44" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="20" font-weight="600" fill="#f0f6fc">Codespace Terminal Setup — Four Steps to Ready</text>
+
+  <!-- Step 1 -->
+  <rect x="60" y="100" width="220" height="300" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <rect x="60" y="100" width="220" height="48" rx="10" fill="#2f81f7"/>
+  <rect x="60" y="130" width="220" height="18" fill="#2f81f7"/>
+  <text x="170" y="131" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#f0f6fc">Step 1</text>
+  <text x="170" y="149" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#f0f6fc">Verify Auth</text>
+  <circle cx="170" cy="220" r="30" fill="#1c2d3e" stroke="#2f81f7" stroke-width="1.5"/>
+  <text x="170" y="225" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="22" fill="#2f81f7">1</text>
+  <text x="170" y="280" text-anchor="middle" font-family="ui-monospace,monospace" font-size="12" fill="#f0f6fc">gh auth status</text>
+  <text x="170" y="302" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#8b949e">Confirm logged in</text>
+  <text x="170" y="318" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#8b949e">to github.com</text>
+  <rect x="110" y="360" width="120" height="24" rx="12" fill="#1a3326" stroke="#3fb950" stroke-width="1"/>
+  <text x="170" y="376" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#3fb950">✓ Authenticated</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="280" y1="250" x2="320" y2="250" stroke="#30363d" stroke-width="2" marker-end="url(#arrow-dark)"/>
+
+  <!-- Step 2 -->
+  <rect x="320" y="100" width="220" height="300" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <rect x="320" y="100" width="220" height="48" rx="10" fill="#2f81f7"/>
+  <rect x="320" y="130" width="220" height="18" fill="#2f81f7"/>
+  <text x="430" y="131" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#f0f6fc">Step 2</text>
+  <text x="430" y="149" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#f0f6fc">Install Extension</text>
+  <circle cx="430" cy="220" r="30" fill="#1c2d3e" stroke="#2f81f7" stroke-width="1.5"/>
+  <text x="430" y="225" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="22" fill="#2f81f7">2</text>
+  <text x="430" y="275" text-anchor="middle" font-family="ui-monospace,monospace" font-size="11" fill="#f0f6fc">gh extension install</text>
+  <text x="430" y="291" text-anchor="middle" font-family="ui-monospace,monospace" font-size="11" fill="#f0f6fc">github/gh-aw</text>
+  <text x="430" y="313" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#8b949e">Then verify version:</text>
+  <text x="430" y="329" text-anchor="middle" font-family="ui-monospace,monospace" font-size="11" fill="#f0f6fc">gh aw --version</text>
+  <rect x="368" y="360" width="124" height="24" rx="12" fill="#1a3326" stroke="#3fb950" stroke-width="1"/>
+  <text x="430" y="376" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#3fb950">✓ Version shown</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="540" y1="250" x2="580" y2="250" stroke="#30363d" stroke-width="2" marker-end="url(#arrow-dark)"/>
+
+  <!-- Step 3 -->
+  <rect x="580" y="100" width="220" height="300" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <rect x="580" y="100" width="220" height="48" rx="10" fill="#2f81f7"/>
+  <rect x="580" y="130" width="220" height="18" fill="#2f81f7"/>
+  <text x="690" y="131" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#f0f6fc">Step 3</text>
+  <text x="690" y="149" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#f0f6fc">Run Diagnostic</text>
+  <circle cx="690" cy="220" r="30" fill="#1c2d3e" stroke="#2f81f7" stroke-width="1.5"/>
+  <text x="690" y="225" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="22" fill="#2f81f7">3</text>
+  <text x="690" y="280" text-anchor="middle" font-family="ui-monospace,monospace" font-size="12" fill="#f0f6fc">gh aw doctor</text>
+  <text x="690" y="302" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#8b949e">Checks GitHub CLI</text>
+  <text x="690" y="318" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#8b949e">auth and toolchain</text>
+  <rect x="628" y="360" width="124" height="24" rx="12" fill="#1a3326" stroke="#3fb950" stroke-width="1"/>
+  <text x="690" y="376" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#3fb950">✓ All checks pass</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="800" y1="250" x2="840" y2="250" stroke="#30363d" stroke-width="2" marker-end="url(#arrow-dark)"/>
+
+  <!-- Step 4 -->
+  <rect x="840" y="100" width="300" height="300" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <rect x="840" y="100" width="300" height="48" rx="10" fill="#2f81f7"/>
+  <rect x="840" y="130" width="300" height="18" fill="#2f81f7"/>
+  <text x="990" y="131" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#f0f6fc">Step 4</text>
+  <text x="990" y="149" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#f0f6fc">Initialize Skills</text>
+  <circle cx="990" cy="220" r="30" fill="#1c2d3e" stroke="#2f81f7" stroke-width="1.5"/>
+  <text x="990" y="225" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="22" fill="#2f81f7">4</text>
+  <text x="990" y="275" text-anchor="middle" font-family="ui-monospace,monospace" font-size="12" fill="#f0f6fc">gh aw init</text>
+  <text x="990" y="297" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#8b949e">Generates skill files,</text>
+  <text x="990" y="313" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#8b949e">mcp.json, and workflow</text>
+  <text x="990" y="329" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#8b949e">setup config</text>
+  <rect x="915" y="360" width="150" height="24" rx="12" fill="#1a3326" stroke="#3fb950" stroke-width="1"/>
+  <text x="990" y="376" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#3fb950">✓ Ready to author</text>
+
+  <!-- Footer annotation -->
+  <text x="600" y="500" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" fill="#8b949e">Complete all four steps in order. Each step builds on the previous — skip none.</text>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow-dark" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#8b949e"/>
+    </marker>
+  </defs>
+</svg>

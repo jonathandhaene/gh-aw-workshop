@@ -10,6 +10,14 @@
 
 You'll verify the `gh` CLI is authenticated, install the `gh-aw` extension, and run one quick diagnostic to confirm your Codespace terminal is ready for [agentic workflow](https://github.github.com/gh-aw/introduction/overview/) setup.
 
+The diagram below shows the four commands you'll run in sequence — each one unlocks the next.
+
+<picture>
+   <source media="(prefers-color-scheme: dark)" srcset="images/06a-install-flow-dark.svg">
+   <source media="(prefers-color-scheme: light)" srcset="images/06a-install-flow-light.svg">
+   <img alt="Four-step Codespace terminal setup: verify auth, install gh-aw, run doctor, initialize skills" src="images/06a-install-flow-light.svg">
+</picture>
+
 ## 📋 Before You Start
 
 - You've completed [What Are Agentic Workflows?](05-agentic-workflows-intro.md)
