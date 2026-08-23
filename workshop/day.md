@@ -21,6 +21,20 @@ A full-day hands-on experience with GitHub Agentic Workflows — from your first
 
 Make sure you have completed the [prerequisites](01-prerequisites.md) before the day starts. The morning session moves fast, and environment issues will slow you down.
 
+## 📋 Before You Use This Agenda
+
+This agenda is for facilitators running a full-day in-person or virtual workshop. Before the session starts, confirm:
+
+- Participants have completed [01-prerequisites.md](01-prerequisites.md) and have access to GitHub Copilot.
+- Each participant has a working Codespace **or** a local terminal with `gh` and Node.js installed (see [02a-setup-codespace.md](02a-setup-codespace.md) or [02b-setup-local.md](02b-setup-local.md)).
+- `gh aw` is installed and returns a version string for each participant:
+
+  ```bash
+  gh aw --version
+  ```
+
+- The workshop schedule has been shared with participants in advance.
+
 ## Facilitation Notes
 
 **Part 1** covers [Steps 0–12](README.md#curriculum--part-1-build-your-first-workflow): welcome, prerequisites, environment setup, Actions intro, the agentic workflow model, installing `gh-aw`, writing your first workflow, running it, and iterating.
@@ -28,3 +42,13 @@ Make sure you have completed the [prerequisites](01-prerequisites.md) before the
 **Part 2** is self-directed. Participants choose their own path through [Steps 14+](README.md#curriculum--part-2-go-deeper) based on what interests them most. Facilitators circulate and help unblock.
 
 **Hackathon** has no prescribed outcome — the goal is one working workflow that solves a real problem. Teams of two or three work well.
+
+## ✅ Checkpoint
+
+Before the session begins, confirm each item with your co-facilitators:
+
+- [ ] All participants have completed [01-prerequisites.md](01-prerequisites.md) and can access their GitHub account.
+- [ ] Each participant has a working Codespace or local terminal — run `gh aw --version` to verify.
+- [ ] The workshop repository is accessible to all participants.
+- [ ] The day's schedule has been shared and participants know where to start ([00-welcome.md](00-welcome.md)).
+- [ ] You have a plan for the hackathon segment: teams formed, problem ideas ready or brainstormed in advance.
