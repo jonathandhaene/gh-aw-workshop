@@ -112,3 +112,7 @@ gh aw compile
 <!-- journey: all -->
 Want to choose another branch from the workshop hub? Return to [What's Next? Keep Exploring](14-next-steps.md).
 <!-- /journey -->
+
+<!-- journey: enterprise -->
+**Next:** [Govern Agentic Workflows Across Your Organisation](27-governance-and-policy.md)
+<!-- /journey -->
