@@ -19,7 +19,7 @@ An [**Agentic Workflow**](https://github.github.com/gh-aw/introduction/overview/
 
 Think of it like a **scheduled email digest** you've set up in an app: every morning it reads your inbox, picks out the three most important messages, and sends you a one-paragraph summary — without you touching a keyboard. An agentic workflow does the same thing for your GitHub repository: it runs on a schedule, reads your issues, pull requests, or code, and posts a structured summary exactly where your team will see it. You describe the job in plain English; the agent figures out how to do it.
 
-The agent always runs within a sandbox and posts results through a guardrailed output system — you will explore how this works in [How Agentic Workflows Stay Safe](05b-agentic-workflows-security.md).
+The agent always runs within a [sandbox](https://github.github.com/gh-aw/reference/sandbox/) and posts results through a guardrailed output system — you will explore how this works in [How Agentic Workflows Stay Safe](05b-agentic-workflows-security.md).
 
 <details>
 <summary>Why not just use a standard Actions workflow?</summary>
@@ -88,7 +88,7 @@ The **compile command** — it reads the `.md` source and writes the `.lock.yml`
 
 - [ ] I can describe what an agentic workflow is in one sentence
 - [ ] I can explain one way an agentic workflow differs from a standard Actions workflow
-- [ ] I can identify the three parts: trigger → agent → safe output
+- [ ] I can identify the three parts: trigger → agent → [safe output](https://github.github.com/gh-aw/reference/safe-outputs/)
 - [ ] I know that `gh aw compile` generates `.lock.yml` from the `.md` source
 
 <details>
