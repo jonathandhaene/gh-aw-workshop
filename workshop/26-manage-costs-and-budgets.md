@@ -109,6 +109,8 @@ gh aw compile
 - [ ] You added or verified a `timeout-minutes` value in your workflow frontmatter
 - [ ] You identified at least one technique to reduce token consumption
 
+**Next:** [Govern Agentic Workflows Across Your Organisation](27-enterprise-governance.md)
+
 <!-- journey: all -->
 Want to choose another branch from the workshop hub? Return to [What's Next? Keep Exploring](14-next-steps.md).
 <!-- /journey -->
