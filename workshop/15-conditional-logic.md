@@ -81,7 +81,11 @@ if: steps.recent.outputs.commit_count != '0' && steps.day.outputs.day != 'Saturd
 
 1. Inspect the run log: on a weekday with commits the agent job should complete normally; on a weekend or a day with no commits it should appear as **skipped** with a grey icon, as shown below.
 
-![Skipped step in GitHub Actions](images/15-skipped-step.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/15-skipped-step-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="images/15-skipped-step-light.svg">
+  <img alt="Skipped step in GitHub Actions" src="images/15-skipped-step-light.svg">
+</picture>
 
 ### Compile your changes
 
