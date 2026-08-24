@@ -19,7 +19,7 @@ In practice, that means:
 
 - You write or review workflow changes in the GitHub web UI.
 - An agent initializes the repository files for you in a pull request.
-- GitHub Actions runs the committed lock file on GitHub's infrastructure.
+- GitHub Actions runs the committed lock file on GitHub's infrastructure. The [compilation](https://github.github.com/gh-aw/reference/compilation-process/) step that converts your Markdown source to a lock file is handled in the agent's session workspace.
 
 ## Initialize the repository
 
