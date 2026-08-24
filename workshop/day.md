@@ -17,9 +17,19 @@ A full-day hands-on experience with GitHub Agentic Workflows — from your first
 | 16:15 | **Share and reflect** — each group demos their hackathon project and explains one decision they made |
 | 16:30 | **Social time** |
 
-## Before You Arrive
+## 📋 Before You Start
 
-Make sure you have completed the [prerequisites](01-prerequisites.md) before the day starts. The morning session moves fast, and environment issues will slow you down.
+Complete the steps in [01 — Prerequisites](01-prerequisites.md) before the day starts. The morning session moves fast, and environment issues will slow you down.
+
+## ✅ Before You Arrive
+
+Run through this checklist the day before to make sure you're ready to go:
+
+- [ ] I have completed [01 — Prerequisites](01-prerequisites.md) and met all tool and access requirements
+- [ ] I have created (or been given) a repository to use for the workshop
+- [ ] I have installed the `gh-aw` CLI extension and can run `gh aw --version` without errors
+- [ ] I have compiled a test workflow successfully with `gh aw compile`
+- [ ] I have confirmed Copilot access in the repository I'll use today
 
 ## Facilitation Notes
 
