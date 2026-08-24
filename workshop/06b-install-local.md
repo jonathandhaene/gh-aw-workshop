@@ -89,6 +89,12 @@ This creates several files needed for agentic workflow authoring:
 `.github/agents/agentic-workflows.md`, `.github/mcp.json`,
 `.github/workflows/copilot-setup-steps.yml`, and `.vscode/settings.json`.
 
+<picture>
+   <source media="(prefers-color-scheme: dark)" srcset="images/06b-init-flow-dark.svg">
+   <source media="(prefers-color-scheme: light)" srcset="images/06b-init-flow-light.svg">
+   <img alt="gh aw init initialization flow: the command scaffolds skill files, agent instructions, MCP config, and a Copilot setup workflow into your repository" src="images/06b-init-flow-light.svg">
+</picture>
+
 ## 🏃 Try It
 
 Run `gh aw --help` and scan the list of sub-commands.

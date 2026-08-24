@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560" role="img" aria-label="gh aw init initialization flow: the command scaffolds skill files, agent instructions, MCP config, and a Copilot setup workflow into your repository">
+  <rect width="1200" height="560" fill="#f6f8fa"/>
+
+  <!-- Title -->
+  <text x="600" y="38" font-family="ui-sans-serif,system-ui,sans-serif" font-size="18" font-weight="700" fill="#24292f" text-anchor="middle">What gh aw init Creates in Your Repository</text>
+
+  <!-- Command box -->
+  <rect x="60" y="70" width="220" height="56" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="170" y="95" font-family="ui-monospace,monospace" font-size="14" font-weight="700" fill="#0969da" text-anchor="middle">gh aw init</text>
+  <text x="170" y="114" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11" fill="#57606a" text-anchor="middle">Run once in your repo</text>
+
+  <!-- Arrow right -->
+  <line x1="280" y1="98" x2="330" y2="98" stroke="#d0d7de" stroke-width="2" marker-end="url(#arrowLight)"/>
+
+  <!-- Center hub -->
+  <rect x="330" y="64" width="160" height="68" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="410" y="91" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13" font-weight="700" fill="#0969da" text-anchor="middle">Scaffolds Files</text>
+  <text x="410" y="111" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11" fill="#24292f" text-anchor="middle">into .github/ + .vscode/</text>
+
+  <!-- Arrows from hub to outputs -->
+  <!-- to Skills -->
+  <line x1="490" y1="82" x2="560" y2="130" stroke="#d0d7de" stroke-width="1.5" marker-end="url(#arrowLight)"/>
+  <!-- to Agents -->
+  <line x1="490" y1="90" x2="560" y2="230" stroke="#d0d7de" stroke-width="1.5" marker-end="url(#arrowLight)"/>
+  <!-- to MCP -->
+  <line x1="490" y1="96" x2="560" y2="330" stroke="#d0d7de" stroke-width="1.5" marker-end="url(#arrowLight)"/>
+  <!-- to Setup Steps -->
+  <line x1="490" y1="102" x2="560" y2="420" stroke="#d0d7de" stroke-width="1.5" marker-end="url(#arrowLight)"/>
+  <!-- to VS Code -->
+  <line x1="490" y1="108" x2="560" y2="500" stroke="#d0d7de" stroke-width="1.5" marker-end="url(#arrowLight)"/>
+
+  <!-- Output boxes -->
+  <!-- Skills -->
+  <rect x="560" y="106" width="300" height="64" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <rect x="560" y="106" width="8" height="64" rx="3" fill="#0969da"/>
+  <text x="579" y="127" font-family="ui-monospace,monospace" font-size="11" font-weight="600" fill="#0969da">.github/skills/agentic-workflows/</text>
+  <text x="579" y="143" font-family="ui-monospace,monospace" font-size="11" fill="#57606a">SKILL.md</text>
+  <text x="579" y="160" font-family="ui-sans-serif,system-ui,sans-serif" font-size="10.5" fill="#57606a">Defines Copilot authoring skill context</text>
+
+  <!-- Agents -->
+  <rect x="560" y="206" width="300" height="64" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <rect x="560" y="206" width="8" height="64" rx="3" fill="#1a7f37"/>
+  <text x="579" y="227" font-family="ui-monospace,monospace" font-size="11" font-weight="600" fill="#1a7f37">.github/agents/</text>
+  <text x="579" y="243" font-family="ui-monospace,monospace" font-size="11" fill="#57606a">agentic-workflows.md</text>
+  <text x="579" y="260" font-family="ui-sans-serif,system-ui,sans-serif" font-size="10.5" fill="#57606a">Agent instruction file for Copilot</text>
+
+  <!-- MCP -->
+  <rect x="560" y="306" width="300" height="64" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <rect x="560" y="306" width="8" height="64" rx="3" fill="#9a6700"/>
+  <text x="579" y="327" font-family="ui-monospace,monospace" font-size="11" font-weight="600" fill="#9a6700">.github/mcp.json</text>
+  <text x="579" y="343" font-family="ui-monospace,monospace" font-size="11" fill="#57606a">&amp; .github/workflows/</text>
+  <text x="579" y="360" font-family="ui-sans-serif,system-ui,sans-serif" font-size="10.5" fill="#57606a">MCP server config for gh-aw tools</text>
+
+  <!-- Copilot Setup Steps -->
+  <rect x="560" y="396" width="300" height="64" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <rect x="560" y="396" width="8" height="64" rx="3" fill="#8250df"/>
+  <text x="579" y="417" font-family="ui-monospace,monospace" font-size="11" font-weight="600" fill="#8250df">copilot-setup-steps.yml</text>
+  <text x="579" y="433" font-family="ui-monospace,monospace" font-size="11" fill="#57606a">in .github/workflows/</text>
+  <text x="579" y="450" font-family="ui-sans-serif,system-ui,sans-serif" font-size="10.5" fill="#57606a">Preinstalls gh-aw in Copilot cloud agent</text>
+
+  <!-- VS Code Settings -->
+  <rect x="560" y="476" width="300" height="56" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <rect x="560" y="476" width="8" height="56" rx="3" fill="#57606a"/>
+  <text x="579" y="497" font-family="ui-monospace,monospace" font-size="11" font-weight="600" fill="#57606a">.vscode/settings.json</text>
+  <text x="579" y="513" font-family="ui-sans-serif,system-ui,sans-serif" font-size="10.5" fill="#57606a">Editor settings for workflow authoring</text>
+
+  <!-- Commit reminder box -->
+  <rect x="880" y="280" width="280" height="80" rx="8" fill="#fff8c5" stroke="#d4a72c" stroke-width="1.5"/>
+  <text x="1020" y="306" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13" font-weight="700" fill="#9a6700" text-anchor="middle">⚠ Commit &amp; Push</text>
+  <text x="1020" y="326" font-family="ui-monospace,monospace" font-size="11" fill="#24292f" text-anchor="middle">git add .</text>
+  <text x="1020" y="343" font-family="ui-monospace,monospace" font-size="11" fill="#24292f" text-anchor="middle">git commit -m "..."</text>
+  <text x="1020" y="360" font-family="ui-monospace,monospace" font-size="11" fill="#24292f" text-anchor="middle">git push</text>
+
+  <!-- Arrow from outputs to commit reminder -->
+  <line x1="860" y1="320" x2="878" y2="320" stroke="#d4a72c" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrowGold)"/>
+
+  <!-- Annotation -->
+  <text x="600" y="545" font-family="ui-sans-serif,system-ui,sans-serif" font-size="12" fill="#57606a" text-anchor="middle">Run gh aw init once, then commit and push all generated files before authoring your first workflow.</text>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowLight" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#d0d7de"/>
+    </marker>
+    <marker id="arrowGold" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#d4a72c"/>
+    </marker>
+  </defs>
+</svg>
