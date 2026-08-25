@@ -53,9 +53,9 @@ From your repository root, run:
 gh aw compile
 ```
 
-This updates the compiled lock file that GitHub Actions actually executes.
+This updates the compiled [lock file](https://github.github.com/gh-aw/reference/workflow-structure/#lock-file-header) that GitHub Actions actually executes.
 
-If the compiler reports an error, fix that first. Do not start a new test run until compilation succeeds.
+If the compiler reports an error, fix that first. Do not start a new test run until [compilation](https://github.github.com/gh-aw/reference/compilation-process/) succeeds.
 
 > [!TIP]
 > If you expect to make several small edits in a row, `gh aw compile --watch` can speed up the loop by recompiling after each save.

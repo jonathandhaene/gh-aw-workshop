@@ -29,7 +29,7 @@ Think of it as a handoff. First, the workflow gathers facts in a predictable way
 </picture>
 
 > [!TIP]
-> If step outputs, here-document syntax, or the scripted versus agentic split are new to you, skim [Side Quest: Passing Data Between Steps with $GITHUB_OUTPUT](side-quest-16-01-github-output.md) and [Side Quest: Deterministic vs Agentic Data Ops](side-quest-16-04-deterministic-vs-agentic-data-ops.md).
+> If [step outputs](https://github.github.com/gh-aw/reference/steps-jobs/#custom-steps-steps), here-document syntax, or the scripted versus agentic split are new to you, skim [Side Quest: Passing Data Between Steps with $GITHUB_OUTPUT](side-quest-16-01-github-output.md) and [Side Quest: Deterministic vs Agentic Data Ops](side-quest-16-04-deterministic-vs-agentic-data-ops.md).
 
 ### Fetch commit history
 

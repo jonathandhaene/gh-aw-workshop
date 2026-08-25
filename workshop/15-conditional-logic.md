@@ -6,7 +6,7 @@
 
 ## 🎯 What You'll Do
 
-Add a conditional check to your daily-status workflow so it only posts a summary when there have been recent commits. You'll learn how to use shell commands to gather context, expose that context as step outputs, and wire it into an `if:` condition that short-circuits the agent job entirely on quiet days.
+Add a conditional check to your daily-status workflow so it only posts a summary when there have been recent commits. You'll learn how to use shell commands to gather context, expose that context as [step outputs](https://github.github.com/gh-aw/reference/steps-jobs/#custom-steps-steps), and wire it into an `if:` condition that short-circuits the agent job entirely on quiet days.
 
 ## 📋 Before You Start
 

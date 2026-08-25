@@ -39,7 +39,7 @@ Every workflow run you have built so far starts with a blank slate. That is fine
 - **Compare against a baseline** — "did the number of failing tests increase since yesterday?"
 - **Scan incrementally** — skip pull requests you have already reviewed.
 
-You will use `cache-memory` in this step; see [Side Quest: Choosing Between Cache Memory and Repo Memory](side-quest-20-01-memory-patterns.md) for a full comparison.
+You will use `cache-memory` in this step; see [Side Quest: Choosing Between Cache Memory and Repo Memory](side-quest-20-01-memory-patterns.md) (see also: [Cache Memory](https://github.github.com/gh-aw/reference/cache-memory/) and [Repo Memory](https://github.github.com/gh-aw/reference/repo-memory/) reference docs) for a full comparison.
 
 ## Steps
 

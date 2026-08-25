@@ -29,7 +29,7 @@ on:
 
 `opened` fires when a PR is first created. `synchronize` fires every time a new commit is pushed to the PR branch. Together they cover the full PR lifecycle without any manual intervention.
 
-Event-driven workflows are the foundation of most real-world agentic review automation. The same pattern powers auto-labellers, summary generators, and quality checklists — three of which you can explore in the side quests at the end of this step.
+Event-driven workflows are the foundation of most real-world agentic review automation. The same pattern powers [auto-labellers](https://github.github.com/gh-aw/patterns/label-ops/), summary generators, and quality checklists — three of which you can explore in the side quests at the end of this step.
 
 ## Create the Workflow File
 
