@@ -34,6 +34,7 @@ A hands-on workshop that takes you from zero to a fully automated, AI-powered wo
 | # | Step |
 |---|------|
 | 15 | [Make Your Workflow Smarter with Conditional Logic](15-conditional-logic.md) |
+| 15b | [Chain Multiple Conditions for Smarter Scheduling](15b-chained-conditions.md) |
 | 16 | [Connect a Live Data Source to Your Workflow](16-connect-data-source.md) |
 | 17 | [Give Your Agent More Tools with MCP](17-add-mcp-tools.md) |
 | 18 | [Share and Reuse Your Agentic Workflows](18-share-and-reuse.md) |

@@ -57,32 +57,6 @@ if: steps.recent.outputs.commit_count != '0'
 
 This condition is embedded into the generated lock file during [compilation](https://github.github.com/gh-aw/reference/compilation-process/); at runtime, GitHub Actions evaluates it and skips the agent job entirely whenever `commit_count` evaluates to `'0'`. You can also reference the count inside your prompt text to give the model concrete context — for example: `"Summarise the last ${{ steps.recent.outputs.commit_count }} commits"` anchors the analysis to the actual number of changes rather than leaving the model to guess the scope.
 
-### Exercise: Add a weekend skip condition
-
-Now that the commit-count condition is in place, extend the workflow to also skip execution on weekends. This exercise reinforces how to chain multiple conditions in a single `if:` expression.
-
-1. Add a step that writes the current day name as an output:
-
-```yaml
-- name: Check day of week
-  id: day
-  run: echo "day=$(date +%A)" >> $GITHUB_OUTPUT
-```
-
-1. Update the top-level `if:` to combine both conditions using `&&`:
-
-```yaml
-if: steps.recent.outputs.commit_count != '0' && steps.day.outputs.day != 'Saturday' && steps.day.outputs.day != 'Sunday'
-```
-
-1. Compile the workflow with `gh aw compile` to regenerate the lock file with the combined condition.
-
-1. Trigger a manual [`workflow_dispatch`](https://github.github.com/gh-aw/reference/triggers/) run from the Actions tab.
-
-1. Inspect the run log: on a weekday with commits the agent job should complete normally; on a weekend or a day with no commits it should appear as **skipped** with a grey icon, as shown below.
-
-![Skipped step in GitHub Actions](images/15-skipped-step.svg)
-
 ### Compile your changes
 
 After editing the frontmatter, compile the workflow to confirm everything is valid:
@@ -124,7 +98,7 @@ git push
 - [ ] The workflow still posts a summary on days with commits
 
 <!-- journey: all -->
-**Next:** [Connect a Live Data Source to Your Workflow](16-connect-data-source.md)
+**Next:** [Chain Multiple Conditions for Smarter Scheduling](15b-chained-conditions.md)
 <!-- /journey -->
 
 
