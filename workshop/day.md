@@ -11,7 +11,7 @@ A full-day hands-on experience with GitHub Agentic Workflows — from your first
 | 11:30 | **Share and reflect** — each participant shows their workflow; group discussion on what surprised you |
 | 12:00 | **Lunch** |
 | 13:00 | **Deep dive — Agenticism** — how agentic workflows shift responsibility from shell scripts to AI reasoning; architecture, safety model, and cost model ([Agentic Workflows Deep Dive →](side-quest-05-02-aw-deep-dive.md)) |
-| 13:30 | **Workshop — Part 2** — go deeper: conditional logic, live data sources, MCP tools, memory, and sub-agents ([Continue →](14-next-steps.md)) |
+| 13:30 | **Workshop — Part 2** — go deeper: conditional logic, live data sources, [MCP tools](https://github.github.com/gh-aw/guides/mcps/), memory, and [sub-agents](https://github.github.com/gh-aw/reference/inline-sub-agents/) ([Continue →](14-next-steps.md)) |
 | 14:30 | **Share and reflect** — demos of Part 2 workflows; group discussion on patterns and tradeoffs |
 | 15:00 | **Hackathon** — build something real: pick a workflow idea from your own team or repo and ship it |
 | 16:15 | **Share and reflect** — each group demos their hackathon project and explains one decision they made |

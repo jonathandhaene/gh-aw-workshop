@@ -6,7 +6,7 @@
 
 ## 🎯 What You'll Do
 
-Learn the most common ways agentic workflows fail in production and apply three practical techniques — defensive task briefs, timeout settings, and [safe-output](https://github.github.com/gh-aw/reference/safe-outputs/) fallbacks — to keep your workflow useful even when things go wrong.
+Learn the most common ways agentic workflows fail in production and apply three practical techniques — defensive task briefs, [timeout settings](https://github.github.com/gh-aw/reference/rate-limiting-controls/#timeouts), and [safe-output](https://github.github.com/gh-aw/reference/safe-outputs/) fallbacks — to keep your workflow useful even when things go wrong.
 
 ## 📋 Before You Start
 

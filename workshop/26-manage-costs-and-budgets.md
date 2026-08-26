@@ -18,7 +18,7 @@ You'll review your workflow's AI Credit consumption in the GitHub billing dashbo
 
 ### Understand AI Credits
 
-Every agentic workflow run uses an AI model to process your task brief and produce output. GitHub bills this inference as **AI Credits (AIC)**.
+Every agentic workflow run uses an AI model to process your task brief and produce output. GitHub bills this [inference](https://github.github.com/gh-aw/reference/billing/#ai-inference) as **AI Credits (AIC)**.
 
 - One AIC corresponds roughly to 1,000 input tokens processed by the model.
 - A typical daily-status workflow run costs between 0.5 and 3 AIC depending on brief length and tool calls.

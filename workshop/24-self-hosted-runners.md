@@ -124,7 +124,7 @@ inherits them from the system environment automatically.
 ### Network isolation
 
 If your runner operates in an air-gapped or restricted environment, ensure it can reach
-the GitHub API, your model endpoint, and any MCP tool servers your workflow calls.
+the GitHub API, your model endpoint, and any [MCP tool servers](https://github.github.com/gh-aw/guides/mcps/) your workflow calls.
 Work with your network admin to allowlist these endpoints before running agentic workflows.
 
 </details>

@@ -6,7 +6,7 @@
 
 ## 🎯 What You'll Do
 
-You'll add an A/B experiment using `experiments:` and compare outcomes across runs.
+You'll add an A/B experiment using `experiments:` and compare [outcomes](https://github.github.com/gh-aw/reference/outcomes/) across runs.
 
 ## 📋 Before You Start
 
