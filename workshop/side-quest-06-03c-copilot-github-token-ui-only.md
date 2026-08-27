@@ -18,7 +18,7 @@ This method stores a fine-grained Personal Access Token (PAT) as a repository se
 3. Set **Repository access** based on your workshop repository visibility:
    - For a public repository, choose **Public repositories**.
    - For a private repository, choose **Only select repositories** and pick your repository.
-4. Under Permissions → **Account permissions**, set Copilot requests to Read-only.
+4. Under [Permissions](https://github.github.com/gh-aw/reference/permissions/) → **Account permissions**, set Copilot requests to Read-only.
 5. Click **Generate token** and copy the value immediately. GitHub shows it only once.
 
 > [!IMPORTANT]

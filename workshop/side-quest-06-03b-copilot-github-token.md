@@ -32,7 +32,7 @@ If you prefer to create and store the PAT manually, follow the full procedure be
 1. Go to [github.com/settings/tokens](https://github.com/settings/tokens) and click **Generate new token (fine-grained)**.
 2. Name the token (for example, `gh-aw-copilot`) and set an expiry (90 days is a common default).
 3. For a public workshop repository, choose **Public repositories**. For a private workshop repository, choose **Only select repositories** and select it.
-4. Under **Permissions** → **Account permissions**, set **Copilot requests** to **Read-only**.
+4. Under [Permissions](https://github.github.com/gh-aw/reference/permissions/) → **Account permissions**, set **Copilot requests** to **Read-only**.
 5. Click **Generate token** and copy the value immediately — GitHub shows it only once.
 
 > [!IMPORTANT]
@@ -81,7 +81,7 @@ git commit -m "Use personal Copilot billing"
 git push
 ```
 
-The compile updates the lock file so it uses the token-based method.
+The compile updates the [lock file](https://github.github.com/gh-aw/reference/glossary/#workflow-lock-file-lockyml) so it uses the token-based method.
 
 ## ✅ Checkpoint
 

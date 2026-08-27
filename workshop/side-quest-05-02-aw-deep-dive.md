@@ -10,7 +10,7 @@
 
 ## Classify these tasks
 
-For each task below: classify it as **agentic workflow** or **standard Actions workflow**, check the box, then reveal the answer before the next task:
+For each task below: classify it as **[agentic workflow](https://github.github.com/gh-aw/introduction/overview/)** or **standard Actions workflow**, check the box, then reveal the answer before the next task:
 
 You just saw how a standard Actions workflow follows fixed steps. Agentic workflows replace those fixed steps with a plain-English task brief — use that contrast to classify the tasks below.
 
