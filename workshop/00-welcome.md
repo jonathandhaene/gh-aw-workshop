@@ -14,6 +14,14 @@ By the end of this workshop, a real AI agent will create an issue with a summary
 You'll build a **[GitHub Agentic Workflow](https://github.github.com/gh-aw/introduction/overview/)**:
 > A GitHub Action that uses AI to inspect your repository, decide what matters, and publish a useful status report on a schedule — practical enough to adapt for real teams.
 
+The diagram below shows how an agentic workflow compares to a classic Actions YAML approach — same trigger, far less code, safety built in.
+
+<picture>
+   <source media="(prefers-color-scheme: dark)" srcset="images/00-actions-vs-agentic-dark.svg">
+   <source media="(prefers-color-scheme: light)" srcset="images/00-actions-vs-agentic-light.svg">
+   <img alt="Side-by-side comparison: Classic GitHub Actions uses 200 lines of YAML and shell scripts; an Agentic Workflow uses 20 lines of Markdown with sandbox isolation and safe outputs built in." src="images/00-actions-vs-agentic-light.svg">
+</picture>
+
 Along the way, you'll learn how to compile the workflow, trigger test runs, and iterate on the prompt until the output matches your intent.
 
 ![Preview of a completed workflow run in the Actions tab](images/00-workflow-run-complete.svg)
