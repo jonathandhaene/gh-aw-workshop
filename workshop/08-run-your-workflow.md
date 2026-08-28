@@ -62,7 +62,11 @@ Click **Run workflow**, keep the default branch selected, and click the green **
 
 If the run fails immediately with a model-access or authentication error, return to [Step 7d](07d-confirm-model-access.md) and confirm the selected billing method matches the workflow.
 
-![Workflow sidebar with the Run workflow button highlighted](images/08-run-workflow-button.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/08-run-workflow-button-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="images/08-run-workflow-button-light.svg">
+  <img alt="Workflow sidebar with the Run workflow button highlighted" src="images/08-run-workflow-button-light.svg">
+</picture>
 
 ![Run workflow confirmation dropdown showing branch selection and final Run workflow button](images/08-run-workflow-confirm-dropdown.svg)
 
