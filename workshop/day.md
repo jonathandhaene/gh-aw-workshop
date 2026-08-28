@@ -21,6 +21,16 @@ A full-day hands-on experience with GitHub Agentic Workflows — from your first
 
 Make sure you have completed the [prerequisites](01-prerequisites.md) before the day starts. The morning session moves fast, and environment issues will slow you down.
 
+## ✅ Checkpoint
+
+Before the day starts, verify that you are ready:
+
+- [ ] You have completed the [prerequisites](01-prerequisites.md) — GitHub account, Copilot access, and environment set up.
+- [ ] You can open a terminal or Codespace and run `gh --version` without errors.
+- [ ] You have reviewed the [program](#program) above and know which path you want to take in Part 2.
+- [ ] You have a workflow idea in mind for the hackathon — even a rough one is fine.
+- [ ] (Optional) You have identified a real problem in your own repo that an agentic workflow could help solve.
+
 ## Facilitation Notes
 
 **Part 1** covers [Steps 0–12](README.md#curriculum--part-1-build-your-first-workflow): welcome, prerequisites, environment setup, Actions intro, the agentic workflow model, installing `gh-aw`, writing your first workflow, running it, and iterating.
