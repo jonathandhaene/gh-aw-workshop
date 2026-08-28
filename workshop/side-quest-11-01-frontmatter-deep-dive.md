@@ -45,7 +45,7 @@ description: ???
 
 ## Section 2 — `on:` triggers
 
-**🔍 Predict:** How would you tell GitHub Actions to run the workflow every day _and_ allow manual triggering? Write the two keys before reading on.
+**🔍 Predict:** How would you tell [GitHub Actions](https://github.github.com/gh-aw/guides/github-actions-primer/) to run the workflow every day _and_ allow manual triggering? Write the two keys before reading on.
 
 ```yaml
 on:

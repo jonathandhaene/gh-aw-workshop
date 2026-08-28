@@ -26,9 +26,9 @@ The five frontmatter sections you'll build in Step 11a:
 | Section | Key(s) | What it does |
 |---------|--------|--------------|
 | Metadata | `emoji`, `description` | Human-readable labels shown in the `gh aw` dashboard and Actions UI. |
-| Triggers | `on:` | Tells GitHub Actions when to run — `schedule: daily` plus a manual `workflow_dispatch` button. |
-| Permissions | `permissions:` | Declares the minimum GitHub API scopes the workflow may use. |
-| Tools | `tools:` | Enables the GitHub MCP tool via `gh-proxy`, scoped to the permissions above. |
+| Triggers | `on:` | Tells [GitHub Actions](https://github.github.com/gh-aw/guides/github-actions-primer/) when to run — `schedule: daily` plus a manual `workflow_dispatch` button. |
+| Permissions | `permissions:` | Declares the minimum [GitHub API scopes](https://github.github.com/gh-aw/reference/permissions/) the workflow may use. |
+| Tools | `tools:` | Enables the [GitHub MCP tool](https://github.github.com/gh-aw/reference/github-tools/) via `gh-proxy`, scoped to the permissions above. |
 | Write guardrail | `safe-outputs:` | The only write actions the agent may take — here, one issue comment per run. |
 
 ## ✏️ Try It: Label the Structure
