@@ -24,7 +24,7 @@ The approach breaks into three parts:
 2. Reference that output using the `steps` context expression `${{ steps.recent.outputs.commit_count }}`.
 3. Add a top-level `if:` key in the workflow [frontmatter](https://github.github.com/gh-aw/reference/frontmatter/) that skips the agent job when the count evaluates to zero.
 
-### Add a commit-count step
+### Write the shell command
 
 Open your daily-status workflow file (e.g., `.github/workflows/daily-status.md`) and add the following block inside the YAML frontmatter under `steps:`:
 
@@ -37,15 +37,20 @@ steps:
       echo "commit_count=$COUNT" >> $GITHUB_OUTPUT
 ```
 
-This shell command uses `git log` with a `--since` time filter to list only commits from the last 24 hours, pipes the output through `wc -l` to count the lines, strips surrounding whitespace with `tr -d ' '`, and writes the final integer to `$GITHUB_OUTPUT` — a special GitHub Actions file that shares values between steps using `key=value` notation. The `id: recent` field is essential: it creates a named slot in the `steps` context so the value can be referenced as `steps.recent.outputs.commit_count` in later steps or in the top-level `if:` condition.
+The `git log --since="24 hours ago"` command lists commits from the past day. Piping to `wc -l` counts those lines, and `tr -d ' '` trims whitespace to give a clean integer.
+
+### Expose it as a step output
+
+The last line in the `run:` block writes the count to `$GITHUB_OUTPUT`:
+
+```bash
+echo "commit_count=$COUNT" >> $GITHUB_OUTPUT
+```
+
+`$GITHUB_OUTPUT` is a special file GitHub Actions uses to share values between steps. Writing `key=value` to it makes the value available as `steps.<id>.outputs.key` in any later step or condition. Because the step above has `id: recent`, the count is accessible as `steps.recent.outputs.commit_count`.
 
 > [!NOTE]
-> <details>
-> <summary>`$GITHUB_OUTPUT` makes step outputs available to later steps as `steps.<id>.outputs.key`.</summary>
->
-> For a deeper explanation of how the `steps` context works alongside other context objects (`github`, `env`, `runner`), how to use built-in expression functions like `contains()` and `toJSON()`, and how to chain conditions with `&&` and `||`, see [Side Quest: GitHub Actions Expressions and Contexts](side-quest-15-01-expressions-and-contexts.md).
->
-> </details>
+> For a deeper look at the `steps` context, expression functions like `contains()`, and condition chaining with `&&` / `||`, see [Side Quest: GitHub Actions Expressions and Contexts](side-quest-15-01-expressions-and-contexts.md).
 
 ### Add a top-level condition in frontmatter
 
@@ -55,11 +60,11 @@ In the same frontmatter block, add a top-level `if:` key at the same indentation
 if: steps.recent.outputs.commit_count != '0'
 ```
 
-This condition is embedded into the generated lock file during [compilation](https://github.github.com/gh-aw/reference/compilation-process/); at runtime, GitHub Actions evaluates it and skips the agent job entirely whenever `commit_count` evaluates to `'0'`. You can also reference the count inside your prompt text to give the model concrete context — for example: `"Summarise the last ${{ steps.recent.outputs.commit_count }} commits"` anchors the analysis to the actual number of changes rather than leaving the model to guess the scope.
+At runtime, GitHub Actions evaluates this expression before running the agent job and skips it entirely when `commit_count` is `'0'`. You can also use the count inside your prompt text — for example: `"Summarise the last ${{ steps.recent.outputs.commit_count }} commits"` — to give the model concrete scope.
 
 ### Exercise: Add a weekend skip condition
 
-Now that the commit-count condition is in place, extend the workflow to also skip execution on weekends. This exercise reinforces how to chain multiple conditions in a single `if:` expression.
+Extend the workflow to also skip on weekends.
 
 1. Add a step that writes the current day name as an output:
 
@@ -69,17 +74,20 @@ Now that the commit-count condition is in place, extend the workflow to also ski
   run: echo "day=$(date +%A)" >> $GITHUB_OUTPUT
 ```
 
-1. Update the top-level `if:` to combine both conditions using `&&`:
+1. Update the top-level `if:` to combine both conditions:
 
 ```yaml
 if: steps.recent.outputs.commit_count != '0' && steps.day.outputs.day != 'Saturday' && steps.day.outputs.day != 'Sunday'
 ```
 
-1. Compile the workflow with `gh aw compile` to regenerate the lock file with the combined condition.
+> [!NOTE]
+> The `&&` operator chains conditions — the job runs only when all conditions are true. For more on condition chaining, see [Side Quest: GitHub Actions Expressions and Contexts](side-quest-15-01-expressions-and-contexts.md).
+
+1. Compile the workflow with `gh aw compile` to regenerate the lock file.
 
 1. Trigger a manual [`workflow_dispatch`](https://github.github.com/gh-aw/reference/triggers/) run from the Actions tab.
 
-1. Inspect the run log: on a weekday with commits the agent job should complete normally; on a weekend or a day with no commits it should appear as **skipped** with a grey icon, as shown below.
+1. Inspect the run log: on a weekday with commits the agent job completes normally; on a weekend or a quiet day it shows as **skipped** with a grey icon.
 
 ![Skipped step in GitHub Actions](images/15-skipped-step.svg)
 
