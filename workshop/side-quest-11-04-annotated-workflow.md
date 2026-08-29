@@ -75,7 +75,7 @@ safe-outputs:
 ## ✏️ Your Turn — Safe-Outputs
 
 1. In your `daily-status.md`, comment out the entire [safe-outputs](https://github.github.com/gh-aw/reference/safe-outputs/) block.
-2. Run `gh aw compile --validate`.
+2. Run [`gh aw compile --validate`](https://github.github.com/gh-aw/reference/compilation-process/).
 3. Read the error message — what write capability does the agent lose?
 4. Uncomment the block and recompile to confirm the error is gone.
 

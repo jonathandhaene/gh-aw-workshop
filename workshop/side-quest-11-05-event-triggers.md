@@ -83,7 +83,7 @@ Open your workflow file, such as `.github/workflows/daily-status.md`, and replac
 Then:
 
 1. Save the workflow file with your updated trigger block.
-2. Run `gh aw compile` to verify the change is valid.
+2. Run [`gh aw compile`](https://github.github.com/gh-aw/reference/compilation-process/) to verify the change is valid.
 3. Commit and push the change using your chosen path.
 4. Open the workflow in the GitHub Actions UI, trigger it manually, and confirm it runs.
 

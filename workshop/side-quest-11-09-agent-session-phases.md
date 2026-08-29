@@ -50,7 +50,7 @@ The GitHub Copilot app supports [**agent merge**](https://docs.github.com/en/cop
 
 ## Advanced: Continuous Compilation with `--watch`
 
-If you want a live compile feedback loop while editing a workflow by hand, install the `gh-aw` CLI (see [Step 6](06-install-gh-aw.md)) and run:
+If you want a live compile feedback loop while editing a workflow by hand, install the `gh-aw` CLI (see [Step 6](06-install-gh-aw.md)) and run the [compilation process](https://github.github.com/gh-aw/reference/compilation-process/) with the watch flag:
 
 ```bash
 gh aw compile --watch

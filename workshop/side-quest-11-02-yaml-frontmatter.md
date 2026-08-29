@@ -95,7 +95,7 @@ You are an AI assistant...
 
 ## `copilot-requests: write` not listed under `permissions`
 
-This is the single most common reason a workflow compiles but produces no output. The agent can't make AI calls without this permission.
+This is the single most common reason a workflow compiles but produces no output. The agent can't make AI calls without this [permission](https://github.github.com/gh-aw/reference/permissions/#special-permission-copilot-requests-write).
 
 ```yaml
 # ❌ Wrong — missing copilot-requests
