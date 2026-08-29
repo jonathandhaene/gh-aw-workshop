@@ -111,4 +111,6 @@ gh aw compile
 
 <!-- journey: all -->
 Want to choose another branch from the workshop hub? Return to [What's Next? Keep Exploring](14-next-steps.md).
+
+**Next:** [Build a Cross-Repository Workflow](27-cross-repository-workflows.md)
 <!-- /journey -->
