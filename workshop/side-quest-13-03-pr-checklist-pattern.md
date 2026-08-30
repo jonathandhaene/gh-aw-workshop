@@ -4,7 +4,7 @@
 
 ## 🎯 What You'll Do
 
-Build a workflow that evaluates every new pull request against a short review checklist and posts a pass/fail summary. Reviewers can see at a glance which criteria are already met before they open the diff.
+Build a workflow that evaluates every new [pull request](https://github.github.com/gh-aw/reference/triggers/#pull-request-triggers-pullrequest) against a short review checklist and posts a pass/fail summary. Reviewers can see at a glance which criteria are already met before they open the diff.
 
 ## Before You Start
 
