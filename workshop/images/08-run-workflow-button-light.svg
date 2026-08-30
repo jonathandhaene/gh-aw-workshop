@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560" role="img" aria-label="Workflow sidebar with the Run workflow button highlighted">
+  <rect width="1200" height="560" fill="#f6f8fa"/>
+  <rect x="0" y="0" width="1200" height="44" rx="8" ry="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+  <rect x="0" y="22" width="1200" height="22" fill="#ffffff" stroke="none"/>
+  <rect x="300" y="8" width="600" height="28" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+  <text x="600" y="27" font-family="Arial, sans-serif" font-size="13" fill="#57606a" text-anchor="middle">github.com/your-org/your-repo/actions/workflows/daily-report-status.md</text>
+  <rect x="0" y="44" width="1200" height="48" fill="#ffffff" stroke="none"/>
+  <line x1="0" y1="92" x2="1200" y2="92" stroke="#d0d7de" stroke-width="1"/>
+  <text x="60" y="73" font-family="Arial, sans-serif" font-size="14" fill="#57606a">Code</text>
+  <text x="120" y="73" font-family="Arial, sans-serif" font-size="14" fill="#57606a">Issues</text>
+  <text x="195" y="73" font-family="Arial, sans-serif" font-size="14" fill="#57606a">Pull requests</text>
+  <text x="300" y="73" font-family="Arial, sans-serif" font-size="14" fill="#0969da" font-weight="bold">Actions</text>
+  <line x1="298" y1="92" x2="348" y2="92" stroke="#0969da" stroke-width="2"/>
+  <text x="365" y="73" font-family="Arial, sans-serif" font-size="14" fill="#57606a">Projects</text>
+  <!-- Sidebar -->
+  <rect x="20" y="108" width="240" height="420" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+  <text x="36" y="136" font-family="Arial, sans-serif" font-size="13" fill="#57606a" font-weight="bold">All workflows</text>
+  <rect x="20" y="148" width="240" height="36" fill="#ddf4ff" stroke="none"/>
+  <text x="36" y="171" font-family="Arial, sans-serif" font-size="13" fill="#0969da" font-weight="bold">Daily Report Status</text>
+  <text x="36" y="207" font-family="Arial, sans-serif" font-size="13" fill="#57606a">PR Reviewer</text>
+  <!-- Main panel -->
+  <rect x="280" y="108" width="900" height="420" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+  <text x="300" y="140" font-family="Arial, sans-serif" font-size="18" fill="#24292f" font-weight="bold">Daily Report Status</text>
+  <!-- Highlighted Run workflow button with glow border -->
+  <rect x="1008" y="114" width="164" height="44" rx="8" fill="#0969da" stroke="#0550ae" stroke-width="2.5"/>
+  <text x="1090" y="141" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">▶  Run workflow</text>
+  <!-- Callout arrow pointing at button -->
+  <polygon points="950,136 990,126 990,146" fill="#cf222e"/>
+  <text x="870" y="140" font-family="Arial, sans-serif" font-size="13" fill="#cf222e" font-weight="bold">Click here</text>
+  <!-- Workflow runs table -->
+  <rect x="280" y="168" width="900" height="32" fill="#f6f8fa" stroke="none"/>
+  <line x1="280" y1="200" x2="1180" y2="200" stroke="#d0d7de" stroke-width="1"/>
+  <text x="316" y="189" font-family="Arial, sans-serif" font-size="12" fill="#57606a">Status</text>
+  <text x="380" y="189" font-family="Arial, sans-serif" font-size="12" fill="#57606a">Workflow name</text>
+  <text x="800" y="189" font-family="Arial, sans-serif" font-size="12" fill="#57606a">Triggered</text>
+  <rect x="280" y="200" width="900" height="52" fill="#ffffff" stroke="none"/>
+  <line x1="280" y1="252" x2="1180" y2="252" stroke="#d0d7de" stroke-width="1"/>
+  <circle cx="316" cy="226" r="10" fill="#1a7f37"/>
+  <text x="316" y="231" font-family="Arial, sans-serif" font-size="13" fill="#ffffff" text-anchor="middle">✓</text>
+  <text x="380" y="223" font-family="Arial, sans-serif" font-size="14" fill="#24292f" font-weight="bold">Daily Report Status</text>
+  <text x="380" y="241" font-family="Arial, sans-serif" font-size="12" fill="#57606a">main · schedule · 2 hours ago</text>
+  <!-- Annotation -->
+  <text x="600" y="540" font-family="Arial, sans-serif" font-size="24" fill="#57606a" text-anchor="middle">Workflow sidebar with the Run workflow button highlighted</text>
+</svg>

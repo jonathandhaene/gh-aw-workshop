@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560" role="img" aria-label="Workflow sidebar with the Run workflow button highlighted">
+  <rect width="1200" height="560" fill="#0d1117"/>
+  <rect x="0" y="0" width="1200" height="44" rx="8" ry="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <rect x="0" y="22" width="1200" height="22" fill="#161b22" stroke="none"/>
+  <rect x="300" y="8" width="600" height="28" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+  <text x="600" y="27" font-family="Arial, sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">github.com/your-org/your-repo/actions/workflows/daily-report-status.md</text>
+  <rect x="0" y="44" width="1200" height="48" fill="#161b22" stroke="none"/>
+  <line x1="0" y1="92" x2="1200" y2="92" stroke="#30363d" stroke-width="1"/>
+  <text x="60" y="73" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">Code</text>
+  <text x="120" y="73" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">Issues</text>
+  <text x="195" y="73" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">Pull requests</text>
+  <text x="300" y="73" font-family="Arial, sans-serif" font-size="14" fill="#2f81f7" font-weight="bold">Actions</text>
+  <line x1="298" y1="92" x2="348" y2="92" stroke="#2f81f7" stroke-width="2"/>
+  <text x="365" y="73" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">Projects</text>
+  <rect x="20" y="108" width="240" height="420" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="36" y="136" font-family="Arial, sans-serif" font-size="13" fill="#8b949e" font-weight="bold">All workflows</text>
+  <rect x="20" y="148" width="240" height="36" fill="#1f2d3e" stroke="none"/>
+  <text x="36" y="171" font-family="Arial, sans-serif" font-size="13" fill="#2f81f7" font-weight="bold">Daily Report Status</text>
+  <text x="36" y="207" font-family="Arial, sans-serif" font-size="13" fill="#8b949e">PR Reviewer</text>
+  <rect x="280" y="108" width="900" height="420" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="300" y="140" font-family="Arial, sans-serif" font-size="18" fill="#f0f6fc" font-weight="bold">Daily Report Status</text>
+  <rect x="1008" y="114" width="164" height="44" rx="8" fill="#2f81f7" stroke="#388bfd" stroke-width="2.5"/>
+  <text x="1090" y="141" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">▶  Run workflow</text>
+  <polygon points="950,136 990,126 990,146" fill="#f85149"/>
+  <text x="870" y="140" font-family="Arial, sans-serif" font-size="13" fill="#f85149" font-weight="bold">Click here</text>
+  <rect x="280" y="168" width="900" height="32" fill="#0d1117" stroke="none"/>
+  <line x1="280" y1="200" x2="1180" y2="200" stroke="#30363d" stroke-width="1"/>
+  <text x="316" y="189" font-family="Arial, sans-serif" font-size="12" fill="#8b949e">Status</text>
+  <text x="380" y="189" font-family="Arial, sans-serif" font-size="12" fill="#8b949e">Workflow name</text>
+  <text x="800" y="189" font-family="Arial, sans-serif" font-size="12" fill="#8b949e">Triggered</text>
+  <rect x="280" y="200" width="900" height="52" fill="#161b22" stroke="none"/>
+  <line x1="280" y1="252" x2="1180" y2="252" stroke="#30363d" stroke-width="1"/>
+  <circle cx="316" cy="226" r="10" fill="#238636"/>
+  <text x="316" y="231" font-family="Arial, sans-serif" font-size="13" fill="#ffffff" text-anchor="middle">✓</text>
+  <text x="380" y="223" font-family="Arial, sans-serif" font-size="14" fill="#f0f6fc" font-weight="bold">Daily Report Status</text>
+  <text x="380" y="241" font-family="Arial, sans-serif" font-size="12" fill="#8b949e">main · schedule · 2 hours ago</text>
+  <text x="600" y="540" font-family="Arial, sans-serif" font-size="24" fill="#8b949e" text-anchor="middle">Workflow sidebar with the Run workflow button highlighted</text>
+</svg>
