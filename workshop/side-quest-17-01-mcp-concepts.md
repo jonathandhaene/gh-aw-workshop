@@ -2,7 +2,7 @@
 <!-- page-adventure: side-quest -->
 # Side Quest: How MCP Tool Servers Work
 
-> _Optional: work through this primer after [Step 17](17-add-mcp-tools.md) if you want to understand how MCP changed your workflow's agentic loop, then continue to the next step._
+> _Optional: work through this primer after [Step 17](17-add-mcp-tools.md) if you want to understand how MCP changed your workflow's [agentic loop](https://github.github.com/gh-aw/introduction/how-they-work/), then continue to the next step._
 
 ## 📋 Before You Start
 
@@ -23,7 +23,7 @@ A tool server is a process that:
 2. Runs those operations on demand when the agent calls them.
 3. Returns structured results the agent can reason about.
 
-The GitHub MCP server, for example, advertises tools like `list_issues`, `get_pull_request`, `list_commits`, and dozens of others. When the agent calls `list_issues`, the server makes the GitHub API request and hands the result back.
+The [GitHub MCP server](https://github.github.com/gh-aw/guides/mcps/#github-mcp-server), for example, advertises tools like `list_issues`, `get_pull_request`, `list_commits`, and dozens of others. When the agent calls `list_issues`, the server makes the GitHub API request and hands the result back.
 
 ---
 
@@ -135,7 +135,7 @@ If the agent makes a tool call you didn't expect, revisit your task brief. Addin
 
 Because MCP tool servers receive and return data at runtime, a few security concepts apply specifically to this environment. You will encounter them in the [Supply Chain Attacks via MCP](side-quest-17-05-supply-chain-mcp.md) side quest.
 
-**Supply chain attack through MCP** — occurs when a tool server your agent trusts returns manipulated data instead of the real thing. Rather than compromising your workflow file directly, an attacker targets the tool server, so the same workflow file can produce harmful results.
+**[Supply chain attack](https://github.github.com/gh-aw/introduction/architecture/#threat-model) through MCP** — occurs when a tool server your agent trusts returns manipulated data instead of the real thing. Rather than compromising your workflow file directly, an attacker targets the tool server, so the same workflow file can produce harmful results.
 
 **Poisoned payload** — the manipulated data a compromised tool server returns. It may be fabricated data (such as fake issue lists) or embedded instructions that redirect the agent to take unintended actions.
 

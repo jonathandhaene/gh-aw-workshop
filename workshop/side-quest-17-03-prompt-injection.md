@@ -113,7 +113,7 @@ Prompt injection is a reminder that **repository data is user-controlled input**
 
 - Data from issues, PRs, and commits can contain adversarial content.
 - The agent's task brief is your control surface — keep it precise.
-- Defence in depth (minimal permissions, narrow safe-outputs, human review) limits the blast radius of a successful injection.
+- Defence in depth (minimal permissions, narrow [safe-outputs](https://github.github.com/gh-aw/reference/safe-outputs/), human review) limits the blast radius of a successful injection.
 
 ---
 

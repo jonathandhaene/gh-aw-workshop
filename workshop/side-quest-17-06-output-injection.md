@@ -26,7 +26,7 @@ When the agent quotes or paraphrases that issue, the fabricated approval banner 
 
 ## Why This Matters for Agentic Workflows
 
-Classic CI pipelines emit predictable script output. Agentic workflows read freeform content and write freeform output, so the trust boundary shifts to the output surface. If an attacker can shape a PR comment or issue summary, they can influence human decisions without changing workflow code.
+Classic CI pipelines emit predictable script output. [Agentic workflows](https://github.github.com/gh-aw/introduction/how-they-work/) read freeform content and write freeform output, so the trust boundary shifts to the output surface. If an attacker can shape a PR comment or issue summary, they can influence human decisions without changing workflow code.
 
 ## How AW Defends Against It
 

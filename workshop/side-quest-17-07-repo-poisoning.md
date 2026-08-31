@@ -66,7 +66,7 @@ tools:
 ---
 ```
 
-With `contents: read`, the GitHub MCP server cannot call any API that creates or modifies repository content. Even a fully hijacked agent brief cannot commit a file.
+With `contents: read`, the [GitHub MCP server](https://github.github.com/gh-aw/guides/mcps/#github-mcp-server) cannot call any API that creates or modifies repository content. Even a fully hijacked agent brief cannot commit a file.
 
 ### Route writes through a pull request
 

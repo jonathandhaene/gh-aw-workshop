@@ -15,7 +15,7 @@ A supply chain attack through MCP starts when you trust a tool server, package, 
 
 ## Attack surface at a glance
 
-Use this table as a quick threat model when you add or review an MCP server.
+Use this table as a quick threat model when you add or review an [MCP server](https://github.github.com/gh-aw/reference/mcp-gateway/).
 
 | Attack type | How it works | Detection signal |
 | --- | --- | --- |

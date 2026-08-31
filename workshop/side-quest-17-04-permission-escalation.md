@@ -20,7 +20,7 @@ Permission escalation means the agent ends up with **more authority than the tas
 
 Picture a workflow with one job: read open issues, read recent commits, and write a daily summary.
 
-Now picture that same workflow allowing the agent to open a pull request touching any file. A malicious issue body or a prompt injection could push the agent to edit `README.md` or change workflow files. You never asked for that.
+Now picture that same workflow allowing the agent to open a pull request touching any file. A malicious issue body or a [prompt injection](https://github.github.com/gh-aw/introduction/architecture/#threat-model) could push the agent to edit `README.md` or change workflow files. You never asked for that.
 
 That is the problem. The workflow author requested one level of authority. The configuration exposed a wider one.
 
