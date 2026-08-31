@@ -36,6 +36,14 @@ If you already write Actions YAML, the frontmatter stays the same (triggers, per
 
 </details>
 
+The diagram below shows how the two approaches compare when both start from the same schedule trigger.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/00-actions-vs-agentic-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="images/00-actions-vs-agentic-light.svg">
+  <img alt="Side-by-side comparison of Classic GitHub Actions YAML versus an Agentic Workflow with safety highlights. Classic: schedule trigger flows through static YAML steps and shell scripts to produce output. Agentic: same trigger flows through a plain-English task brief with safety config (permissions, tools, safe-outputs) into a sandbox-isolated AI agent that applies integrity filtering and zero-secrets constraints, producing output only through declared safe-output surfaces." src="images/00-actions-vs-agentic-light.svg">
+</picture>
+
 ## Three things to know
 
 ![Agentic workflow lifecycle: a Markdown file with YAML frontmatter and a task brief is compiled by gh aw compile into a lock.yml file, which GitHub Actions triggers, runs the AI agent that reads repository data and calls tools, and produces a structured output posted back to GitHub](images/05-workflow-lifecycle.svg)
